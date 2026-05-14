@@ -903,6 +903,7 @@ _TEMPLATES["base.html"] = """<!DOCTYPE html>
   <meta name="twitter:image" content="{{ BASE_URL }}/assets/og-image.png">
   {% if json_ld %}<script type="application/ld+json">{{ json_ld | tojson }}</script>{% endif %}
   <link rel="stylesheet" href="{{ base_url }}assets/style.css">
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0a131b108939488eb030e5d57b61121f"}'></script>
 </head>
 <body>
 <header class="site-header" data-pagefind-ignore>
@@ -1020,6 +1021,7 @@ _TEMPLATES["base_wide.html"] = """<!DOCTYPE html>
   <meta name="twitter:image" content="{{ BASE_URL }}/assets/og-image.png">
   {% if json_ld %}<script type="application/ld+json">{{ json_ld | tojson }}</script>{% endif %}
   <link rel="stylesheet" href="{{ base_url }}assets/style.css">
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0a131b108939488eb030e5d57b61121f"}'></script>
 </head>
 <body>
 <header class="site-header" data-pagefind-ignore>
