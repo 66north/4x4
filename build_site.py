@@ -53,6 +53,7 @@ _SVG_WARN   = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=
 _SVG_RULER  = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>'
 _SVG_CHIP   = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M15 2v3M9 2v3M15 19v3M9 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/><rect x="2" y="2" width="20" height="20" rx="3"/></svg>'
 _SVG_BOOK   = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>'
+_SVG_GUIDE  = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.3 12.5 7.6 12.8a.55.55 0 0 0 .8 0C12.7 22.5 20 15.4 20 10a8 8 0 0 0-8-8z"/></svg>'
 
 CATEGORIES = [
     {"slug": "maintenance",  "title": "Maintenance",     "icon": _SVG_WRENCH, "desc": "Routine service tasks"},
@@ -60,6 +61,7 @@ CATEGORIES = [
     {"slug": "specs",        "title": "Specifications",  "icon": _SVG_RULER,  "desc": "Torques, fluids, clearances"},
     {"slug": "codes",        "title": "Fault Codes",     "icon": _SVG_CHIP,   "desc": "DTC decoder & repair"},
     {"slug": "reference",    "title": "Reference",       "icon": _SVG_BOOK,   "desc": "Fuses, wiring, schedules"},
+    {"slug": "guides",       "title": "Guides",          "icon": _SVG_GUIDE,  "desc": "Buying, owning & planning"},
 ]
 
 MANUAL_NAMES: dict[str, str] = {
@@ -711,6 +713,42 @@ mark { background: #fff176; padding: .02rem .12rem; border-radius: 2px; }
 }
 .filter-chip.on { background: var(--brand); color: #fff; border-color: var(--brand); }
 .filter-chip:hover:not(.on) { border-color: var(--brand); color: var(--brand); }
+
+/* ── Guide long-form body (Markdown-rendered) ── */
+.guide-body { font-size: .95rem; line-height: 1.75; color: var(--text); }
+.guide-body h2 {
+  font-size: 1.15rem; font-weight: 800; color: #1a1a2e;
+  margin: 2.25rem 0 .6rem; padding-bottom: .35rem;
+  border-bottom: 2px solid var(--border);
+}
+.guide-body h3 {
+  font-size: 1rem; font-weight: 700; color: var(--brand);
+  margin: 1.5rem 0 .4rem;
+}
+.guide-body p { margin-bottom: .9rem; }
+.guide-body ul, .guide-body ol { margin: .5rem 0 .9rem 1.4rem; }
+.guide-body li { margin-bottom: .3rem; }
+.guide-body strong { color: #1a1a2e; }
+.guide-body table {
+  width: 100%; border-collapse: collapse; font-size: .87rem;
+  margin: 1rem 0 1.25rem;
+}
+.guide-body th {
+  background: var(--th-bg); text-align: left;
+  padding: .45rem .7rem; font-weight: 700; font-size: .8rem;
+  border: 1px solid var(--border);
+}
+.guide-body td { padding: .4rem .7rem; border: 1px solid var(--border); vertical-align: top; }
+.guide-body tr:nth-child(even) td { background: #fafbfc; }
+.guide-card {
+  display: block; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 1rem 1.25rem; margin-bottom: .6rem;
+  text-decoration: none; color: var(--text); transition: border-color .15s, transform .12s;
+  box-shadow: var(--shadow);
+}
+.guide-card:hover { border-color: var(--brand); transform: translateX(3px); }
+.guide-card-title { font-weight: 700; font-size: 1rem; color: #1a1a2e; margin-bottom: .25rem; }
+.guide-card-desc { font-size: .87rem; color: var(--muted); line-height: 1.5; }
 
 /* ── Responsive ── */
 @media (max-width: 760px) {
@@ -1587,6 +1625,69 @@ _TEMPLATES["find_part.html"] = """{% extends "base.html" %}
 {% endblock %}
 """
 
+_TEMPLATES["guide.html"] = """{% extends "base.html" %}
+{% block title %}{{ guide.title }} — Pajero IV (Montero / Shogun) Workshop Hub{% endblock %}
+{% block content %}
+<nav class="breadcrumb">
+  <a href="{{ base_url }}index.html">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="{{ base_url }}guides/index.html">Guides</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>{{ guide.title }}</span>
+</nav>
+<div class="topic-header">
+  <h1>{{ guide.title }}</h1>
+  {% if guide.applies_to and guide.applies_to.engines %}
+  <div class="topic-tags">
+    {% for eng in guide.applies_to.engines %}
+    <span class="ttag engine">{{ eng }}</span>
+    {% endfor %}
+    {% if guide.applies_to.years %}
+    <span class="ttag">{{ guide.applies_to.years[0] }}–{{ guide.applies_to.years[-1] }}</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+<p class="topic-intro">{{ guide.description }}</p>
+<div class="guide-body">
+  {{ body_html | safe }}
+</div>
+{% if related_topics %}
+<h2 class="topic-h2">Related topics</h2>
+<div class="related-chips">
+  {% for rt in related_topics %}
+  <a class="related-chip" href="{{ base_url }}topics/{{ rt.slug }}.html">{{ rt.title }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+<div class="feedback-bar">
+  <button class="feedback-btn" onclick="openFeedback()">✏ Improve this page</button>
+  <span class="feedback-note">Found an error or have a better tip? Let us know.</span>
+</div>
+{% endblock %}
+"""
+
+_TEMPLATES["guides_index.html"] = """{% extends "base.html" %}
+{% block title %}Guides — Pajero IV (Montero / Shogun) Workshop Hub{% endblock %}
+{% block content %}
+<nav class="breadcrumb">
+  <a href="{{ base_url }}index.html">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>Guides</span>
+</nav>
+<h1 style="font-size:1.7rem;font-weight:800;color:#1a1a2e;margin-bottom:.5rem">Guides</h1>
+<p style="color:var(--muted);font-size:.92rem;margin-bottom:1.75rem">{{ category.desc }}</p>
+{% for g in guides %}
+<a class="guide-card" href="{{ base_url }}guides/{{ g.slug }}.html">
+  <div class="guide-card-title">{{ g.title }}</div>
+  <div class="guide-card-desc">{{ g.description | truncate(160) }}</div>
+</a>
+{% else %}
+<p style="color:var(--muted)">No guides yet.</p>
+{% endfor %}
+{% endblock %}
+"""
+
 
 class _DictLoader(BaseLoader):
     def get_source(self, env, name):
@@ -1756,6 +1857,21 @@ def load_shops(content_dir: Path) -> tuple[list[dict], str]:
         return [], ""
     data = yaml.safe_load(shops_file.read_text(encoding="utf-8"))
     return data.get("shops", []), data.get("feedback_email", "")
+
+
+def load_guides(content_dir: Path) -> list[dict]:
+    guides_dir = content_dir / "guides"
+    if not guides_dir.exists():
+        return []
+    guides = []
+    for f in sorted(guides_dir.glob("*.yml")):
+        try:
+            data = yaml.safe_load(f.read_text(encoding="utf-8"))
+            if data:
+                guides.append(data)
+        except Exception as e:
+            print(f"  WARNING: could not load guide {f.name}: {e}", file=sys.stderr)
+    return guides
 
 
 def make_shop_url(shop: dict, oem: str) -> str:
@@ -2073,6 +2189,58 @@ def gen_topic_page(topic: dict, topics_by_slug: dict, shops: list[dict],
     return _jinja.get_template("topic.html").render(**ctx)
 
 
+def gen_guide_page(guide: dict, topics_by_slug: dict, sidebar_cats: list[dict],
+                   feedback_email: str, base_url: str) -> str:
+    import markdown as _md
+    body_html = _md.markdown(
+        guide.get("body", ""),
+        extensions=["tables", "nl2br"],
+    )
+    related = [topics_by_slug[s] for s in guide.get("related", []) if s in topics_by_slug]
+
+    json_ld = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": guide.get("title", ""),
+        "description": guide.get("description", ""),
+        "author": {"@type": "Organization", "name": "Community"},
+        "isPartOf": {"@type": "WebSite", "url": BASE_URL},
+    }
+
+    ctx = _base_ctx(base_url,
+                    sidebar_categories=sidebar_cats,
+                    active_category="guides",
+                    feedback_email=feedback_email,
+                    canonical_url=f"/guides/{guide['slug']}.html",
+                    description=guide.get("description", ""),
+                    og_type="article",
+                    json_ld=json_ld)
+    ctx.update({
+        "guide": guide,
+        "body_html": body_html,
+        "related_topics": related,
+    })
+    return _jinja.get_template("guide.html").render(**ctx)
+
+
+def gen_guides_index_page(guides: list[dict], all_cats_with_counts: list[dict],
+                          feedback_email: str, base_url: str) -> str:
+    guides_cat = next((c for c in all_cats_with_counts if c["slug"] == "guides"), {})
+    ctx = _base_ctx(base_url,
+                    sidebar_categories=all_cats_with_counts,
+                    active_category="guides",
+                    full_width=True,
+                    feedback_email=feedback_email,
+                    canonical_url="/guides/",
+                    description="Buying guides and ownership resources for the Mitsubishi Pajero (Montero / Shogun).",
+                    og_type="website")
+    ctx.update({
+        "category": guides_cat,
+        "guides": guides,
+    })
+    return _jinja.get_template("guides_index.html").render(**ctx)
+
+
 # ---------------------------------------------------------------------------
 # SEO: robots.txt and sitemap.xml generation
 # ---------------------------------------------------------------------------
@@ -2099,6 +2267,7 @@ def gen_sitemap_xml(
     base_url: str,
     pages: list[dict],
     topics: list[dict],
+    guides: list[dict],
     categories: list[dict],
     years: list[str],
     manuals: list[str],
@@ -2119,6 +2288,10 @@ def gen_sitemap_xml(
     # Topics (0.9 - curated, high-value content)
     for topic in topics:
         add_url(f"{base_url}topics/{topic['slug']}.html", 0.9)
+
+    # Guides (0.9 - long-form, high-value content)
+    for guide in guides:
+        add_url(f"{base_url}guides/{guide['slug']}.html", 0.9)
 
     # Categories (0.8 - landing pages)
     for cat in categories:
@@ -2214,14 +2387,19 @@ def main():
 
     # Load curated content
     topics = load_topics(CONTENT_DIR)
+    guides = load_guides(CONTENT_DIR)
     shops, feedback_email = load_shops(CONTENT_DIR)
     topics_by_slug = {t["slug"]: t for t in topics}
     topics_by_cat: dict[str, list] = {}
     for t in topics:
         topics_by_cat.setdefault(t.get("category", ""), []).append(t)
     cats_with_counts = [{**c, "topic_count": len(topics_by_cat.get(c["slug"], []))} for c in CATEGORIES]
+    # Annotate the guides category with its guide count
+    for c in cats_with_counts:
+        if c["slug"] == "guides":
+            c["topic_count"] = len(guides)
     sidebar_cats = cats_with_counts
-    print(f"  loaded {len(topics)} topics, {len(shops)} shops")
+    print(f"  loaded {len(topics)} topics, {len(guides)} guides, {len(shops)} shops")
 
     # New landing index (problem-oriented)
     (out_dir / "index.html").write_text(
@@ -2251,6 +2429,18 @@ def main():
         html = gen_topic_page(topic, topics_by_slug, shops, sidebar_cats, feedback_email, base_url)
         (topics_dir / f"{topic['slug']}.html").write_text(html, encoding="utf-8")
     print(f"  wrote {len(topics)} topic pages")
+
+    # Guide pages
+    guides_dir = out_dir / "guides"
+    guides_dir.mkdir(exist_ok=True)
+    (guides_dir / "index.html").write_text(
+        gen_guides_index_page(guides, cats_with_counts, feedback_email, base_url),
+        encoding="utf-8",
+    )
+    for guide in guides:
+        html = gen_guide_page(guide, topics_by_slug, sidebar_cats, feedback_email, base_url)
+        (guides_dir / f"{guide['slug']}.html").write_text(html, encoding="utf-8")
+    print(f"  wrote {len(guides)} guide pages")
 
     # View pages: one per (year, manual) combo
     view_count = 0
@@ -2369,7 +2559,7 @@ def main():
     (out_dir / "robots.txt").write_text(gen_robots_txt(base_url), encoding="utf-8")
     print("  wrote robots.txt")
 
-    sitemap_content = gen_sitemap_xml(base_url, pages, topics, CATEGORIES, YEAR_ORDER, MANUAL_ORDER)
+    sitemap_content = gen_sitemap_xml(base_url, pages, topics, guides, CATEGORIES, YEAR_ORDER, MANUAL_ORDER)
     (out_dir / "sitemap.xml").write_text(sitemap_content, encoding="utf-8")
     print("  wrote sitemap.xml")
 
