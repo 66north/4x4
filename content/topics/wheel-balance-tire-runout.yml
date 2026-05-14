@@ -1,0 +1,58 @@
+slug: wheel-balance-tire-runout
+title: "Wheel Balance & Tire Runout — Diagnosis"
+category: reference
+difficulty: 1
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Wheel imbalance (uneven weight distribution) and tire runout (out-of-round or side-to-side
+  wobble) cause vibration and accelerated tire wear. Factory service intervals call for wheel
+  balance checks after tire replacement or if vibration develops. Runout is a tire or wheel
+  defect measured with a dial gauge; balance is corrected by adding weights. DIY diagnosis is
+  visual and tactile; precision measurement requires a wheel balance machine at a tyre shop.
+
+symptoms:
+  - "Vibration in the steering wheel or floor at highway speeds (70–100 km/h)"
+  - "Vibration that decreases at higher speeds or appears only within a narrow speed range"
+  - "Uneven tire wear (one edge wearing faster than the opposite edge)"
+  - "Tyre wear on one side of the tread pattern (cupping or scalloping)"
+  - "Visible wobble or run-out when spinning the wheel by hand (out-of-round)"
+  - "Steering wheel shimmy on acceleration or braking"
+
+parts:
+  - name: "Wheel balance weights (stick-on or clip-on)"
+    oem: null
+    spec: "5g, 10g, 15g, 25g weight stickers for alloy wheels"
+    notes: "Balancing is a tyre shop service (~$15–25 per wheel). Weights are consumables and wear off over time."
+    verify: false
+  - name: "Wheel bearing inspection"
+    oem: null
+    spec: "If runout is severe, wheel bearing may be loose or damaged"
+    notes: "See rear-axle-bearing-inspection or wheel-alignment topics for bearing play diagnosis."
+    verify: false
+
+tools:
+  - "Dial indicator or runout gauge (tyre shop equipment)"
+  - "Wheel balancer machine (tyre shop equipment)"
+  - "Jack and jack stands"
+
+tips:
+  - "Imbalance vs runout: imbalance causes up-and-down vibration, runout causes wobble. Imbalance is corrected by adding weights; runout is corrected by truing the tire or replacing the wheel."
+  - "Visual check for runout: spin the wheel by hand (with the vehicle jacked up) and watch the edge of the tire. It should remain perfectly round with no side-to-side wobble. Any visible wobble indicates runout."
+  - "Vibration at one specific speed (e.g., exactly at 80 km/h) is often imbalance — the resonant frequency of the car matches a harmonic of the wheel rotation. Vibration across a range of speeds is more likely runout or a bearing problem."
+  - "After tire replacement, always have wheels balanced. Even a new tire can have manufacturing imbalance. Balancing adds $15–25 per wheel to a tire job."
+  - "Stick-on weights (adhesive) are lighter and look neater on alloy wheels. Clip-on weights work on steel wheels and are reusable. The choice depends on your wheel type."
+  - "Runout tolerance: typically ±3 mm radial (vertical wobble) and ±2 mm lateral (side-to-side). Wheels exceeding this should be re-trued or replaced."
+  - "If vibration persists after balancing, suspect driveshaft runout, engine imbalance, or suspension wear — not a wheel problem."
+
+procedure_refs:
+  - label: "Factory procedure — Front Suspension (Section 31)"
+    section: "31"
+    manual: "M1"
+
+related:
+  - tire-pressure-and-wear
+  - tire-wear-and-alignment
+  - wheel-alignment

@@ -1,0 +1,66 @@
+slug: brake-pads-front
+title: Front Brake Pad Replacement
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Front brake pads on the Pajero IV typically last 40,000–60,000 km depending on
+  driving style. They must always be replaced as a complete axle set (both sides).
+  The process requires winding back the front caliper pistons — a simple piston
+  push-in type, not screw-in.
+
+symptoms:
+  - Squealing or squeaking noise under braking
+  - Grinding metal-on-metal sound when braking
+  - Longer stopping distances than usual
+  - Brake warning light illuminated
+  - Pad friction material worn to less than 2mm
+  - Brake dust visible inside wheel dramatically reduced (worn pads produce less dust)
+
+parts:
+  - name: Front brake pads (axle set)
+    oem: 4605A072
+    notes: Verify with dealer — OEM number varies by year and market (EUR/GE)
+    verify: true
+  - name: Brake pad lubricant / anti-squeal shim grease
+    oem: null
+    notes: Apply to pad backing plates and caliper sliding pins only — never to friction surface
+  - name: Brake fluid top-up if needed
+    spec: DOT 4
+    oem: null
+    notes: Compressing pistons pushes fluid back to reservoir — check level before starting
+
+tools:
+  - 17mm socket (wheel bolts)
+  - 12mm + 14mm socket (caliper bolts)
+  - Caliper piston compression tool (C-clamp or dedicated tool)
+  - Wire brush (for caliper slides)
+  - Brake cleaner spray
+  - Torque wrench
+
+torque:
+  - component: Caliper mounting bracket bolts
+    value_nm: 108
+  - component: Caliper slide pin bolts
+    value_nm: 27
+  - component: Wheel nuts
+    value_nm: 108
+
+tips:
+  - Always replace pads as an axle set (both sides). Replacing one side creates uneven braking.
+  - Remove about 20–30ml of fluid from the reservoir before compressing pistons to prevent overflow.
+  - Clean the caliper slide pins and regrease them — seized pins are a common cause of uneven wear and poor fuel economy.
+  - Bed in new pads with 8–10 moderate stops from 60 km/h before any hard braking.
+  - Do not apply grease to the friction material — only to backing plate edges and slide pin contact points.
+
+procedure_refs:
+  - label: "Factory procedure — Brakes (Section 35)"
+    section: "35"
+    manual: "M1"
+
+related:
+  - brake-pads-rear
+  - brake-fluid-flush

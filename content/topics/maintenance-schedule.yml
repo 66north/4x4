@@ -1,0 +1,161 @@
+slug: maintenance-schedule
+title: Maintenance Schedule — Service Intervals
+category: specs
+difficulty: 1
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Regular maintenance is the most cost-effective way to keep your Pajero IV running reliably and avoid expensive repairs.
+  Mitsubishi specifies service intervals every 10,000 km or 12 months (whichever comes first) for most items. This guide
+  covers the complete maintenance schedule from first service (1,000 km) through major services at 100,000+ km.
+
+service_schedule:
+  note: "Perform the service at whichever interval (distance or time) comes first. For example, if 15,000 km service is due in 18 months, perform it at 15,000 km regardless of time elapsed."
+
+  first_service:
+    interval_km: 1000
+    interval_months: null
+    tasks:
+      - "Check all fluid levels and top up if necessary"
+      - "Check tire pressure and condition"
+      - "Inspect brakes and suspension for wear"
+      - "Test all lighting, wipers, and accessories"
+    note: "Free service at most dealerships"
+
+  regular_service:
+    interval_km: 10000
+    interval_months: 12
+    tasks:
+      - "Engine oil and filter change"
+      - "Visual brake inspection"
+      - "Tire rotation (front-left ↔ rear-right, front-right ↔ rear-left)"
+      - "Check all fluid levels (coolant, transmission, brake, power steering)"
+      - "Inspect wipers, lights, and belts"
+    estimated_cost: "$150-300 depending on workshop and oil grade"
+
+  20k_service:
+    interval_km: 20000
+    interval_months: 24
+    tasks:
+      - "Oil and filter change"
+      - "Tire rotation"
+      - "Brake fluid inspection"
+      - "Air filter inspection (replace if very dirty)"
+      - "Check suspension components"
+
+  40k_service:
+    interval_km: 40000
+    interval_months: 48
+    tasks:
+      - "Oil and filter change"
+      - "Coolant flush and refill (if due — coolant lasts 40,000 km or 24 months)"
+      - "Tire rotation"
+      - "Transmission fluid and filter change (if due — 40,000-60,000 km intervals)"
+      - "Brake inspection and pad check"
+      - "Suspension and steering component check"
+      - "Air filter replacement (if clogged)"
+      - "Cabin air filter replacement"
+    estimated_cost: "$400-600"
+    note: "This is a major service. Budget accordingly."
+
+  60k_service:
+    interval_km: 60000
+    interval_months: 60
+    tasks:
+      - "Oil and filter change"
+      - "Tire rotation"
+      - "Transmission fluid and filter change (if not done at 40k)"
+      - "Brake fluid renewal (flush and refill)"
+      - "Differential oil change (front and rear)"
+      - "Spark plugs (6G75 petrol only — every 60,000 km)"
+      - "Check suspension and steering"
+    estimated_cost: "$500-800"
+    note: "Differential oil is often forgotten but essential for off-road vehicles"
+
+  80k_service:
+    interval_km: 80000
+    interval_months: null
+    tasks:
+      - "Oil and filter change"
+      - "Tire rotation"
+      - "Brake pad replacement (if worn below 3 mm)"
+      - "Suspension inspection"
+      - "Wheel alignment check (if pulling to one side)"
+
+  100k_service:
+    interval_km: 100000
+    interval_months: null
+    tasks:
+      - "Oil and filter change"
+      - "Major inspection of all systems"
+      - "Transmission fluid and filter change"
+      - "Spark plugs (6G75 petrol only)"
+      - "Brake fluid and coolant flush"
+      - "Suspension component inspection and possible replacement"
+      - "Driveshaft and CV joint inspection"
+    estimated_cost: "$1000-1500"
+    note: "This is the 100k major service. Most components have reached mid-life and may need attention."
+
+special_services:
+  transmission_fluid_flush:
+    interval_km: 40000
+    interval_months: 24
+    notes: "Some vehicles may need more frequent intervals if towing or severe driving. Dark or burnt-smelling fluid requires immediate change."
+
+  coolant_flush:
+    interval_km: 40000
+    interval_months: 24
+    notes: "Essential in hot climates or if fluid is brown/black (sign of corrosion)"
+
+  brake_fluid_flush:
+    interval_km: 60000
+    interval_months: 36
+    notes: "Brake fluid is hygroscopic and absorbs moisture. Moisture lowers boiling point and causes corrosion."
+
+  air_filter:
+    interval_km: 20000
+    notes: "More frequent replacement (every 10,000 km) if driving in dusty conditions"
+
+  cabin_air_filter:
+    interval_km: 20000
+    notes: "Blocks pollen, dust, and odors from entering the cabin. Replace more frequently in dusty regions."
+
+  differential_oil:
+    interval_km: 40000
+    notes: "Often forgotten but crucial, especially for 4WD use. Limited-slip differentials need special oil."
+
+  spark_plugs_6g75:
+    interval_km: 60000
+    notes: "Check gap and condition. Replace if fouled or damaged. Diesel engines (4M41) have glow plugs, not spark plugs."
+
+  glow_plugs_4m41:
+    interval_km: 80000
+    notes: "Diesel engines need glow plugs for cold starting. Replace if cold-start becomes difficult."
+
+driving_condition_modifications:
+  severe_conditions: "If towing, desert driving, or frequent idling in traffic, reduce all service intervals by 25-50%"
+  high_temperature: "In climates above 35°C, change oil and coolant more frequently"
+  dusty_environment: "In desert or rural areas, change air filter every 5,000 km instead of 20,000 km"
+  short_trips: "Frequent short trips don't allow proper battery charging; have the alternator tested regularly"
+
+tips:
+  - "Keep detailed service records in your logbook — they prove maintenance history if you sell the vehicle."
+  - "Don't skip major services to save money. A $300 service now prevents a $3,000 repair later."
+  - "If you exceed the service interval significantly (20%+ over), still service the vehicle and inform the technician of the overdue work."
+  - "Synthetic oils last longer (8,000-10,000 km intervals possible), but use factory-recommended viscosity."
+  - "Have your mechanic explain any 'additional work required' — don't blindly approve it. Get a second opinion if the cost seems high."
+  - "Dealer service is more expensive but uses genuine parts and warranty-backed labor. Independent workshops are cheaper but quality varies."
+
+procedure_refs:
+  - label: "Factory procedure — Maintenance Schedule (Section 70)"
+    section: "70"
+    manual: "M1"
+
+related:
+  - engine-oil-specifications
+  - transmission-fluid-specifications
+  - coolant-specifications
+  - air-filter
+  - spark-plugs

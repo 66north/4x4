@@ -1,0 +1,75 @@
+slug: headlight-bulb-replacement
+title: "Headlight & Exterior Bulb Replacement"
+category: maintenance
+difficulty: 1
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV uses halogen headlights as standard, with HID (xenon) as an option on higher
+  trim levels. Most bulbs can be replaced from behind the headlamp housing without removing it.
+  HID headlights use a D2S discharge bulb — do not touch the burner with bare hands, and note
+  that HID systems carry dangerous high voltage even with the ignition off. Indicators and
+  tail/brake lights use standard bayonet bulbs accessible from inside the boot or behind trim panels.
+
+symptoms:
+  - "Headlight not working on one side (single bulb or fuse failure)"
+  - "Both headlights out — check fuse or relay, not bulbs (rare for both to fail together)"
+  - "Indicator flashing faster than normal (hyper-flash) — bulb in that circuit has failed"
+  - "Reversing light not working — check bulb and reverse switch"
+  - "Fog light not working — separate fuse circuit"
+
+parts:
+  - name: "Headlight bulb — halogen (H4)"
+    oem: null
+    spec: "H4 P43t 60/55W — standard halogen models"
+    notes: "Confirm your model has halogen (standard) vs HID (optional). Philips X-tremeVision or Osram Night Breaker are popular upgrades. $15–40 per pair."
+    verify: true
+  - name: "Headlight bulb — HID xenon (D2S)"
+    oem: null
+    spec: "D2S 35W — HID optioned models only"
+    notes: "HID systems carry 25,000V — disconnect the battery before working near the ballast. Philips or Osram OEM-equivalent. $40–100 per bulb."
+    verify: true
+  - name: "Front fog light bulb (H11)"
+    oem: null
+    spec: "H11 PGJ19-2 55W"
+    notes: "Accessed from behind the front bumper fog lamp housing. $8–20."
+    verify: true
+  - name: "Front indicator bulb (PY21W amber)"
+    oem: null
+    spec: "PY21W BAU15s 21W amber"
+    notes: "Orange base bayonet. Use amber-tinted bulb only — clear bulb will fail amber colour test. $3–8."
+    verify: true
+  - name: "Tail / brake light bulb (P21/5W)"
+    oem: null
+    spec: "P21/5W BAY15d 21/5W dual-filament"
+    notes: "Dual filament — one for tail light, one for brake. $3–8 each."
+    verify: true
+  - name: "Reversing light bulb (P21W)"
+    oem: null
+    spec: "P21W BA15s 21W"
+    notes: "Single filament. $3–8."
+    verify: true
+
+tools:
+  - "Plastic trim clip removal tool (for boot liner on tail light access)"
+  - "Gloves (for halogen bulb handling)"
+
+tips:
+  - "Never touch a halogen or HID bulb glass with bare fingers — skin oils cause hot spots that shorten bulb life dramatically. Use gloves or a clean cloth."
+  - "HID headlights: the system stores charge for several minutes after power is removed. Disconnect the battery and wait 5 minutes before handling the ballast or igniter. The discharge voltage is lethal."
+  - "Headlight access on the Pajero IV: reach in from behind the headlamp unit — there is a rubber dust cap over each bulb. Twist and remove the cap, then disconnect the wiring plug, twist the bulb retaining ring, and pull the bulb out."
+  - "Indicator hyper-flash (fast flashing): the indicator relay senses circuit current — a blown bulb in the front or rear circuit reduces current and triggers fast flash. Find and replace the failed bulb before the rapid flash misleads you into replacing the relay."
+  - "Tail light and brake light access: open the tailgate, fold back the boot liner at the rear corners, and remove the plastic nut fasteners to access the lamp cluster from inside."
+  - "Front fog lights: accessible via a cutout in the front bumper — no bumper removal needed on most Pajero IV models. Reach in from below."
+  - "If an indicator bulb is replaced but hyper-flash continues, check the earth connection at the lamp housing — poor earths cause false low-current readings at the flasher relay."
+
+procedure_refs:
+  - label: "Factory procedure — Exterior & Interior Lamps (Section 54)"
+    section: "54"
+    manual: "M1"
+
+related:
+  - exterior-lights-not-working
+  - fuse-box-reference

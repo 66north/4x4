@@ -1,0 +1,49 @@
+slug: wheel-alignment
+title: Wheel Alignment — When & Why
+category: reference
+difficulty: 1
+time_minutes: 10
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Wheel alignment sets the angles of the tyres relative to the vehicle and road. Correct alignment
+  prevents uneven tyre wear, reduces rolling resistance, and keeps the vehicle tracking straight.
+  The Pajero IV uses an independent front suspension and a live rear axle, so front alignment
+  (toe and camber) is adjustable; rear alignment is largely fixed. Alignment should be checked
+  after any suspension component replacement, kerb strike, or if the vehicle pulls to one side.
+
+symptoms:
+  - "Vehicle pulling left or right when driving straight on a level road"
+  - "Uneven tyre wear — worn on inner or outer edge only"
+  - "Steering wheel off-centre when driving straight"
+  - "Vibration or wandering at highway speeds"
+  - "After suspension component replacement (arms, ball joints, tie rods)"
+  - "After a heavy kerb strike or pothole impact"
+
+tips:
+  - "Always check tyre pressures before an alignment — under-inflated tyres change the contact patch and make alignment readings inaccurate."
+  - "Front toe is the most commonly out-of-spec measurement and causes rapid inner or outer tyre wear. Easy to see on worn tyres before alignment is measured."
+  - "Camber on the Pajero IV front suspension is partially adjustable via eccentric bolts on the lower arm. Some workshops skip this and only adjust toe."
+  - "After any steering or suspension repair (tie rod, lower arm, ball joint), always get an alignment — the geometry will have changed."
+  - "Alignment costs $60–120 at most tyre shops. It's the cheapest tyre preservation service you can buy."
+  - "If the vehicle pulls only under braking (not at cruise), the issue is brake balance or a sticking caliper, not alignment."
+  - "Off-road driving on rough terrain gradually knocks alignment out. Check annually if you drive off-road regularly."
+
+parts:
+  - name: "Tie rod end (inner or outer) — if replacement is needed"
+    oem: "MR267617"
+    spec: "Front tie rod end, M14 thread"
+    notes: "Replace if worn during alignment check. $30–80 per side. Always replace in pairs."
+    verify: true
+  - name: "Eccentric bolt / camber adjustment bolt (front lower arm)"
+    oem: "MB527543"
+    spec: "M14 eccentric bolt"
+    notes: "May be needed if camber is out of range. $10–20 each."
+    verify: true
+
+related:
+  - tire-specifications
+  - suspension-squeaks-and-clunks
+  - shock-absorber-replacement
+  - tire-wear-and-alignment

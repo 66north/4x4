@@ -1,0 +1,114 @@
+slug: hose-sizes-fittings
+title: "Hose Part Numbers — Coolant, Vacuum & Brake Hose Reference"
+category: parts
+difficulty: 2
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  OEM and replacement hose part numbers for the 2008–2013 Pajero IV. Covers coolant hoses (upper 32mm,
+  lower 38mm), vacuum hoses (4–8mm ID), and brake hoses. Hoses degrade with heat and UV over 5–10 years
+  and should be inspected at every major service. A cracked vacuum hose triggers multiple fault codes;
+  a failed brake hose is a safety emergency. Replace before failure, not after.
+
+parts:
+  - name: "Upper Radiator Hose — Mitsubishi OEM"
+    oem: "MR224768"
+    spec: "32mm ID, connects radiator outlet to thermostat housing"
+    notes: "High-temperature section. Inspect at 40,000 km for cracks or hardening. $20–35."
+    verify: true
+
+  - name: "Lower Radiator Hose — Mitsubishi OEM"
+    oem: "MR224769"
+    spec: "38mm ID, connects radiator inlet to water pump"
+    notes: "Larger diameter than upper hose. Same inspection interval. $20–35."
+    verify: true
+
+  - name: "Heater Inlet Hose — Mitsubishi OEM"
+    oem: "MR315272"
+    spec: "16mm ID, engine block to heater core"
+    notes: "One of two heater hoses. Often replaced as a pair. $15–25."
+    verify: true
+
+  - name: "Heater Outlet Hose — Mitsubishi OEM"
+    oem: "MR315273"
+    spec: "16mm ID, heater core to expansion tank"
+    notes: "Replace together with inlet hose. $15–25."
+    verify: true
+
+  - name: "Coolant Hose Clamp — 32mm (upper hose)"
+    oem: "MF140052"
+    spec: "Worm-drive clamp, 32mm band width"
+    notes: "Use stainless steel clamps. 3–5 Nm torque. Pack of 2 covers upper hose connections."
+    verify: false
+
+  - name: "Coolant Hose Clamp — 38mm (lower hose)"
+    oem: "MF140053"
+    spec: "Worm-drive clamp, 38mm band width"
+    notes: "For lower radiator hose. Pack of 2. Stainless steel preferred over zinc-coated."
+    verify: false
+
+  - name: "Vacuum Hose Kit — Gates (all vacuum lines)"
+    oem: "VMK001"
+    spec: "4mm, 6mm, 8mm ID tubing + barbed fittings"
+    notes: "Pre-assembled vacuum hose kit with labelled fittings. Covers intake manifold, brake booster, EGR, EVAP lines. $25–40."
+    verify: false
+
+  - name: "Brake Hose — Front Left — Mitsubishi OEM"
+    oem: "MB858162"
+    spec: "6mm ID, M14×1.5 banjo bolt, 400–500mm"
+    notes: "Front left flexible brake hose. Replace if leaking, cracked, or spongy pedal. $20–35."
+    verify: true
+
+  - name: "Brake Hose — Front Right — Mitsubishi OEM"
+    oem: "MB858163"
+    spec: "6mm ID, M14×1.5 banjo bolt, 400–500mm"
+    notes: "Front right flexible brake hose. Replace in pairs (both fronts) for balanced braking. $20–35."
+    verify: true
+
+  - name: "Brake Hose — Rear — Mitsubishi OEM"
+    oem: "MB858164"
+    spec: "4.75mm ID, rear drum cylinder connection"
+    notes: "Rear brake hose to wheel cylinder. Replace if rear brakes feel uneven or pedal is soft. $15–28."
+    verify: true
+
+  - name: "Banjo Bolt Crush Washers (brake hose)"
+    oem: "MB857108"
+    spec: "M14 × 1.5, copper crush washer"
+    notes: "Always replace both crush washers on each banjo bolt — never reuse old ones. Pack of 10. $5–10."
+    verify: false
+
+tools:
+  - "Hose clamp pliers (for spring clamps)"
+  - "Adjustable wrench and screwdrivers (for worm-drive clamps)"
+  - "Coolant drain pan (minimum 12L capacity)"
+  - "Brake bleeder kit (for brake hose replacement)"
+  - "14mm brake line wrench (flare nut wrench — not open-ended)"
+  - "Torque wrench"
+
+torque:
+  - component: "Banjo bolt (brake hose to caliper)"
+    value_nm: 30
+    note: "27–35 Nm. Always use new crush washers."
+  - component: "Coolant hose clamp (worm-drive)"
+    value_nm: 4
+    note: "3–5 Nm. Snug only — over-tightening cuts the hose."
+
+tips:
+  - "Brake hose failure is a safety emergency — spongy or uneven pedal after hose inspection means immediate replacement."
+  - "Always bleed the brakes after replacing any brake hose. Air in the lines causes soft pedal that won't firm up under hard braking."
+  - "Vacuum hose cracks are invisible until they cause a fault code. Inspect by feel — a healthy hose is flexible but firm; a degraded one is crumbly or stiff."
+  - "Coolant hoses soften and swell internally before they fail externally. Squeeze the upper hose when cold — if it collapses instead of springing back, replace it."
+  - "OEM hose part numbers above should be verified against your VIN at the dealer — some variants have minor routing differences."
+  - "Replace coolant hoses and clamps as a set when doing a major coolant flush — labour cost is the same and hose clamps are cheap insurance."
+
+procedure_refs:
+  - label: "Factory procedure — Cooling System (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - coolant-specifications
+  - maintenance-schedule
+  - fault-code-p0400

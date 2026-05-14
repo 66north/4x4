@@ -1,0 +1,67 @@
+slug: door-glass-adjustment
+title: "Door Glass & Seal Problems"
+category: troubleshoot
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Door glass problems on the Pajero IV fall into two categories: mechanical (glass misalignment,
+  sliding mechanism wear, regulator failure) and sealing (water ingress, wind noise, worn door
+  seals). The factory manual covers glass adjustment, sliding mechanism checks, and door fit
+  adjustment. Most door glass issues can be diagnosed and corrected without replacing components —
+  adjustment resolves more problems than replacement.
+
+symptoms:
+  - "Wind noise from door glass at highway speed (glass not seating fully in the seal)"
+  - "Water ingress at the door glass surround or door seal (torn or compressed seal)"
+  - "Door window glass not travelling to the full-up or full-down position (regulator or motor)"
+  - "Glass moves slowly or jerks during operation (worn regulator mechanism or weak motor)"
+  - "Glass sits proud of the door frame at the top when fully closed (misalignment)"
+  - "Rattling from the door glass over rough roads (loose regulator or glass clips)"
+
+parts:
+  - name: "Door window glass (front left)"
+    oem: "MR294873"
+    spec: "Laminated door glass, clip-mount to regulator"
+    notes: "Replace only if cracked or chipped. Adjustment resolves most fit issues. $100–250."
+    verify: true
+  - name: "Door window regulator (front)"
+    oem: "MR294874"
+    spec: "Scissor-type regulator with integrated motor"
+    notes: "Replace if glass moves slowly, jerks, or stops mid-travel. $80–200."
+    verify: true
+  - name: "Door seal (outer weatherstrip)"
+    oem: "MR294875"
+    spec: "Rubber door glass seal, clips into door frame channel"
+    notes: "Replace if torn or hardened — causes wind noise and water ingress. $30–70 per door."
+    verify: true
+  - name: "Door seal (inner)"
+    oem: "MR294876"
+    spec: "Foam-backed inner door seal"
+    notes: "$20–50 per door."
+    verify: true
+
+tools:
+  - "Trim removal tool (to remove door card)"
+  - "T30 Torx socket (window regulator bolts)"
+  - "10mm socket"
+
+tips:
+  - "Glass alignment adjustment: in most cases, glass misalignment is corrected by loosening the regulator mounting bolts inside the door (requires removing the door card), repositioning the glass, and retightening. No parts needed."
+  - "To remove the door card: prise off the armrest screw covers, remove the screws, then run a trim tool around the perimeter to release the plastic clips. The window switch harness disconnects with a press-tab connector."
+  - "Water ingress test: with the door closed, run a garden hose over the door glass and surrounding seals. Have someone inside observe where water enters. This pinpoints whether the problem is the glass seal, door seal, or drain holes blocked."
+  - "Door drain holes: there are usually 2–3 drain holes in the bottom of the door skin. These can become blocked with road debris. Water in the door cavity is normal — it must drain out. Clear blocked holes with a piece of wire."
+  - "Wind noise at the top corner of the door glass is almost always the outer weatherstrip lifting away from the glass. Press the seal back against the glass and run your hand along it — if it seals the noise momentarily, the seal needs replacing or re-adhering."
+  - "If the regulator motor runs but the glass does not move, the regulator mechanism (the scissor arms or cable system) has broken. The motor and regulator are usually sold as a combined unit."
+
+procedure_refs:
+  - label: "Factory procedure — Body (Section 42)"
+    section: "42"
+    manual: "M1"
+
+related:
+  - windows-not-working
+  - central-locking-problems
+  - outside-mirror-problems

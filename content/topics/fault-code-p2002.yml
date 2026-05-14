@@ -1,0 +1,61 @@
+slug: fault-code-p2002
+title: "P2002 — Diesel Particulate Filter Efficiency Below Threshold"
+category: codes
+difficulty: 4
+time_minutes: 90
+applies_to:
+  engines: [4M41]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P2002 means the ECU has detected that the Diesel Particulate Filter (DPF) is not performing
+  regeneration correctly, or the DPF is so clogged that it cannot be regenerated. The DPF traps
+  soot particles and periodically burns them off during highway driving (passive regeneration) or
+  via an active injection cycle. This code commonly appears on vehicles used predominantly for
+  short urban trips, which prevent the exhaust from reaching regeneration temperature.
+
+symptoms:
+  - "DPF warning light illuminated (amber lamp)"
+  - "Check Engine light illuminated"
+  - "Noticeable loss of power (limp mode in severe cases)"
+  - "Increased fuel consumption"
+  - "Oily residue from exhaust tip"
+  - "White or grey smoke at startup or under load"
+
+likely_causes:
+  - "Short-trip driving preventing passive regeneration (most common cause)"
+  - "DPF physically blocked — soot loading above 80% (needs forced regen or replacement)"
+  - "DPF pressure sensor fault (false reading causing no regen trigger)"
+  - "EGR fault preventing correct regen conditions"
+  - "Injector leaking post-injection fuel into oil (oil level rising — check oil dipstick)"
+  - "Wrong engine oil used (non-ACEA C3 oil ash blocks DPF)"
+
+diagnosis:
+  step_1: "Read DPF soot load % via scanner. Below 80% — forced regeneration may clear the code. Above 80% — professional service or DPF replacement needed."
+  step_2: "Check engine oil level. Rising oil level indicates injectors are leaking post-injection fuel into the sump, which accelerates DPF clogging."
+  step_3: "Inspect DPF differential pressure sensor and hoses for blockage or damage (sensor measures pressure drop across the DPF)."
+  step_4: "If soot load is manageable (50–80%), perform a forced regeneration using a scanner or a sustained highway drive at 2500+ RPM for 30–45 minutes."
+  step_5: "Check EGR system for faults — a stuck EGR valve prevents correct combustion temperature for regeneration."
+  step_6: "If DPF cannot be regenerated, professional cleaning (ultrasonic or thermal) or replacement is needed."
+
+common_fixes:
+  highway_drive: "30–45 minute highway drive at 2500+ RPM — free. Clears mild soot loading."
+  forced_regen: "Forced regen via scanner — $80–200 at a workshop"
+  dpf_cleaning: "Professional DPF clean (ultrasonic/thermal) — $300–600"
+  dpf_replacement: "Replace DPF — $1200–2500 (OEM), $600–1200 (aftermarket)"
+  pressure_sensor: "Replace DPF pressure sensor — $80–200 part, $80–150 labor"
+
+estimated_repair_cost: "Free–$200 (regen); $300–600 (cleaning); $700–2700 (replacement)"
+
+tips:
+  - "Use only ACEA C3 rated engine oil in the 4M41 with DPF. Standard ACEA A3/B4 oil contains higher ash content that cannot be burned off and permanently blocks the DPF."
+  - "At least one monthly motorway drive at 60+ km/h for 30+ minutes is essential for DPF health. Urban-only driving will block the DPF within 50,000 km."
+  - "Check engine oil level if P2002 appears — rising oil level is a sign of post-injection fuel contamination, which damages the engine and DPF simultaneously."
+  - "Do NOT attempt to remove or bypass the DPF — this is illegal in most markets and triggers additional fault codes affecting engine management."
+  - "If the vehicle is exclusively used in urban driving, consider professional DPF cleaning every 60,000–80,000 km as preventive maintenance."
+  - "A forced regeneration should not be performed in an enclosed space — the exhaust temperature rises to 600°C+ during active regen."
+
+related:
+  - dpf-warning-light
+  - check-engine-light
+  - engine-oil-specifications
+  - fault-code-p0400

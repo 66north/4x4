@@ -1,0 +1,77 @@
+slug: brake-fluid-flush
+title: Brake Fluid Flush & Bleed
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Brake fluid is hygroscopic — it absorbs water from the air. Over time, dissolved water lowers
+  the boiling point of the fluid, reducing brake performance, especially under heavy use (towing,
+  mountain passes). Factory service intervals recommend a complete brake fluid flush every 2 years
+  or 40,000 km. This procedure involves bleeding each wheel cylinder or caliper to remove old fluid
+  and replace it with fresh DOT 3 or DOT 4 fluid. Proper brake bleeding order is critical: RR, LR, RF, LF
+  (rear-right, rear-left, front-right, front-left) to avoid air pockets.
+
+symptoms:
+  - Scheduled maintenance interval (every 2 years or 40,000 km)
+  - Brake pedal feels spongy or soft (indicates air in lines or water-soaked fluid)
+  - Brake fluid appears dark brown or has a burnt smell (oxidation and water contamination)
+  - Brakes fade during towing or mountain descents (fluid boils, reducing pressure)
+  - Brake warning light on dashboard (low fluid level or pressure imbalance detected)
+  - Visible brake fluid leakage from wheel cylinders or brake lines
+
+parts:
+  - name: Brake fluid — DOT 3 or DOT 4
+    oem: "Mitsubishi OEM brake fluid or Castrol, Mobil, Shell equivalents"
+    notes: "Capacity: Approximately 2 liters for complete system flush. Buy premium DOT 4 for longer intervals"
+    verify: true
+  - name: Brake master cylinder fluid level sensor (if light won't go off)
+    oem: "MD619269 or similar, depending on model year"
+    notes: "Rare, but sensor can fail and trigger warning light despite adequate fluid level"
+    verify: false
+
+tools:
+  - Brake bleeder wrench or box wrench (usually 10mm, fits bleeder valve on caliper/cylinder)
+  - Bleeder hose and catch bottle to collect old fluid
+  - Manual pressure bleeder or vacuum pump (optional, but highly recommended for speed)
+  - Brake fluid catch pan to prevent spills on paint
+  - Rags and shop towels (brake fluid eats paint and plastic, clean spills immediately)
+  - Flashlight and a helper (two people recommended, though solo is possible with care)
+
+torque_specs:
+  - component: Brake bleeder valve (on caliper or wheel cylinder)
+    value: 10
+    unit: Nm
+    notes: "Snug but not forceful. Bleeder valves are delicate and strip easily. Back out only 1/2 turn to 3/4 turn to avoid draining threads"
+
+bleeding_procedure:
+  step_1: "With engine off, pump the brake pedal 10–15 times to build pressure in the system"
+  step_2: "Attach one end of the bleeder hose to the RR (rear-right) caliper/cylinder bleeder valve and the other end to the collection bottle (immersed in a small amount of brake fluid to prevent air backflow)"
+  step_3: "Open the bleeder valve 1/2 turn (use the brake bleeder wrench). Brake fluid will flow into the bottle"
+  step_4: "Have your helper (or pump the pedal yourself if alone) depress the brake pedal fully, then release slowly. Repeat 5–10 times until fresh (clear) fluid flows out of the bleeder hose"
+  step_5: "Close the bleeder valve BEFORE the pedal is released (this prevents air from being drawn back in)"
+  step_6: "Move to the LR (rear-left) caliper, then RF (front-right), then LF (front-left). Repeat steps 2–5 for each wheel"
+  step_7: "After all four wheels are bled, the pedal should feel firm. If spongy, repeat the entire procedure starting from RR again"
+
+tips:
+  - Brake fluid eats paint and plastic — wipe spills immediately with a damp cloth. Do NOT allow brake fluid to sit on the vehicle's finish
+  - If you do not have a helper, use a one-way brake bleeder valve (bought separately, fits on the bleeder screw) to prevent backflow. Or use a manual pressure bleeder (bottle with hose that applies steady pressure while you open bleeder valves)
+  - Always open the bleeder valve BEFORE pressing the pedal, and close it BEFORE releasing the pedal. If you release the pedal with the valve open, air will be drawn back into the system
+  - Some people use a turkey baster or syringe to suck old fluid from the master cylinder reservoir before bleeding. This speeds up the process
+  - Check the fluid level in the master cylinder often. If it runs dry, air enters the system and you must start over. Refill as needed
+  - The last wheel to bleed (LF, front-left) often takes longest because it is farthest from the master cylinder and air moves slowly through the long line
+  - After bleeding all wheels, have a helper press the brake pedal hard while you check for leaks at all four calipers/cylinders and at the master cylinder. Tighten any wet bleeder valves
+  - Dispose of old brake fluid as hazardous waste — many auto shops accept it for free, or take it to a recycling center
+  - Modern ABS-equipped vehicles may require a special bleeding procedure to activate the ABS module. Consult the factory manual for your specific year/model
+
+procedure_refs:
+  - label: "Factory procedure — Brake System (Section 35)"
+    section: "35"
+    manual: "M1"
+
+related:
+  - brake-pads-front
+  - brake-hose-replacement
+  - differential-oil-change

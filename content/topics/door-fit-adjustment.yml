@@ -1,0 +1,68 @@
+slug: door-fit-adjustment
+title: "Door & Boot Fit Adjustment"
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Door sag, wind noise, and poor sealing on the Pajero IV are usually caused by hinge wear or
+  striker misalignment rather than structural damage. The factory manual documents adjustment
+  procedures for door clearance, door height, hood (bonnet) height and striker engagement, and
+  the back door (tailgate). All are adjustable within a range using slotted mounting points —
+  no specialist tools required. Door handle play checks are also part of the Body section.
+
+symptoms:
+  - "Door drops when opened and does not align with the body when closing"
+  - "Door requires lifting to close properly (sagging hinge)"
+  - "Wind noise when driving — door not seating fully in the seal"
+  - "Door striker clicking or chattering over bumps (striker engagement too loose)"
+  - "Tailgate (back door) difficult to close or has excessive play"
+  - "Hood (bonnet) sitting higher on one side or not latching flush"
+  - "Door handle has excessive free travel before triggering the latch"
+
+tips:
+  - "Door sag is caused by worn hinge bushings or pins. Before adjusting the striker, check the hinges: open the door to 45 degrees and lift the door edge — if it moves more than 3 mm vertically, the hinge pins or bushings are worn and should be replaced before adjusting the striker."
+  - "Striker adjustment: the door striker is on a slotted plate and can be moved up/down and in/out. Loosen the striker bolts, close the door slowly and observe where the latch contacts the striker, then shift the striker to centre the contact. Use a marker pen on the striker to see the contact point."
+  - "Hood adjustment: the hood hinge is bolted to the body with slotted holes — loosen both hinge bolts on the affected side and reposition. The hood striker (the pin the latch hooks over) is also adjustable for height — turn it in or out to achieve flush fitment."
+  - "Back door fit: the tailgate hinges, striker, and check strap are all adjustable. If the back door droops when open, the check strap (the device that holds the door at full-open) may be stretched or the hinge bushings worn."
+  - "Door seal compression: a correctly adjusted door compresses the seal evenly around the perimeter. If you can pull a piece of paper out from between the closed door and the seal without resistance, the door is not sealing at that point — adjust the striker inward."
+  - "Door handle play: the factory specification for outside handle play is 0–2 mm of free movement before the latch begins to open. If handle play is greater than this, the handle-to-latch rod may be out of adjustment or the handle mechanism is worn."
+  - "After any door adjustment, always test the door lock and unlock function before reassembling trim — the central locking actuator rod routing can be disturbed if the door card is removed."
+
+parts:
+  - name: "Door hinge pin and bushing kit"
+    oem: "MR294880"
+    spec: "Steel pin with nylon bushing, press fit into hinge"
+    notes: "Replace if door sags. Requires pressing out old pins. $20–50 per door. Often sold as a complete upper/lower hinge kit."
+    verify: true
+  - name: "Door check strap"
+    oem: "MR294881"
+    spec: "Rubber and metal check strap (holds door at full open position)"
+    notes: "Replace if door swings fully open without resistance and hits the guard. $25–60."
+    verify: true
+
+tools:
+  - "T40 Torx socket (hinge bolts on some models)"
+  - "13mm socket (striker bolts)"
+  - "Marker pen (to mark striker contact point)"
+  - "Torque wrench"
+
+torque:
+  - component: "Door striker bolts"
+    value_nm: 23
+    note: "20–25 Nm after adjustment."
+  - component: "Hood striker (bonnet latch pin)"
+    value_nm: 9
+    note: "8–10 Nm."
+
+procedure_refs:
+  - label: "Factory procedure — Body (Section 42)"
+    section: "42"
+    manual: "M1"
+
+related:
+  - door-glass-adjustment
+  - central-locking-problems
+  - windows-not-working

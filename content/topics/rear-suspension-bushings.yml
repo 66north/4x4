@@ -1,0 +1,90 @@
+slug: rear-suspension-bushings
+title: "Rear Suspension Bushings & Ball Joints"
+category: maintenance
+difficulty: 3
+time_minutes: 120
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV rear suspension uses a multi-link arrangement with trailing arms, toe control arms,
+  upper arms, and a stabiliser bar — all connected via rubber bushings and ball joints. Worn
+  bushings cause vague handling, rear-end wandering, and clunking over bumps. Ball joint wear causes
+  play and can be detected by lifting the wheel and checking for movement. Bushing replacement
+  requires pressing out the old rubber and pressing in new ones, which typically needs a hydraulic
+  press — this is a workshop job, but inspection is straightforward.
+
+symptoms:
+  - "Clunking or knocking from the rear over bumps or during hard braking"
+  - "Rear-end wander or loose feeling on straight roads"
+  - "Uneven rear tyre wear (worn bushings change toe angle)"
+  - "Squeaking from the rear suspension during slow manoeuvring"
+  - "Visible cracking or splitting in rubber bushings (inspect during service)"
+  - "Play detected when lifting the rear wheel and pushing/pulling the tyre"
+
+parts:
+  - name: "Lower arm bushing (rear axle)"
+    oem: "MR418234"
+    spec: "Rubber-bonded bushing, hydraulic press fit"
+    notes: "Inspect for cracking or collapse. Press replacement. $20–50 each. $200–400 labour."
+    verify: true
+  - name: "Trailing arm bushing"
+    oem: "MR418235"
+    spec: "Rubber bushing, trailing arm to body mount"
+    notes: "Common wear item on high-mileage or off-road vehicles. $25–55 each."
+    verify: true
+  - name: "Stabiliser link ball joint"
+    oem: "MR418236"
+    spec: "Ball-and-socket stabiliser link, replaceable with dust cover"
+    notes: "Replace if turning torque is out of spec or dust cover is torn. $25–60 per side."
+    verify: true
+  - name: "Toe control arm ball joint"
+    oem: "MR418237"
+    spec: "Ball joint on rear toe control arm"
+    notes: "Axial play check at every service. $40–90."
+    verify: true
+  - name: "Upper arm ball joint"
+    oem: "MR418238"
+    spec: "Upper control arm ball joint, rear"
+    notes: "$40–90. Check axial play with wheel lifted."
+    verify: true
+
+tools:
+  - "Jack and axle stands"
+  - "17mm socket (wheel bolts)"
+  - "Pry bar (to check ball joint play with wheel loaded)"
+  - "Ball joint separator (pickle fork) for removal"
+  - "Hydraulic press (for bushing replacement — workshop tool)"
+  - "Torque wrench"
+
+torque:
+  - component: "Trailing arm to body mount bolt"
+    value_nm: 120
+    note: "Tighten with suspension at ride height (vehicle weight on wheels), not at full droop."
+  - component: "Toe control arm ball joint nut"
+    value_nm: 98
+    note: "95–100 Nm. Always use new nut — these are self-locking."
+  - component: "Stabiliser link ball joint nut"
+    value_nm: 44
+    note: "40–50 Nm."
+
+tips:
+  - "All suspension arm bolts must be torqued with the vehicle at ride height (on the ground or on a ramp with the suspension loaded). Torquing at full droop pre-loads the bushings and causes premature failure."
+  - "Bushing inspection: look for visible rubber cracking, collapse (the bush has sagged and there is a gap around it), or separation (the inner metal sleeve is moving independently). Any of these means replacement."
+  - "Ball joint play check: lift the rear axle (not individual wheels) so both rear wheels hang freely. Grip each tyre at 12 and 6 o'clock and push/pull — check for movement in the toe arm joint. Grip at 3 and 9 o'clock to check the upper arm joint."
+  - "Stabiliser link turning torque: can be checked with a torque wrench — the ball joint should rotate with a specific resistance (typically 0.5–3.0 Nm). Zero resistance means the ball has worn loose."
+  - "Rear wheel alignment: whenever any rear suspension component is replaced, a four-wheel alignment is required. Rear toe and camber are adjustable on the Pajero IV and shift when arms are disturbed."
+  - "Polyurethane bushing upgrades are popular for off-road use — they resist oil contamination and last longer than rubber. However, they transmit more noise and vibration into the cabin. Use standard rubber for a daily driver."
+
+procedure_refs:
+  - label: "Factory procedure — Rear Suspension (Section 32)"
+    section: "32"
+    manual: "M1"
+  - label: "Factory procedure — Suspension Arms & Bushings (Section 34)"
+    section: "34"
+    manual: "M1"
+
+related:
+  - suspension-squeaks-and-clunks
+  - wheel-alignment
+  - shock-absorber-replacement

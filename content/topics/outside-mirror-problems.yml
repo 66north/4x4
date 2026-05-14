@@ -1,0 +1,66 @@
+slug: outside-mirror-problems
+title: "Outside Mirror Problems — Folding, Heating & Adjustment"
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV outside mirrors have electric adjustment, optional heating, and optional electric
+  folding. On vehicles with the ETACS (Electronic Time & Alarm Control System), the mirrors can
+  be set to auto-fold when locking and unfold when unlocking. Mirror problems are usually
+  electrical — a failed motor, a corroded connector in the door, or a blown fuse. The mirror
+  adjustment switch is on the driver door trim; the fold switch (if fitted) is on the dash.
+
+symptoms:
+  - "Mirror does not adjust in one or more directions — switch or motor fault"
+  - "Mirror does not fold or unfold electrically — fold motor or wiring"
+  - "Mirror heating not working in winter — check MIRROR HEAT fuse and heated mirror element"
+  - "Mirror position resets after folding — normal on ETACS vehicles (memorised to last switch position)"
+  - "Mirror glass cracked or fallen out — glass and motor/heater element replaceable separately"
+
+parts:
+  - name: "Mirror adjustment motor assembly"
+    oem: "MR641348"
+    spec: "2-axis adjustment motor, fits into mirror housing"
+    notes: "Replace if mirror moves in some directions only, or not at all with fuse confirmed good. $40–100."
+    verify: true
+  - name: "Mirror fold motor"
+    oem: "MR641349"
+    spec: "Electric fold motor (vehicles with power-fold option)"
+    notes: "$50–120. Check wiring connector at door hinge before replacing — common corrosion point."
+    verify: true
+  - name: "Mirror glass with heater element (left)"
+    oem: "MR641350"
+    spec: "Mirror glass with integrated heating element, clip-fit"
+    notes: "Glass is replaceable separately from the housing. Heat element is integral to the glass. $30–70."
+    verify: true
+  - name: "Mirror glass with heater element (right)"
+    oem: "MR641351"
+    spec: "Mirror glass with integrated heating element, clip-fit"
+    notes: "$30–70."
+    verify: true
+
+tools:
+  - "Trim removal tool (door card)"
+  - "Multimeter"
+
+tips:
+  - "Check the mirror fuse before anything else — the mirror circuit is typically labelled MIRROR or PWR MIRROR in the interior fuse box."
+  - "Mirror heater fuse: separate to the adjustment motor circuit on most Pajero IV models. Labelled MIRROR HTR or DEFOG MIRROR."
+  - "The door wiring harness passes through a flexible conduit in the door hinge area. This loom flexes every time the door opens and is the most common cause of intermittent mirror faults — wiggle the door through its full range while the mirror is selected to see if the fault appears or clears."
+  - "To remove the mirror glass: press firmly at one edge and lever gently — it is clip-mounted onto the adjuster ball. Replacement glass snaps back in. No tools required if you are only replacing the glass."
+  - "Mirror adjustment switch: if no mirrors move in any direction, the switch is suspect. Confirm 12V at the switch input. An OBD scanner with body functions can actuate mirrors directly if the switch is dead — useful for diagnosis."
+  - "ETACS auto-fold setup: the fold-on-lock feature can be enabled or disabled via the customise menu in the instrument cluster (hold OK button on stalk during ignition on sequence — refer to owner handbook). Some personalisation settings require a dealer scan tool."
+  - "A mirror that folds but does not unfold reliably is usually a fold motor with a worn park switch inside — the motor does not know when to stop and stalls."
+
+procedure_refs:
+  - label: "Factory procedure — Wipers, Washers & Mirrors (Section 51)"
+    section: "51"
+    manual: "M1"
+
+related:
+  - windows-not-working
+  - central-locking-problems
+  - fuse-box-reference

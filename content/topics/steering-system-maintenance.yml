@@ -1,0 +1,70 @@
+slug: steering-system-maintenance
+title: "Steering System Maintenance"
+category: maintenance
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Steering system maintenance on the Pajero IV covers the power steering fluid, steering rack boots,
+  tie rod ends, and steering damper. These components are inspected at major services but rarely
+  replaced on schedule — most are replaced when they show wear. A well-maintained steering system
+  gives precise, responsive handling; neglected components cause wandering, play, and vibration.
+
+symptoms:
+  - "Excessive play or looseness in the steering wheel (worn tie rods or rack)"
+  - "Vehicle wanders on straight roads (alignment or worn steering components)"
+  - "Clunking over bumps from steering area (worn steering damper or ball joints)"
+  - "Torn steering rack boots (inspect visually at every service)"
+
+parts:
+  - name: "Tie rod end — outer (left)"
+    oem: "MR267617"
+    spec: "M14×1.5 thread, tapered pin"
+    notes: "Replace if play is detected or rubber boot is torn. $30–80 each. Always replace in pairs."
+    verify: true
+  - name: "Tie rod end — outer (right)"
+    oem: "MR267618"
+    spec: "M14×1.5 thread"
+    notes: "$30–80. Get wheel alignment after replacement."
+    verify: true
+  - name: "Steering rack boot kit"
+    oem: "MR554052"
+    spec: "Rubber bellows boot with clips"
+    notes: "Inspect at every service. Replace if torn — prevents water and grit reaching the rack. $15–30."
+    verify: true
+  - name: "Steering damper"
+    oem: "MB520959"
+    spec: "Hydraulic steering damper (front axle)"
+    notes: "Replace if steering feels imprecise or has oscillation after kerb strike. $50–120."
+    verify: true
+
+tools:
+  - "Torque wrench"
+  - "17mm, 19mm spanners (tie rod lock nut)"
+  - "Ball joint separator / pickle fork"
+
+torque:
+  - component: "Tie rod end lock nut"
+    value_nm: 60
+    note: "55–65 Nm after alignment. Recheck after 500 km."
+  - component: "Tie rod end castle nut (to steering knuckle)"
+    value_nm: 35
+    note: "30–40 Nm then align to cotter pin hole."
+
+tips:
+  - "Always get a wheel alignment after replacing tie rod ends — even a small change in tie rod length shifts the toe setting."
+  - "Check tie rod end play by gripping the tyre at 9 and 3 o'clock and pushing/pulling. Any detectable knock is a worn end — replace it."
+  - "Steering rack boots protect the rack from grit and moisture. Torn boots lead to rack seal failure within 12–24 months. They cost $15 to replace."
+  - "The steering damper is often forgotten — it is located across the front axle and dampens kickback from rough terrain. A failed damper causes steering wheel wobble on corrugated roads."
+
+procedure_refs:
+  - label: "Factory procedure — Power Steering (Section 37)"
+    section: "37"
+    manual: "M1"
+
+related:
+  - power-steering-problems
+  - wheel-alignment
+  - suspension-squeaks-and-clunks

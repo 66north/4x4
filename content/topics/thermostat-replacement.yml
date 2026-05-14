@@ -1,0 +1,67 @@
+slug: thermostat-replacement
+title: Thermostat Replacement
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The thermostat controls coolant flow to maintain the engine at operating temperature (~88°C).
+  A stuck-open thermostat causes P0128 (engine runs cold), poor fuel economy, and a heater that
+  never gets hot. A stuck-closed thermostat causes overheating. Replacement requires a partial
+  coolant drain and takes about an hour. Always use a new gasket and refill with the correct coolant.
+
+symptoms:
+  - "Temperature gauge stuck low or slow to reach midpoint (stuck open)"
+  - "Overheating — gauge climbing above midpoint (stuck closed)"
+  - "P0128 fault code stored"
+  - "Heater not producing warm air even when engine is warm"
+  - "Poor fuel economy (cold engine runs richer)"
+
+parts:
+  - name: "Thermostat — Mitsubishi OEM (MD315295)"
+    oem: "MD315295"
+    spec: "Opens at 88°C, fully open at 103°C"
+    notes: "OEM thermostat for both 4M41 and 6G75. $20–40."
+    verify: true
+  - name: "Thermostat gasket / O-ring"
+    oem: "MD050616"
+    spec: "Paper gasket or O-ring seal (depends on housing)"
+    notes: "Always replace — reusing the old seal risks a coolant leak. $5–10."
+    verify: true
+  - name: "Engine coolant (top-up)"
+    oem: "MB328635"
+    spec: "Mitsubishi Genuine or ASTM D3306 long-life"
+    quantity: "1–2 L top-up after procedure"
+    notes: "Have 2L on hand to replace what drains. Do not mix coolant types."
+    verify: false
+
+tools:
+  - "10mm socket and ratchet (thermostat housing bolts)"
+  - "Flat-head screwdriver (hose clamps)"
+  - "Drain pan (minimum 3L)"
+  - "Torque wrench"
+
+torque:
+  - component: "Thermostat housing bolts"
+    value_nm: 14
+    note: "12–16 Nm. Do not overtighten — aluminium housing."
+
+tips:
+  - "Drain only 2–3 litres of coolant from the lower radiator hose — you do not need to fully drain the system."
+  - "Clean the thermostat housing sealing surface before fitting the new gasket. Aluminium surfaces corrode and leave bumps that cause leaks."
+  - "After refilling, run the engine with the heater on full and the cap off the expansion tank. Squeeze the upper radiator hose to help purge air bubbles."
+  - "A stuck-open thermostat is much more common than a stuck-closed one — the spring mechanism wears open, not shut."
+  - "If the temperature gauge reads normal but P0128 is stored, the coolant temperature sensor may be the actual fault — check sensor resistance before replacing the thermostat."
+
+procedure_refs:
+  - label: "Factory procedure — Cooling System (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - fault-code-p0128
+  - overheating
+  - coolant-flush
+  - coolant-specifications

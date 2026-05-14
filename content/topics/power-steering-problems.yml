@@ -1,0 +1,64 @@
+slug: power-steering-problems
+title: "Power Steering Problems — Fluid, Leaks & Whine"
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV uses hydraulic power steering with a belt-driven pump and a steering rack.
+  Common problems are fluid leaks (low fluid causing whine), a worn pump, and rack seal failure.
+  Power steering fluid is rarely changed but should be inspected at every service — dark or burnt
+  fluid indicates oxidation and accelerates pump wear. Heavy or stiff steering is a safety concern
+  and should be addressed promptly.
+
+symptoms:
+  - "Whining or groaning noise when turning the steering wheel"
+  - "Steering heavier than normal, especially at low speed"
+  - "Power steering fluid level dropping regularly (leak)"
+  - "Fluid puddle under the engine bay (usually front-left area)"
+  - "Steering wheel vibrating or shuddering when turned"
+  - "Fluid foam or bubbles visible in reservoir (air in system)"
+
+tips:
+  - "Check the power steering fluid reservoir first — it is a small cap-and-dipstick unit near the firewall. Level should be between MIN and MAX with the engine warm."
+  - "Whining that increases with steering input usually means low fluid. Top up and check for leaks before assuming pump failure."
+  - "Inspect the power steering hoses (high-pressure from pump, low-pressure return) for weeping at connections — these are the most common leak points."
+  - "The power steering rack seal is a common failure point on 100,000+ km vehicles. Oil seeping from the rubber boots on the steering rack confirms rack seal failure."
+  - "Do not overfill the reservoir — foaming from overfill causes air entrainment which accelerates pump wear."
+  - "A pump that whines only on cold startup and quiets when warm usually just needs fresh fluid. A pump that whines constantly with correct fluid level is worn."
+  - "Power steering fluid is Dexron II/III ATF or Mitsubishi Genuine PSF — do not use DOT brake fluid or any other type."
+
+parts:
+  - name: "Power steering fluid — Mitsubishi PSF"
+    oem: null
+    spec: "Dexron II/III ATF or Mitsubishi Genuine PSF"
+    quantity: "0.9 L reservoir (0.5 L typical top-up)"
+    notes: "Top up as needed. Full flush rarely required. $8–15 per litre."
+    verify: false
+  - name: "Power steering pump — 4M41 / 6G75"
+    oem: "MR992479"
+    spec: "Hydraulic vane pump, belt-driven"
+    notes: "Replace if whining with correct fluid level. Remanufactured $150–300."
+    verify: true
+  - name: "High-pressure power steering hose"
+    oem: "MR992480"
+    spec: "High-pressure braided hose with threaded fittings"
+    notes: "Replace if leaking at crimped ends or hose body. $60–150."
+    verify: true
+  - name: "Power steering rack seal kit"
+    oem: "MB930220"
+    spec: "Seal and O-ring kit for steering rack"
+    notes: "Requires rack removal — workshop job. $30–60 kit, $200–400 labour."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Power Steering (Section 37)"
+    section: "37"
+    manual: "M1"
+
+related:
+  - suspension-squeaks-and-clunks
+  - wheel-alignment
+  - steering-system-maintenance

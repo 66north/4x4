@@ -1,0 +1,70 @@
+slug: crank-angle-sensor-diagnosis
+title: "Crank Angle Sensor — Diagnosis & Replacement"
+category: troubleshoot
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The crank angle sensor (CAS) reads the crankshaft position and speed, providing the ECU with
+  timing information for fuel injection and ignition. A failed CAS causes immediate no-start or
+  stalling, as the ECU cannot determine when to fire injectors or ignition. Unlike oxygen sensors
+  that degrade gradually, the CAS either works or doesn't — there is no "weak" state. Symptoms
+  are sudden, not progressive. The sensor is located on the engine block near the crankshaft
+  pulley and can be tested with a multimeter and an oscilloscope (workshop tools).
+
+symptoms:
+  - "Engine will not start (cranks but no ignition or fuel)"
+  - "Engine dies immediately after starting (cannot maintain sync)"
+  - "Stalling at random speeds or idle (intermittent sensor signal loss)"
+  - "Check Engine light with code P0335 (Crankshaft Position Sensor Circuit)"
+  - "Check Engine light with code P0336 (Crankshaft Position Sensor Signal Out of Range)"
+  - "Rough idle or hesitation on acceleration (weak or unstable signal)"
+
+parts:
+  - name: "Crank angle sensor — 4M41"
+    oem: "MD366408"
+    spec: "Inductive proximity sensor, cylinder block mounted"
+    notes: "Replace if multimeter shows no AC voltage output with engine cranking. $50–120."
+    verify: true
+  - name: "Crank angle sensor — 6G75"
+    oem: "MD366409"
+    spec: "Inductive sensor, same function as 4M41 but different connector"
+    notes: "$50–120."
+    verify: true
+  - name: "CAS sensor connector (if damaged)"
+    oem: "MD366410"
+    spec: "Weatherproof 3-pin connector"
+    notes: "Replace if corroded or pins are bent. $10–20."
+    verify: true
+
+tools:
+  - "Multimeter (to test sensor output voltage)"
+  - "Oscilloscope (for detailed waveform analysis — workshop tool)"
+  - "10mm or 12mm socket (sensor mounting bolt)"
+  - "OBD-II scanner (to read fault codes and sensor data)"
+
+tips:
+  - "The CAS is tested by cranking the engine and measuring AC voltage at the sensor connector (usually 0.3–2V AC, depending on engine speed). If cranking produces zero voltage, the sensor is dead."
+  - "Do not test with the key ON (engine off) — the sensor produces no signal without crankshaft rotation. Always crank the engine to see a signal."
+  - "If the multimeter shows AC voltage but the engine still won't start, the problem is not the CAS — the issue is in the wiring to the ECU or the ECU itself."
+  - "A corroded sensor connector is a common cause of intermittent no-start. Check the connector at the sensor and at the ECU. Clean terminals with electrical contact cleaner and apply dielectric grease."
+  - "The sensor gap (distance from the sensor tip to the crankshaft timing ring) is critical: typically 0.3–0.5 mm. If the sensor was removed during another repair and reinstalled too far away, it will not read the crankshaft signal. Check gap before condemning a new sensor."
+  - "If replacing the CAS, mark the original sensor's angular position (e.g., pointing at the 12 o'clock position on the block) before removal. Reinstall the new sensor in the same position to avoid further timing issues."
+  - "After replacing the CAS, clear the Check Engine codes and drive a full cycle (cold start, warm-up, highway speeds) to allow the ECU to relearn. The fault may re-appear if timing is not correct."
+
+tips_advanced:
+  - "Dual CAS systems: Some Pajero IV models have two CAS sensors (one per bank) for improved timing stability on the 6G75 V6. If one sensor fails, the engine will still run on the other, but with a fault code and rough idle. Replace both if they are similar age."
+  - "Oscilloscope waveform: a good CAS produces a sine-wave pattern (smooth curve) when cranking. A square-wave or distorted pattern indicates a worn sensor or timing ring damage."
+  - "Timing ring damage: if the crankshaft timing ring (the toothed ring the sensor reads) is cracked or damaged, a new sensor will not solve the problem. The timing ring is not user-serviceable and requires crankshaft removal."
+
+procedure_refs:
+  - label: "Factory procedure — Engine Electrical (Section 17)"
+    section: "17"
+    manual: "M1"
+
+related:
+  - check-engine-light
+  - engine-wont-start
+  - fault-code-p0335

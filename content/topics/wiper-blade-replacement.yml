@@ -1,0 +1,57 @@
+slug: wiper-blade-replacement
+title: "Wiper Blade Replacement"
+category: maintenance
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV uses hook-type wiper arms. Replace blades when they streak, chatter, or leave
+  unwiped bands — typically every 12–18 months or sooner in harsh climates. The front uses two
+  different-length blades; the rear uses a shorter blade with a different attachment. Always
+  replace front blades as a pair — a new driver blade against an old passenger blade causes
+  uneven clearing.
+
+symptoms:
+  - "Streaking or smearing across the windscreen during wiping"
+  - "Chattering or juddering as the blade crosses the glass"
+  - "Unwiped arc or band left on the windscreen"
+  - "Blade sitting away from glass at one end (split or hardened rubber)"
+  - "Squealing wiper noise at low speed"
+
+parts:
+  - name: "Front wiper blade — driver side (600 mm / 24\")"
+    oem: null
+    spec: "600 mm hook-type blade, standard or flat/aero style"
+    notes: "Bosch Aerotwin AP24U or A001S are common fits. $15–30."
+    verify: true
+  - name: "Front wiper blade — passenger side (450 mm / 18\")"
+    oem: null
+    spec: "450 mm hook-type blade"
+    notes: "Bosch Aerotwin AP18U or equivalent. $12–25. Always replace with driver blade."
+    verify: true
+  - name: "Rear wiper blade (350 mm / 14\")"
+    oem: null
+    spec: "350 mm, hook-type or pinch-tab depending on arm"
+    notes: "Bosch H353 or equivalent. $10–20."
+    verify: true
+
+tools:
+  - "No tools required — blade clips by hand"
+
+tips:
+  - "Lift the arm fully away from the glass before removing the blade — if it springs back without a blade fitted it can crack the windscreen."
+  - "Lay a folded cloth on the bonnet under the arm before lifting, as insurance if it drops."
+  - "The release tab is on the underside of the blade where it joins the arm hook. Press it toward the glass and slide the blade down and off."
+  - "Clean the windscreen with glass cleaner and the wiper arm hook with a rag before fitting the new blade — a gritty hook scratches the new blade insert immediately."
+  - "If new blades still streak, the windscreen may have a silicone or wax film from car wash products. Clean with an isopropyl alcohol wipe before wiping down with the new blade."
+  - "Rear wiper blades on the Pajero IV use the same hook fitting as the front — confirm the arm style before ordering, as some late-model vehicles use a pinch-tab adapter."
+
+procedure_refs:
+  - label: "Factory procedure — Wipers & Washers (Section 51)"
+    section: "51"
+    manual: "M1"
+
+related:
+  - wipers-not-working

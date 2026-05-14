@@ -1,0 +1,38 @@
+slug: dashboard-warning-lights
+title: "Dashboard Warning Lights — Quick Reference"
+category: reference
+difficulty: 1
+time_minutes: 5
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Quick reference for dashboard warning lights on the Pajero IV. Red lights require immediate
+  attention — stop safely as soon as possible. Amber lights indicate a fault that needs diagnosis
+  but is not immediately dangerous. Blue and green lights are informational. When in doubt, connect
+  an OBD-II scanner to read the fault code before driving further.
+
+symptoms:
+  - "Warning light illuminated on dashboard"
+  - "Multiple warning lights on after startup (may be a battery or sensor fault)"
+  - "Warning light on but vehicle appears to drive normally"
+
+tips:
+  - "RED warning lights: stop the vehicle as soon as it is safe. Oil pressure, engine temperature, and brake warning lights indicate conditions that cause immediate engine or safety damage."
+  - "AMBER warning lights: continue driving cautiously to a workshop. Check Engine, ABS, traction control, and suspension lights should be scanned before next long journey."
+  - "All lights illuminating at startup and then going off is normal — this is a bulb check. Lights staying on after 3 seconds indicate a fault."
+  - "Check Engine light (MIL): connect an OBD-II scanner to read the fault code. The light alone tells you nothing — the code tells you everything."
+  - "ABS light on without Check Engine: usually a wheel speed sensor fault. Safe to drive but ABS is disabled."
+  - "Battery light on while driving: alternator is not charging. Drive directly to a workshop — the battery will go flat within 20–40 minutes."
+  - "Oil pressure light on while driving: stop immediately, do not restart. Check oil level. If oil level is correct, the oil pump or pressure sensor may have failed."
+  - "Glow plug light (diesel) staying on or flashing: indicates a glow plug circuit fault. Cold starting will be affected. See P0380 fault code guide."
+  - "DPF light (diesel): exhaust filter needs regeneration. Take a 30-minute motorway drive immediately. If light remains, workshop regeneration required."
+  - "TPMS light (tyre pressure): check all four tyre pressures including spare. Light resets when pressures are corrected and vehicle is driven above 25 km/h."
+
+related:
+  - fuse-box-reference
+  - check-engine-light
+  - fault-code-p0380
+  - fault-code-p2002
+  - battery-specifications
+  - tire-specifications

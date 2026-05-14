@@ -1,0 +1,70 @@
+slug: fault-code-p0128
+title: "P0128 — Coolant Temperature Below Thermostat Regulating Temperature"
+category: codes
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0128 means the engine is not reaching normal operating temperature within the expected time,
+  or is running cooler than the thermostat's rated opening point. The most common cause by far is
+  a stuck-open thermostat, which keeps coolant circulating through the radiator constantly and
+  prevents the engine from warming up fully. Symptoms are subtle — heater that doesn't get hot,
+  poor fuel economy, and a temperature gauge that never reaches the midpoint.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Heater not producing hot air (engine runs cold)"
+  - "Temperature gauge stays low or never reaches midpoint"
+  - "Poor fuel economy (cold engine runs richer)"
+  - "Slightly rough idle (fuel trims not optimised for cold engine)"
+
+likely_causes:
+  - "Stuck-open thermostat (by far the most common cause — thermostat fails open, not closed)"
+  - "Wrong thermostat installed (incorrect temperature rating for the engine)"
+  - "Coolant temperature sensor (CTS) giving a false reading"
+  - "Wiring fault to the coolant temperature sensor"
+
+diagnosis:
+  step_1: "Check freeze frame data — was engine running cold consistently or only occasionally?"
+  step_2: "With engine at full operating temperature, verify the temperature gauge reads midpoint (~90–95°C). If it never reaches midpoint, suspect thermostat."
+  step_3: "Feel the upper radiator hose after 5 minutes of running. If it gets hot very quickly (under 2 minutes), the thermostat is stuck open."
+  step_4: "If gauge reads normal but code persists, test the coolant temperature sensor resistance at cold start: should be ~2,400Ω at 20°C, ~300Ω at 80°C."
+  step_5: "If sensor is out of spec, replace the coolant temperature sensor."
+  step_6: "If sensor is fine and code persists, replace thermostat."
+
+common_fixes:
+  thermostat: "Replace thermostat — $20–40 part, $100–200 labor (needs partial coolant drain)"
+  sensor: "Replace coolant temperature sensor — $30–60 part, $50–100 labor"
+
+estimated_repair_cost: "$120–240 (thermostat most common); $80–160 if sensor only"
+
+tips:
+  - "A stuck-open thermostat is much more common than a stuck-closed one. The spring mechanism wears open, not shut."
+  - "Thermostats are a wear item — replace every 100,000 km or when diagnosing a cold-running engine."
+  - "Always drain enough coolant before removing the thermostat housing — usually 1.5–2 litres is enough to prevent coolant spillage."
+  - "After replacing thermostat, run engine with heater on full and bleed air from the cooling system (look for air purge screw on thermostat housing)."
+  - "If you notice the temperature gauge sitting just below midpoint but the heater works well, the car is likely fine — check gauge calibration before replacing parts."
+
+parts:
+  - name: "Thermostat — 4M41 / 6G75 (88°C)"
+    oem: "MD315295"
+    spec: "Opens at 88°C, fully open at 103°C"
+    notes: "OEM thermostat for both engines. Also check Gates TH48689G or Wahler 4166.88D as equivalents. $20–40."
+    verify: true
+  - name: "Coolant temperature sensor"
+    oem: "MD319792"
+    spec: "NTC thermistor, M12×1.5 thread"
+    notes: "Replace if resistance values are out of spec. $30–60."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Cooling System (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - coolant-flush
+  - overheating
+  - coolant-specifications

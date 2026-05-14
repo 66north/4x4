@@ -1,0 +1,72 @@
+slug: wipers-not-working
+title: "Wipers Not Working — Diagnosis"
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV wiper system is controlled by the combination switch on the steering column and
+  a wiper relay in the engine bay fuse box. The most common faults are a blown fuse, a failed
+  wiper relay, a seized wiper motor, or a failed wiper link assembly. Intermittent failure often
+  points to the relay or a loose earth connection. Complete failure on all speeds usually means
+  the fuse or relay, not the motor.
+
+symptoms:
+  - "Wipers do not operate on any speed (check fuse and relay first)"
+  - "Wipers operate at HI and LO but not on intermittent — combination switch fault"
+  - "Wipers do not park at the rest position and stop mid-sweep — park switch in motor"
+  - "Rear wiper not working but front works — separate fuse and motor"
+  - "Washer pump not working — separate pump fuse, pump blocked or failed"
+  - "Rain sensor wipers not responding — sensor adaptation required after windscreen replacement"
+
+parts:
+  - name: "Wiper fuse (engine bay fuse box)"
+    oem: null
+    spec: "20A blade fuse — confirm with fuse box lid label"
+    notes: "Check this first. $1–2."
+    verify: false
+  - name: "Wiper relay"
+    oem: "MB627474"
+    spec: "4-pin standard relay, engine bay fuse/relay box"
+    notes: "Pull and swap with an identical relay from the same box to test. $10–25."
+    verify: true
+  - name: "Front wiper motor"
+    oem: "MR272228"
+    spec: "12V DC motor with integrated park switch"
+    notes: "Replace if motor runs intermittently or fails to park. $80–180."
+    verify: true
+  - name: "Rear wiper motor"
+    oem: "MR519954"
+    spec: "12V DC motor, tailgate mounted"
+    notes: "$60–140. Check tailgate wiring harness connector first — prone to corrosion."
+    verify: true
+  - name: "Combination switch (wiper stalk)"
+    oem: "MR198756"
+    spec: "Steering column combination switch"
+    notes: "Replace if intermittent function only at specific switch positions. $50–120."
+    verify: true
+
+tools:
+  - "Multimeter (voltage and continuity)"
+  - "Fuse puller"
+
+tips:
+  - "Check the wiper fuse first — it is in the engine bay fuse box, labelled WIPER or FRONT WIPER. The rear wiper is on a separate fuse labelled REAR WIPER."
+  - "To test the relay: pull it out and swap it with an identical relay from the same fuse box (horn relay or similar). If wipers now work, the relay is the fault."
+  - "If the wipers stop in the middle of the windscreen: the park switch inside the motor is faulty. The wipers should always return to the parked position even after the stalk is switched off."
+  - "Rear wiper failure: check the rubber-sealed connector in the tailgate hinge area first. This connector flexes every time the tailgate opens and the contacts corrode. Clean with electrical contact cleaner."
+  - "Washer pump not spraying: check that the washer bottle is full. Then disconnect the hose at the pump and blow through it — a blocked jet nozzle causes apparent pump failure."
+  - "If wipers work on LO/HI but not INT: the intermittent wiper function is part of the combination switch. Replace the switch rather than diagnosing the internal contacts."
+  - "Rain sensor (auto wiper) adaptation: after windscreen replacement, the rain sensor must be adapted to the new glass using a scan tool or by performing the adaptation procedure in the factory manual."
+
+procedure_refs:
+  - label: "Factory procedure — Wipers & Washers (Section 51)"
+    section: "51"
+    manual: "M1"
+
+related:
+  - wiper-blade-replacement
+  - fuse-box-reference
+  - dashboard-warning-lights

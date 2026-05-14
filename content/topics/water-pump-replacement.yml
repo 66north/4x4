@@ -1,0 +1,89 @@
+slug: water-pump-replacement
+title: Water Pump Replacement
+category: maintenance
+difficulty: 3
+time_minutes: 120
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The water pump circulates coolant through the engine block, radiator, and heater. Most pumps
+  are belt-driven by the serpentine belt and last 80,000–120,000 km before the bearing wears out
+  or the seal fails. A failed pump causes coolant leaks, overheating, and in severe cases, catastrophic
+  engine damage (warped head, cracked block). While the job is moderate difficulty, it requires
+  draining coolant, removing the serpentine belt, and careful reinstallation of gaskets.
+
+symptoms:
+  - Coolant leak from the front of the engine (pooling under the radiator)
+  - Overheating or slow warm-up (pump not circulating coolant efficiently)
+  - Grinding or squealing noise from the front of the engine (bearing wear in pump shaft)
+  - White crusty buildup around the pump housing (coolant seeping past the seal)
+  - Engine coolant temperature gauge slowly creeping up despite normal ambient temperature
+  - Sweet smell from engine bay (coolant leak)
+
+parts:
+  - name: Water pump assembly
+    oem: "4M41: MZ690xxx | 6G75: MD303031"
+    notes: Some pumps come pre-assembled with gasket; others require separate gasket purchase
+    verify: true
+  - name: Water pump gasket (if not included in pump assembly)
+    oem: "4M41: MZ690xxx | 6G75: MZ690572"
+    notes: Always replace the gasket, even if the old one looks intact
+    verify: true
+  - name: Serpentine belt tensioner (while you're in there)
+    oem: "Various, depends on engine variant"
+    notes: "Optional but recommended — labor cost is negligible if replacing pump anyway"
+    verify: false
+  - name: Engine coolant (1–2 liters)
+    oem: "MB328635 or equivalent Mitsubishi OEM long-life pink/red coolant"
+    notes: "Top up the system after pump replacement and running the engine"
+    verify: false
+
+tools:
+  - Socket set and wrenches for serpentine belt pulley bolts (typically 10-14mm)
+  - Gasket scraper or plastic scraper to remove old pump gasket (plastic recommended)
+  - Serpentine belt tool or reference to check belt condition and routing diagram
+  - Coolant drain pan with minimum 2 liters capacity
+  - Torque wrench with 20-100 Nm range for pump bolts and pulley
+
+torque_specs:
+  - component: Water pump mounting bolts
+    value: 20
+    unit: Nm
+    notes: "Check factory manual for exact torque — bolts vary by size. Tighten in a cross pattern"
+  - component: Water pump pulley bolt (if removable)
+    value: 25
+    unit: Nm
+    notes: "Some designs have the pulley fixed to the pump; others allow removal for access"
+  - component: Serpentine belt tensioner bolt
+    value: 30
+    unit: Nm
+    notes: "Tensioner is under spring pressure. Support it carefully when loosening"
+
+procedure_overview:
+  step_1: "Drain the coolant system (see coolant-flush.yml)"
+  step_2: "Remove the serpentine belt by loosening the belt tensioner and sliding the belt off the water pump pulley"
+  step_3: "Unbolt the water pump from the engine block (usually 3–5 bolts)"
+  step_4: "Scrape the old gasket material from the engine block sealing surface"
+  step_5: "Install the new water pump with a fresh gasket, tightening bolts in a cross pattern to the specified torque"
+  step_6: "Reinstall the serpentine belt, ensuring it is routed correctly on all pulleys"
+  step_7: "Tension the belt: The serpentine belt should have 10–15mm of deflection (1/2 inch) when pressed halfway between two pulleys at moderate force"
+  step_8: "Refill the coolant system with fresh fluid, bleed air from the system, and verify the water pump is not leaking"
+
+tips:
+  - Before removing the water pump, inspect the serpentine belt. If it is cracked, frayed, or glazed, replace it at the same time. The labor cost is minimal compared to pulling the engine again
+  - The water pump routing is critical. Take a photo of the belt routing BEFORE removal so you can replicate it exactly. Incorrect routing causes overheating and belt slipping
+  - Some engines (especially the 6G75 petrol) have the thermostat housing bolted directly to the water pump. If removing the housing, you may disturb the thermostat. Have a fresh O-ring seal on hand
+  - The water pump bearing can seize if the vehicle is stored in a cold climate and not started for weeks. If the bearing is stuck, do not force it to rotate by hand. Soak the pump in penetrating oil (WD-40, Liquid Wrench) for 15–30 minutes, then try again
+  - After the first 100 km of driving, recheck the coolant level and inspect the pump area for leaks. The gasket may need additional torque or bedding-in time
+  - If the engine still overheats after pump replacement, the thermostat or radiator may be the culprit, not the pump. Have the thermostat checked (see thermostat-replacement.yml)
+
+procedure_refs:
+  - label: "Factory procedure — Cooling System (Section 13)"
+    section: "13"
+    manual: "M1"
+
+related:
+  - timing-belt
+  - coolant-flush
+  - thermostat-replacement

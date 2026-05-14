@@ -1,0 +1,68 @@
+slug: coil-pack-replacement
+title: Ignition Coil Pack Replacement
+category: maintenance
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The 6G75 petrol engine uses six individual coil-on-plug ignition coils, one per cylinder.
+  Each coil sits directly on top of its spark plug. A failing coil causes a single-cylinder misfire
+  (P0301–P0306) and rough running. Unlike older distributor systems, you can swap coils between
+  cylinders to confirm a fault — if the misfire code follows the coil, the coil is bad.
+  This is a petrol-only job; the 4M41 diesel has no spark ignition.
+
+symptoms:
+  - "P0301–P0306 misfire code (specific cylinder)"
+  - "Rough idle or engine shaking"
+  - "Hesitation or stumble at low RPM"
+  - "Check Engine light illuminated"
+  - "Symptoms worse when cold or damp"
+
+parts:
+  - name: "Ignition coil pack — Mitsubishi OEM (MD362913)"
+    oem: "MD362913"
+    spec: "Coil-on-plug, 12V primary"
+    quantity: "1 per cylinder (6 total for full set)"
+    notes: "OEM coil for 6G75. $60–120 each. Replace the faulty one, or all 6 for peace of mind at 100,000+ km."
+    verify: true
+  - name: "Ignition coil — Bosch 0221504470"
+    oem: "0221504470"
+    spec: "Coil-on-plug equivalent"
+    quantity: "1 per cylinder"
+    notes: "Aftermarket equivalent. $40–80 each."
+    verify: false
+  - name: "Ignition coil — Delphi GN10328"
+    oem: "GN10328"
+    spec: "Coil-on-plug equivalent"
+    quantity: "1 per cylinder"
+    notes: "Budget-friendly equivalent. $30–60 each."
+    verify: false
+
+tools:
+  - "10mm socket (coil retaining bolt)"
+  - "Electrical connector removal tool (or small flat-head)"
+  - "OBD-II scanner (to read and clear misfire codes)"
+
+torque:
+  - component: "Coil pack retaining bolt"
+    value_nm: 10
+    note: "8–12 Nm."
+
+tips:
+  - "To confirm a bad coil without buying parts: swap the suspect coil with an adjacent one and rescan. If P0302 becomes P0303, the coil is confirmed faulty."
+  - "Inspect the coil boot (rubber tip) for cracks or carbon tracking — a cracked boot can cause a misfire without the coil itself failing."
+  - "Coils are prone to failure after water ingress (engine washing, heavy rain). Misfire codes appearing after wet weather often mean a failed coil."
+  - "At 100,000+ km, consider replacing all 6 coils as a set. The labour to reach them is the same whether you replace one or six."
+  - "Always replace spark plugs at the same time as coils — worn plugs stress coils and cause premature failure."
+
+procedure_refs:
+  - label: "Factory procedure — Ignition System (Section 15)"
+    section: "15"
+    manual: "M1"
+
+related:
+  - spark-plugs
+  - fault-code-p0300
+  - check-engine-light

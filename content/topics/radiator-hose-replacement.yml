@@ -1,0 +1,62 @@
+slug: radiator-hose-replacement
+title: "Radiator Hose Replacement"
+category: maintenance
+difficulty: 1
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV has two main radiator hoses — upper and lower — plus a smaller overflow/header tank
+  hose. Rubber hoses degrade and eventually crack or split, causing catastrophic coolant loss. They
+  should be inspected at every service (squeeze the hose when cold — it should feel firm and spring
+  back, not mushy or hard and cracked). A 10-year or 150,000 km replacement interval is conservative
+  but sensible for a vehicle used off-road.
+
+symptoms:
+  - "Coolant leak visible at hose or hose clamp connection"
+  - "Hose feels soft and mushy when squeezed cold (internal delamination)"
+  - "Hose is hard and cracked when squeezed (heat-hardened, failure imminent)"
+  - "Engine temperature rising faster than normal (restricted hose reducing flow)"
+  - "Coolant smell from engine bay without visible leak (seeping past clamp)"
+
+parts:
+  - name: "Upper radiator hose"
+    oem: "MR272093"
+    spec: "Moulded rubber hose, thermostat outlet to radiator top"
+    notes: "Inspect at every service. $25–60."
+    verify: true
+  - name: "Lower radiator hose"
+    oem: "MR272094"
+    spec: "Moulded rubber hose, radiator bottom to water pump"
+    notes: "$25–60. Usually fails later than upper hose (lower heat)."
+    verify: true
+  - name: "Coolant — Mitsubishi Long Life (blue)"
+    oem: null
+    spec: "Mitsubishi Super Long Life Coolant (blue) or equivalent OAT type"
+    quantity: "7.5 L system total (top up as needed)"
+    notes: "Do not mix blue OAT with green conventional coolant. $15–25 per litre."
+    verify: false
+
+tools:
+  - "Pliers or hose clamp tool (spring clamps)"
+  - "Drain pan (minimum 3L)"
+  - "Hose pick or blunt knife (to break hose seal)"
+
+tips:
+  - "Always replace hoses with the engine cold — never open the cooling system when hot."
+  - "To break the seal of a stuck hose: twist it before pulling, or carefully use a hose pick around the rim. Do not pry with a screwdriver — the plastic thermostat housing and radiator neck are fragile."
+  - "Check the hose clamps when replacing hoses — original spring-type clamps weaken over time. Replace with screw-type clamps for better long-term retention."
+  - "Burp the coolant system after refilling: leave the heater on full, start the engine, and wait until the top hose gets hot (thermostat opens). Then check the level again and top up if needed."
+  - "Inspect the header/overflow tank hoses at the same time — they are small in diameter and often overlooked."
+  - "If replacing only one hose, check the age and condition of the other before reassembly. Labour is the same either way."
+
+procedure_refs:
+  - label: "Factory procedure — Cooling (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - coolant-flush
+  - thermostat-replacement
+  - overheating

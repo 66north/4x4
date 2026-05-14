@@ -1,0 +1,90 @@
+slug: differential-oil-change
+title: Differential Oil Change (Front & Rear)
+category: maintenance
+difficulty: 3
+time_minutes: 90
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The front and rear differentials contain hypoid gear oil that lubricates the ring and pinion
+  gears and the differential carrier. Over time, the oil oxidizes and metallic particles from gear
+  wear accumulate, reducing lubricant viscosity and protective film thickness. Factory intervals
+  call for replacement every 40,000 km under normal driving, or every 20,000 km for towing or
+  off-road use. Neglecting differential oil changes causes accelerated gear wear, whining noises,
+  and eventual catastrophic failure.
+
+symptoms:
+  - Scheduled maintenance interval (40,000 km normal, 20,000 km if towing/off-road)
+  - Whining or howling from the differential during acceleration or coasting
+  - Metallic grinding noise when turning (suggests gear damage)
+  - Visible contamination in oil when draining (metal shavings, sludge)
+  - Oil overfilled or low level (indicates internal leakage or overflow)
+  - Sudden loss of traction or clunking on hard acceleration
+
+parts:
+  - name: Differential oil — front & rear (API GL-5 80W-90)
+    oem: MB Genuine or equivalent (Mobil 1 SHC, Shell Tellus recommended)
+    notes: "Capacity: Front diff ~1.5L, Rear diff ~2.0L. Always buy premium GL-5 for hypoid gears"
+    verify: true
+  - name: Front differential drain plug
+    oem: MZ690340 (gasket/washer)
+    notes: Optional — many reuse the crush washer. Replace if damaged
+    verify: false
+  - name: Rear differential drain plug
+    oem: MZ690340 (gasket/washer)
+    notes: Same as front. Always replace the crush washer for a proper seal
+    verify: false
+  - name: Front differential filler/level plug
+    oem: MZ690341
+    notes: Located on the side of the differential housing, usually at mid-height
+    verify: false
+  - name: Rear differential filler/level plug
+    oem: MZ690341
+    notes: Same as front. Check here to verify proper fill level
+    verify: false
+
+tools:
+  - Axle/differential drain pan (minimum 3 liters capacity)
+  - Wrench or socket for drain plugs (usually 17mm or 19mm hex)
+  - Wrench or socket for filler plugs (usually 24mm)
+  - New crush washers or gaskets (buy with the oil)
+  - Hand pump or electric oil pump (to refill the differential — very slow with a funnel)
+  - Clean rags or shop towels (to wipe plugs and sealing surfaces)
+  - Jack and jack stands (to safely lift the vehicle off the ground)
+
+torque_specs:
+  - component: Front differential drain plug
+    value: 25
+    unit: Nm
+    notes: "Snug the crush washer. Over-torque can damage the aluminum housing"
+  - component: Rear differential drain plug
+    value: 25
+    unit: Nm
+    notes: Same as front. Ensure crush washer is seated
+  - component: Differential filler/level plug
+    value: 25
+    unit: Nm
+    notes: Hand-tighten until snug, then torque to spec. Do not over-tighten
+
+tips:
+  - The front differential is on the front axle, under the engine bay. The rear differential is visible on the rear axle assembly, mounted to the frame.
+  - If the vehicle has multiple transfer case settings (2H, 4H, 4L), select 2H (high-range 2WD) before starting work. Do not change gears while the vehicle is elevated.
+  - Drain the front differential first, then the rear. Let each drain for at least 10 minutes to ensure full evacuation.
+  - The filler plug is located above the drain plug (on the side of the differential housing). Once drained, remove this plug to check the level after refilling.
+  - Filling via a regular funnel is tedious; an electric oil pump with a tube makes the job 10x faster. Pour the oil into the pump bottle, position the tube in the filler hole, and cycle the pump.
+  - The differential should be filled until oil just reaches the bottom of the filler plug hole. Use a straight edge or rod to measure this precisely.
+  - Reinstall the filler plug before the drain plug is fully tightened — this ensures you can remove it for level verification.
+  - After refilling, idle the vehicle in neutral for 1–2 minutes, then drive gently for 10 km. Recheck the level; it may need topping up if air pockets were purged.
+  - Some enthusiasts use a catch-can to capture a small oil sample during draining. Examine it under light for the volume and size of metal particles — this indicates gear wear.
+  - If the differential oil is severely contaminated (black, chunky sludge) or metallic particles are visible, a deeper inspection or gearbox overhaul may be warranted.
+
+procedure_refs:
+  - label: "Factory procedure — Final Drive (Axles, Section 26–27)"
+    section: "26"
+    manual: "M1"
+
+related:
+  - oil-change
+  - transfer-case-oil-change
+  - brake-fluid-flush

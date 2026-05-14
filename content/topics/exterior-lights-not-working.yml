@@ -1,0 +1,60 @@
+slug: exterior-lights-not-working
+title: "Exterior Lights Not Working — Diagnosis"
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Lighting faults on the Pajero IV usually follow a simple pattern: a single light out means
+  a bulb; multiple lights on one circuit means a fuse or relay; all lights dim or flicker means
+  a poor earth or charging fault. The headlamp auto-levelling system (where fitted) has its own
+  ECU and can trigger the warning lamp on the dash. Work through the fuse box before replacing
+  bulbs or switches.
+
+symptoms:
+  - "One headlight out — check bulb first, then check for moisture in housing"
+  - "Both headlights out — check HEADLAMP fuse and relay in engine bay box"
+  - "Tail lights and dash lights out together — same fuse circuit (TAIL or ILLUM)"
+  - "One indicator not flashing (hyper-flash on other side) — failed bulb in that corner"
+  - "All indicators not working — check HAZARD fuse and hazard/flasher relay"
+  - "Reversing light not working — check bulb, then reverse gear switch on gearbox"
+  - "Brake lights not working — check bulb, then brake light switch above brake pedal"
+  - "Fog lights not working — check FOG fuse and fog lamp switch continuity"
+
+tips:
+  - "Use the fuse box lid label as your first reference — every circuit is listed. The Pajero IV has two fuse boxes: engine bay (high-current circuits) and interior/dash (lower-current circuits under the steering column)."
+  - "Tail lights and instrument illumination share a fuse — if both go out at once, check the TAIL fuse in the interior fuse box before suspecting a switch."
+  - "Brake light failure: the most common cause is the brake light switch at the top of the brake pedal. Press the brake pedal by hand with the ignition on and check for 12V at the switch output terminal. The switch is easily replaced — it unplugs and screws in."
+  - "Reversing light failure: if the bulb is good, check the reverse switch on the side of the gearbox or transmission. On the automatic, the inhibitor switch (park/neutral switch) controls the reverse light signal."
+  - "Headlamp levelling fault warning (dashboard): the auto-levelling ECU monitors the level sensor and levelling motors. A fault code can be read with an OBD-II scanner supporting enhanced Mitsubishi protocols. The most common cause is a failed levelling motor or a corroded sensor connector at the front suspension."
+  - "Moisture in headlamp housings: the Pajero IV headlamp seals age and admit moisture. Condensation inside the lens is common. Remove the dust cap at the rear of the housing and allow it to ventilate before sealing with new weatherstrip — replacing the whole housing is rarely necessary."
+  - "Earth connections: if multiple lights in a zone are dim or intermittent, trace the earth wire back to the body earthing point. Rear lamp earths on the Pajero IV are prone to corrosion at the tailgate body stud."
+
+parts:
+  - name: "Brake light switch"
+    oem: "MB618183"
+    spec: "Push-type switch, normally open, at brake pedal arm"
+    notes: "Very common failure. $15–35."
+    verify: true
+  - name: "Reverse gear switch — automatic"
+    oem: "MR263341"
+    spec: "Inhibitor/park-neutral switch, integrated with transmission selector"
+    notes: "Controls reverse light signal. More complex replacement than a manual switch. $80–200."
+    verify: true
+  - name: "Headlamp levelling motor (front)"
+    oem: "MR392651"
+    spec: "Stepper motor, integrated into headlamp assembly"
+    notes: "Replace per-side if auto-levelling fault code present. $30–80."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Exterior & Interior Lamps (Section 54)"
+    section: "54"
+    manual: "M1"
+
+related:
+  - headlight-bulb-replacement
+  - fuse-box-reference
+  - starting-charging-problems

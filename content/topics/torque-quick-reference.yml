@@ -1,0 +1,105 @@
+slug: torque-quick-reference
+title: "Torque Specifications — Quick Reference"
+category: reference
+difficulty: 1
+time_minutes: 5
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Common torque specifications for the 2008–2013 Pajero IV. Values are from the Mitsubishi factory
+  service manual and apply to both 4M41 diesel and 6G75 petrol engines unless noted otherwise.
+  Always use a calibrated torque wrench on safety-critical fasteners (wheels, brakes, suspension).
+  Do not use air tools to final-torque wheel nuts.
+
+torque:
+  - component: "Wheel nuts (road wheels)"
+    value_nm: 108
+    note: "108–118 Nm. Use a torque wrench — impact guns cause uneven clamping and warped rotors."
+  - component: "Front brake caliper guide bolts (lower)"
+    value_nm: 40
+    note: "36–45 Nm. Clean threads and apply copper anti-seize to bolt shanks."
+  - component: "Front brake caliper mounting bracket bolts"
+    value_nm: 90
+    note: "85–100 Nm. High-torque safety fastener — do not skip."
+  - component: "Rear brake caliper guide bolts"
+    value_nm: 32
+    note: "28–35 Nm."
+  - component: "Brake disc retaining screw"
+    value_nm: 6
+    note: "Phillips head set screw. Hand-tight plus 1/4 turn."
+  - component: "Engine oil drain plug"
+    value_nm: 39
+    note: "35–42 Nm. Use new sealing washer each time."
+  - component: "Oil filter (spin-on type)"
+    value_nm: 14
+    note: "Hand-tighten until gasket contacts, then 3/4 turn. Never use a wrench to install."
+  - component: "Spark plug (6G75 petrol)"
+    value_nm: 20
+    note: "18–22 Nm. Hand-thread first. Aluminium head strips easily."
+  - component: "Glow plug (4M41 diesel)"
+    value_nm: 15
+    note: "13–17 Nm. Low torque — very easy to snap in a cold, brittle head."
+  - component: "Battery terminal bolts (M8)"
+    value_nm: 10
+    note: "8–12 Nm. Snug only — over-tightening cracks battery terminal post."
+  - component: "Spark plug coil pack bolt (6G75)"
+    value_nm: 10
+    note: "8–12 Nm."
+  - component: "Front strut top nut"
+    value_nm: 55
+    note: "50–60 Nm. Requires a strut holder tool to prevent rotation during torquing."
+  - component: "Lower suspension arm (front) — pivot bolt"
+    value_nm: 130
+    note: "125–135 Nm. Torque with vehicle weight on wheels (suspension at ride height)."
+  - component: "Upper suspension arm (front) — pivot bolt"
+    value_nm: 115
+    note: "110–120 Nm. Torque with suspension at ride height."
+  - component: "Tie rod end lock nut"
+    value_nm: 60
+    note: "55–65 Nm after alignment adjustment. Recheck after first 500 km."
+  - component: "Shock absorber lower mount bolt (front)"
+    value_nm: 115
+    note: "110–120 Nm. Torque with suspension at ride height."
+  - component: "Shock absorber lower mount bolt (rear)"
+    value_nm: 100
+    note: "95–110 Nm."
+  - component: "Timing belt tensioner bolt (6G75)"
+    value_nm: 25
+    note: "23–27 Nm. Set tension before final torque."
+  - component: "Water pump bolts"
+    value_nm: 14
+    note: "12–16 Nm. Clean block surface before installing new gasket."
+  - component: "Coolant drain plug"
+    value_nm: 20
+    note: "18–22 Nm with new sealing washer."
+  - component: "Differential fill/drain plugs"
+    value_nm: 35
+    note: "33–38 Nm."
+  - component: "Transmission pan drain plug"
+    value_nm: 35
+    note: "32–38 Nm with new washer."
+  - component: "Brake fluid bleeder nipple"
+    value_nm: 8
+    note: "7–9 Nm. Brass thread — very easy to snap. Close gently."
+  - component: "Brake hose banjo bolt"
+    value_nm: 30
+    note: "27–35 Nm with new copper crush washers on both sides."
+
+tips:
+  - "Torque specifications assume clean, dry threads unless the step specifies thread locker or lubricant."
+  - "Always use a calibrated torque wrench — click-type or digital. Beam wrenches are accurate but hard to use in tight spaces."
+  - "Suspension fasteners (arms, struts, anti-roll bars) must be torqued with the vehicle at ride height, not with the suspension hanging. Torquing in the air pre-loads the bushings in a distorted position."
+  - "Wheel nuts: tighten in a star pattern across the wheel, not in a circle. This ensures even seating against the hub."
+  - "If a fastener feels like it reaches torque before the expected angle, stop and inspect — the thread may be stripping or a washer may be missing."
+
+procedure_refs:
+  - label: "Factory specifications — Torque Values (Section 00)"
+    section: "00"
+    manual: "M1"
+
+related:
+  - brake-pads-front
+  - shock-absorber-replacement
+  - timing-belt
+  - oil-change

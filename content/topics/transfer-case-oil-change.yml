@@ -1,0 +1,65 @@
+slug: transfer-case-oil-change
+title: Transfer Case Oil Change
+category: maintenance
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The transfer case distributes drive to front and rear axles and enables low-range 4WD. It uses its
+  own fluid, separate from the transmission. The Pajero IV transfer case takes approximately 1.1L of
+  ATF SP-III (same fluid as the automatic transmission). This is the most commonly forgotten fluid
+  service on 4WD vehicles — neglect causes premature wear of the chain or gear set inside.
+  Service interval: every 40,000 km or whenever the fluid is dark or contaminated.
+
+symptoms:
+  - "Routine service interval reached (40,000 km)"
+  - "Vibration or whine from transfer case area in 4WD"
+  - "4WD engagement grinding or hesitation"
+  - "Dark or metallic-looking fluid found on inspection"
+
+parts:
+  - name: "Transfer case fluid — ATF SP-III"
+    oem: null
+    spec: "ATF SP-III (Mitsubishi Genuine or Dexron III equivalent)"
+    quantity: "1.1 L approx."
+    notes: "Same fluid as the automatic transmission. Fill until fluid drips from filler hole. $15–25 per litre."
+    verify: false
+  - name: "Transfer case drain plug washer"
+    oem: "MZ690340"
+    spec: "Copper crush washer, M20"
+    notes: "Replace the crush washer — same part as differential drain plugs. $2–5."
+    verify: false
+
+tools:
+  - "17mm hex key / Allen socket (drain and fill plugs)"
+  - "Drain pan (minimum 2L)"
+  - "Torque wrench"
+  - "Hand-operated fluid pump (for refilling through the side filler hole)"
+
+torque:
+  - component: "Transfer case drain plug"
+    value_nm: 35
+    note: "33–38 Nm with new washer."
+  - component: "Transfer case filler plug"
+    value_nm: 35
+    note: "33–38 Nm."
+
+tips:
+  - "The transfer case filler plug and drain plug are both hex-socket type (17mm Allen key). Do not confuse with the transmission pan bolts."
+  - "Fill until fluid runs out of the filler hole — this is the correct level. Do not try to estimate volume."
+  - "If the drained fluid contains metallic particles or looks like grey sludge, inspect the transfer case for damage before refilling."
+  - "Always check that the filler plug is removable before draining — if it is seized you cannot refill."
+  - "The transfer case is located behind the transmission and is accessible from underneath with the vehicle on ramps or a lift."
+  - "If you drive in water crossings or off-road mud, change the transfer case fluid every 20,000 km — water contamination degrades the fluid rapidly."
+
+procedure_refs:
+  - label: "Factory procedure — Transfer Case (Section 25)"
+    section: "25"
+    manual: "M1"
+
+related:
+  - differential-oil-change
+  - 4wd-not-engaging
+  - transmission-fluid

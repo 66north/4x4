@@ -1,0 +1,79 @@
+slug: tire-specifications
+title: Tire & Wheel Specifications
+category: specs
+difficulty: 1
+time_minutes: 10
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Your Pajero IV's tires and wheels are engineered for load capacity, off-road capability, and comfort. Using the wrong
+  size, load rating, or pressure reduces handling, increases fuel consumption, and can damage the suspension. This guide
+  covers factory tire sizes, wheel specifications, and pressure recommendations for your Pajero IV.
+
+tire_sizes:
+  common_sizes:
+    - "265/60R18 (most common on modern variants)"
+    - "265/65R17"
+    - "275/60R18"
+    - "265/70R16"
+    - "265/50R20 (some luxury variants)"
+    - "275/55R19 (some variants)"
+  note: "The exact size depends on your model year and market region. Always check the driver's door jamb sticker for your vehicle's specification."
+  where_to_find: "The factory tire size is printed on a sticker located inside the driver's side door jamb or fuel filler door."
+
+tire_pressure:
+  factory_recommendation:
+    front_psi: 32
+    rear_psi: 35
+    front_kpa: 220
+    rear_kpa: 240
+  notes:
+    - "Pressure should be checked when tires are cold (before driving or 3+ hours after driving)"
+    - "Tire pressure increases 1-2 PSI per 10°C temperature rise"
+    - "Winter: Check pressure more frequently as cold air reduces tire pressure"
+    - "Heavy load or towing: Increase pressure to 38-40 PSI front and rear to prevent excessive flexing"
+  under_inflation_consequences: "Poor fuel economy, increased tire wear on edges, overheating, and poor handling"
+  over_inflation_consequences: "Harsh ride, reduced traction, wear in center of tire, and increased braking distance"
+
+wheel_specifications:
+  bolt_pattern: "6x139.7 mm (6 lugs, 139.7 mm diameter)"
+  lug_nut_torque_nm: 130
+  lug_nut_torque_note: "Use a torque wrench when installing wheels. Over-tightening can warp rotors and break studs."
+  wheel_offsets: "Varies by trim level and market (typically +35 to +50 mm)"
+  wheel_sizes:
+    - "16 inches (some base models)"
+    - "17 inches"
+    - "18 inches (most common)"
+    - "20 inches (some luxury variants)"
+
+tread_depth:
+  minimum_legal_depth_mm: 1.6
+  recommended_replacement_depth_mm: 4.0
+  how_to_check: "Use a penny test: Insert a penny upside-down into the tread. If you can see the top of Lincoln's head, tread is below 2 mm and tires should be replaced."
+  why_it_matters: "Wet braking distance increases dramatically below 4 mm. Braking distance can double when tread is below 2 mm."
+
+tire_wear_patterns:
+  even_wear: "Normal. Rotate tires every 10,000 km (front-left to rear-right, front-right to rear-left)"
+  inner_edge_wear: "Likely under-inflation or negative camber (wheel tilted inward). Check pressure and wheel alignment."
+  outer_edge_wear: "Likely over-inflation or positive camber (wheel tilted outward). Check pressure and wheel alignment."
+  center_wear: "Over-inflation. Reduce tire pressure to factory spec."
+  one_side_wear: "Aggressive cornering or suspension wear. Check suspension bushings and ball joints."
+
+tips:
+  - "Tire pressure drops 1 PSI for every 10°C temperature decrease. Check pressure monthly, especially in winter."
+  - "Replacing one tire on a 4WD vehicle can damage the differential — always replace all four if possible, or have the new tire shaved to match the others."
+  - "All-terrain or mud-terrain tires are heavier and drag more than highway tires, reducing fuel economy by 10-15%."
+  - "Wheel balancing should be done every 10,000 km or when you notice vibration at highway speed."
+  - "When rotating tires, inspect brakes, suspension components, and wheel bearings for wear."
+  - "Nitrogen-filled tires (common on new vehicles) retain pressure better than air, but regular air is acceptable if you check pressure monthly."
+  - "Running on a flat tire or severely under-inflated tire damages the sidewall. Repair is not possible; tire must be replaced."
+
+procedure_refs:
+  - label: "Factory procedure — Wheels & Tires (Section 33)"
+    section: "33"
+    manual: "M1"
+
+related:
+  - tire-wear-and-alignment
+  - suspension-squeaks-and-clunks

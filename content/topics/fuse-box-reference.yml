@@ -1,0 +1,53 @@
+slug: fuse-box-reference
+title: "Fuse Box Layout & Fuse Ratings"
+category: reference
+difficulty: 1
+time_minutes: 10
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Fuse box locations and fuse assignments for the 2008–2013 Pajero IV. There are two fuse boxes:
+  the engine bay fuse/relay box (left side of engine bay) and the interior fuse box (behind the
+  glovebox panel, passenger side). Always replace a blown fuse with the identical amperage rating —
+  a fuse that keeps blowing indicates an electrical fault, not a weak fuse.
+
+symptoms:
+  - "Electrical component stopped working suddenly (lights, windows, wipers, accessories)"
+  - "Check Engine or warning light on for an electrical system"
+  - "Intermittent fault that clears itself (borderline-blown fuse)"
+
+parts:
+  - name: "Blade fuse assortment (ATO/ATC standard)"
+    oem: null
+    spec: "5A, 7.5A, 10A, 15A, 20A, 25A, 30A — mixed pack"
+    notes: "Keep a spare fuse assortment in the glovebox. ATO/ATC blade type fits both Pajero fuse boxes. $5–10 for mixed pack."
+    verify: false
+  - name: "Maxi blade fuse — 30A (engine bay)"
+    oem: null
+    spec: "30A Maxi blade fuse"
+    notes: "For high-current circuits in the engine bay fuse box. $3–5 each."
+    verify: false
+  - name: "Fuse puller tool"
+    oem: null
+    spec: "Plastic fuse puller"
+    notes: "Usually included in the fuse box lid. Replacements available at any auto parts shop. $2–5."
+    verify: false
+
+tips:
+  - "The engine bay fuse box cover has a fuse layout diagram printed on the inside of the lid — use it before consulting the manual."
+  - "The interior fuse box is located behind the lower glovebox panel. Open the glovebox, press the side clips to drop it down, and the fuse box is above."
+  - "A fuse that blows repeatedly means there is a short circuit downstream. Replacing with a higher-rated fuse is dangerous — do not do it."
+  - "Check fuses visually: the thin metal bridge inside the fuse should be intact. Some fuses look fine visually but are blown internally — test with a multimeter if unsure."
+  - "Tail light, interior light, and accessory socket faults are almost always a blown fuse before anything more complex."
+  - "If a fuse blows immediately on replacement, unplug the load (lamp, accessory) first to confirm it is the fault source before replacing the fuse again."
+
+procedure_refs:
+  - label: "Factory wiring — Fuse & Relay Reference (Section 16)"
+    section: "16"
+    manual: "M1"
+
+related:
+  - battery-specifications
+  - battery-replacement
+  - starting-charging-problems

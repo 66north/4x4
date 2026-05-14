@@ -1,0 +1,74 @@
+slug: oil-change
+title: Engine Oil & Filter Change
+category: maintenance
+difficulty: 1
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The most important routine maintenance on any Pajero IV. Fresh oil protects the engine,
+  reduces wear, and maintains fuel economy. Mitsubishi recommends every 10,000 km or
+  12 months — whichever comes first. On the 4M41 diesel, use only ACEA C3-rated oil
+  if your vehicle has a DPF (diesel particulate filter).
+
+symptoms:
+  - Routine maintenance interval reached (10,000 km / 12 months)
+  - Oil level low on dipstick
+  - Oil appears dark brown or black on dipstick
+  - Oil pressure warning light illuminated
+
+parts:
+  - name: Oil filter — 4M41 diesel
+    oem: 1230A043
+    notes: Confirm with your dealer for exact year/variant
+    verify: true
+  - name: Oil filter — 6G75 petrol
+    oem: MD360935
+    notes: Also fits many other Mitsubishi models
+    verify: true
+  - name: Drain plug sealing washer
+    oem: MD050417
+    notes: Replace every oil change — reusing old washer risks leaks
+    verify: true
+  - name: Engine oil — 4M41 diesel (DPF equipped)
+    spec: 5W-30 ACEA C3
+    quantity: "6.5–7.0 L"
+    oem: null
+    notes: "Shell Helix Ultra ECT C3, Castrol EDGE 5W-30 C3, or equivalent"
+  - name: Engine oil — 4M41 diesel (non-DPF)
+    spec: 5W-40 ACEA B4
+    quantity: "6.5–7.0 L"
+    oem: null
+  - name: Engine oil — 6G75 petrol
+    spec: 5W-30 ACEA A3/B3
+    quantity: "5.5 L"
+    oem: null
+
+tools:
+  - Oil drain pan (8L+ capacity)
+  - 17mm socket or ring spanner (drain plug)
+  - Oil filter removal strap wrench
+  - Funnel
+  - Torque wrench
+
+torque:
+  - component: Sump drain plug
+    value_nm: 39
+    note: Do not overtighten — aluminium sump threads strip easily
+
+tips:
+  - Run the engine for 2–3 minutes before draining. Warm oil flows faster and carries more debris.
+  - "4M41 capacity: 6.5L without filter, 7.0L with new filter. Always check dipstick and top up accordingly."
+  - Pre-fill the new oil filter with fresh oil before fitting — reduces dry-start duration.
+  - Let the car sit on level ground for 5 minutes after filling before reading the dipstick.
+  - Dispose of used oil responsibly — most auto parts stores accept it.
+
+procedure_refs:
+  - label: "Factory procedure — Engine Lubrication (Section 12)"
+    section: "12"
+    manual: "M1"
+
+related:
+  - air-filter
+  - fuel-filter-diesel

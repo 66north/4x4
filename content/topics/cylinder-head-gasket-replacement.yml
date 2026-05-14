@@ -1,0 +1,66 @@
+slug: cylinder-head-gasket-replacement
+title: "Cylinder Head Gasket Failure — Diagnosis"
+category: troubleshoot
+difficulty: 4
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Head gasket failure is uncommon on the Pajero IV but can occur after overheating events or at very
+  high mileage (200,000+ km). The 4M41 diesel and 6G75 petrol both use multi-layer steel (MLS) head
+  gaskets. Diagnosis is more important than replacement — head gasket work is a major workshop job,
+  and many symptoms attributed to the head gasket have other causes (coolant loss is usually a hose
+  or cap; white smoke is often diesel injection). Confirm thoroughly before condemning the gasket.
+
+symptoms:
+  - "White smoke from exhaust that persists after engine is warm (coolant burning)"
+  - "Milky or mayonnaise-like contamination on the oil filler cap (coolant in oil)"
+  - "Coolant level dropping regularly with no external leak found"
+  - "Bubbles visible in coolant reservoir when engine is running (combustion gases)"
+  - "Engine overheating without obvious coolant loss or hose failure"
+  - "Oil contaminated in coolant reservoir (oil floating on top)"
+
+tips:
+  - "Check the oil filler cap first — a small amount of white condensation inside is normal in a cold climate. Thick, creamy, mayonnaise-like substance throughout the cap and filler neck is a genuine concern."
+  - "A chemical block test (combustion gas test kit, available at auto stores) is the most reliable non-invasive test. Add the tester fluid to the coolant reservoir; if it changes from blue to yellow, combustion gases are present."
+  - "White smoke on cold start that clears within 2–3 minutes is condensation — normal. Persistent white smoke after the engine is warm and up to temperature is the diagnostic sign to watch."
+  - "If coolant is disappearing but there is no external leak, no white smoke, no milky oil, and no bubbles in the reservoir — suspect the heater core before the head gasket."
+  - "On the 4M41 diesel, white smoke at idle after warmup is more likely an injector leak-off problem than a head gasket — check injector return lines first."
+  - "Head gasket replacement requires removing the cylinder head, checking the head surface for warping (maximum 0.05 mm flatness deviation), and resurfacing if needed. This is a workshop job."
+  - "If the engine has overheated, do not continue running it — coolant loss from a blown gasket leads to rapid cylinder wall and bearing damage."
+
+parts:
+  - name: "Head gasket — 4M41"
+    oem: "1005A039"
+    spec: "Multi-layer steel (MLS) head gasket, 92.0 mm bore"
+    notes: "Workshop job — requires head removal. $80–200 gasket. $800–1,500 labour. Always replace head bolts."
+    verify: true
+  - name: "Head gasket — 6G75"
+    oem: "1005A168"
+    spec: "MLS head gasket — two required (one per bank)"
+    notes: "$80–200 each. V6 requires both head gaskets and head bolts replaced. $1,500–2,500 labour."
+    verify: true
+  - name: "Head bolt set — 4M41"
+    oem: "MD326740"
+    spec: "Torque-to-yield head bolts (single use)"
+    notes: "Always replace — torque-to-yield bolts stretch on use and cannot be reliably retorqued. $50–120."
+    verify: true
+
+torque:
+  - component: "4M41 head bolts (torque-to-yield)"
+    value_nm: 0
+    note: "Step 1: 49 Nm. Step 2: +90°. Step 3: +90°. Use new bolts only. Refer to Section 11."
+  - component: "6G75 head bolts (torque-to-yield)"
+    value_nm: 0
+    note: "Step 1: 78 Nm. Step 2: +90°. Use new bolts only. Refer to Section 11."
+
+procedure_refs:
+  - label: "Factory procedure — Engine (Section 11)"
+    section: "11"
+    manual: "M1"
+
+related:
+  - overheating
+  - coolant-flush
+  - timing-belt

@@ -1,0 +1,78 @@
+slug: brake-pads-rear
+title: Rear Brake Pad Replacement
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV uses disc brakes on all four wheels. Rear pads typically last 60,000–80,000 km
+  depending on driving style. Rear caliper pistons rotate as they compress (unlike front pistons
+  which press straight in), so you need a brake piston wind-back tool — a screwdriver will not work
+  and will damage the caliper. Always replace rear pads as a complete axle set (both sides).
+
+symptoms:
+  - "Squealing or grinding noise from rear brakes"
+  - "Brake pad warning light illuminated (if rear sensors fitted)"
+  - "Rear pad thickness below 3mm when inspected"
+  - "Vehicle pulling to one side under braking"
+  - "Pulsing or vibration through brake pedal"
+
+parts:
+  - name: "Rear brake pads — Mitsubishi OEM (4605A079)"
+    oem: "4605A079"
+    spec: "Axle set (both rear wheels)"
+    notes: "OEM rear pads. Verify with dealer — may vary by year and market. $60–100 per axle set."
+    verify: true
+  - name: "Rear brake pads — EBC Greenstuff (upgrade)"
+    oem: "DP21694"
+    spec: "Low-dust street compound"
+    notes: "EBC upgrade option. Better initial bite and less wheel dust than OEM. $60–90."
+    verify: false
+  - name: "Brake pad lubricant / anti-squeal grease"
+    oem: null
+    spec: "Copper or ceramic brake lubricant"
+    notes: "Apply to pad backing plates and caliper pin slides only — never on friction surface. $5–10."
+    verify: false
+  - name: "Brake fluid top-up (DOT 4)"
+    oem: null
+    spec: "DOT 4"
+    quantity: "Top up reservoir as needed"
+    notes: "Compressing pistons pushes fluid back to reservoir — check level before starting."
+    verify: false
+
+tools:
+  - "17mm socket (wheel bolts)"
+  - "12mm + 14mm socket (caliper bolts)"
+  - "Brake piston wind-back tool (cube/socket type for rotating pistons — essential)"
+  - "Torque wrench"
+  - "Wire brush (caliper slides)"
+
+torque:
+  - component: "Rear caliper guide pin bolts"
+    value_nm: 32
+    note: "28–35 Nm."
+  - component: "Rear caliper mounting bracket bolts"
+    value_nm: 75
+    note: "70–85 Nm."
+  - component: "Wheel nuts"
+    value_nm: 108
+    note: "108–118 Nm. Use a torque wrench — not an impact gun."
+
+tips:
+  - "The rear caliper pistons ROTATE as they compress — you cannot push them straight in with a clamp or screwdriver. A wind-back tool is mandatory."
+  - "Wind-back direction: clockwise when viewed from behind the piston (check your specific caliper — direction markings are usually moulded in)."
+  - "Clean the caliper slide pins with a wire brush and apply fresh brake lubricant. Seized slides are the most common cause of uneven rear pad wear."
+  - "Before compressing pistons, remove about 50ml of fluid from the reservoir — the pistons displacing back will overflow the reservoir if it's full."
+  - "Bed in new pads with 10–15 moderate stops from 60 km/h before any hard braking. This seats the pad compound to the disc surface."
+
+procedure_refs:
+  - label: "Factory procedure — Brakes (Section 35)"
+    section: "35"
+    manual: "M1"
+
+related:
+  - brake-pads-front
+  - brake-fluid-flush
+  - torque-quick-reference

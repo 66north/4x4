@@ -1,0 +1,76 @@
+slug: fuel-filter-diesel
+title: Fuel Filter Element Replacement (Diesel)
+category: maintenance
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The fuel filter on the 4M41 diesel engine protects the injection pump and injectors from
+  contamination. Clogged filters increase fuel pressure, reduce efficiency, and in severe cases
+  can trigger "Check Engine" warnings. Factory service intervals call for replacement every
+  60,000 km or annually. Diesel is hygroscopic — water absorbs into old filters, promoting
+  microbial growth and corrosion in fuel systems.
+
+symptoms:
+  - Scheduled maintenance interval (60,000 km)
+  - Hard starting, especially in cold weather
+  - Loss of power or sluggish acceleration
+  - Check Engine light (P1276 - fuel filter pressure switch code)
+  - Increased fuel consumption or excessive fuel odor
+  - Visible water or discoloration in fuel bowl sight glass
+
+parts:
+  - name: Fuel filter cartridge element — 4M41
+    oem: 1770A023
+    notes: Some vehicles use 1770A021 (early 2008). Verify with dealer before ordering
+    verify: true
+  - name: Fuel filter bowl gasket/O-ring
+    oem: MZ690577
+    notes: Always replace if removing the bowl. Sealing is critical to prevent air leaks
+    verify: true
+  - name: Fuel pressure sensor (if replacing bowl assembly)
+    oem: 1770A053
+    notes: Only if fuel filter pressure switch is damaged or stuck
+    verify: false
+
+tools:
+  - Wrench or socket for fuel filter bowl (usually 75mm hex or 3/8" drive socket)
+  - Pan or drain container for residual fuel
+  - Clean shop towels or compressed air
+  - New fuel line clamps (optional, if original clamps are loose)
+  - Fuel system priming tool or hand pump (for air bleeding on some models)
+
+torque_specs:
+  - component: Fuel filter bowl cap
+    value: 25
+    unit: Nm
+    notes: Do not overtighten — ceramic elements can crack
+  - component: Fuel return line banjo bolt (if present)
+    value: 20
+    unit: Nm
+    notes: Ensure copper washer is present on both sides
+  - component: Fuel supply line union
+    value: 20
+    unit: Nm
+    notes: Use two wrenches to prevent line twisting
+
+tips:
+  - The fuel filter cartridge is located on the driver's side of the engine bay, mounted vertically on the chassis frame.
+  - Before loosening, place a drain pan underneath — fuel will spill when you remove the bowl.
+  - Keep the engine off and key out of the ignition for at least 10 minutes before working on fuel lines. Diesel engines can hold significant pressure even when off.
+  - After replacing the element, the system contains air. Start the engine and let it idle for 30–60 seconds to self-bleed; you may hear a slight knock or rattling as air purges through the injector pump.
+  - If the engine does not start or runs very rough after replacement, perform manual priming via the fuel pump hand primer (small rubber bulb on some models) or use the MUT-III scan tool to command fuel pump prime cycles.
+  - Dispose of old fuel filters as hazardous waste — they contain trapped diesel, which is flammable and toxic.
+  - Some owners extend intervals to 80,000 km in clean environments; reduce to 40,000 km if towing or driving dusty/unpaved roads.
+
+procedure_refs:
+  - label: "Factory procedure — Engine Lubrication & Fuel (Section 13)"
+    section: "13"
+    manual: "M1"
+
+related:
+  - oil-change
+  - coolant-flush
+  - glow-plugs

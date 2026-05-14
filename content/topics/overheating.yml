@@ -1,0 +1,82 @@
+slug: overheating
+title: Engine Overheating — Diagnosis
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Engine overheating is a serious condition that can cause head gasket failure, warped cylinder heads,
+  or catastrophic engine damage if ignored. Most overheating is caused by coolant loss (leak or evaporation),
+  failed thermostat, or weak water pump. Diagnosis requires understanding the cooling system components
+  and ruling out causes methodically. Never ignore an overheating warning light or high temperature gauge.
+
+symptoms:
+  - Temperature gauge reads above the midpoint or near red zone
+  - Steam or smoke from under the hood (coolant boiling in radiator)
+  - Sweet smell from the engine bay (coolant leak or burning)
+  - Coolant leaking from radiator hose, radiator, or engine block
+  - Check Engine light illuminated (P0128 - thermostat fault code)
+  - Loss of heater output (low coolant or airlock in system)
+  - Engine knocking or pinging under load (pre-ignition due to heat)
+
+diagnosis_procedure:
+  step_1: "STOP immediately if temperature is in the red zone. Pull over safely and allow the engine to cool (30 minutes minimum). Do NOT open the radiator cap while hot — steam burns"
+  step_2: "Once cool, check coolant level in the overflow reservoir. If low, inspect for visible leaks under the vehicle (look for drips, wet hoses, or wet block). Green/pink coolant indicates the leak source"
+  step_3: "Inspect the radiator for debris (leaves, dirt, bugs) blocking airflow. Clean the radiator fins with low-pressure compressed air or a soft brush"
+  step_4: "Check the water pump for leaks (shaft seal failure causes a weep at the pump base). Check serpentine belt tension — a loose or slipping belt reduces pump speed"
+  step_5: "Start the engine and observe temperature rise. It should climb gradually to the midpoint and stabilize. If it shoots to red immediately, suspect a stuck thermostat (fully closed, blocking flow)"
+  step_6: "Feel the upper radiator hose while idling — it should be warm. If it's cold and the temperature gauge is high, the thermostat is stuck closed"
+  step_7: "If the hose is hot but the engine is overheating, the cooling capacity is insufficient (radiator blocked internally, weak water pump, or fan not running at full speed)"
+
+common_causes:
+  coolant_leak: "Loss of coolant from radiator, hoses, heater core, or engine block. Most common cause. Repair: identify and seal the leak, refill with fresh coolant"
+  stuck_thermostat: "Thermostat valve stuck in closed position blocks coolant flow. Engine heats rapidly. Repair: replace thermostat (50-200 dollars labor + part)"
+  failed_water_pump: "Pump bearing failure or seal leak reduces flow. Symptoms: whining noise, visible leakage at pump base. Repair: replace pump (300-600 dollars labor + part)"
+  radiator_blockage: "Internal rust/scale or external debris blocks coolant flow. Repair: flush radiator or replace if cracked (200-400 dollars labor + part)"
+  fan_failure: "Electric cooling fan not running. Modern Pajeros use thermostat-controlled fans. Repair: check fan relay, motor, or wiring (100-300 dollars)"
+  low_coolant: "Gradual evaporation or minor seepage. Most common on older vehicles. Repair: top up with correct coolant type (10-20 dollars per liter)"
+  burst_hose: "Hose fails under pressure, spraying coolant. Repair: replace hose (30-100 dollars labor + hose)"
+
+parts:
+  - name: Coolant - Mitsubishi OEM or equivalent (long-life pink or red)
+    oem: MB328635
+    notes: "Capacity: 7.5 liters total. Use OEM specification to avoid mixing incompatible coolants"
+    verify: true
+  - name: Thermostat assembly
+    oem: "4M41: MZ690xxx | 6G75: MZ690xxx"
+    notes: Often includes housing and gasket; always replace when removed
+    verify: false
+  - name: Water pump assembly
+    oem: "4M41: MZ690xxx | 6G75: MD303031"
+    notes: If pump is failing, replace rather than rebuild
+    verify: false
+  - name: Radiator hose assortment (upper, lower, bypass)
+    oem: Various OEM
+    notes: Replacement hoses are cheap insurance against future failures
+    verify: false
+
+tools:
+  - Coolant thermometer (optional, to measure actual temperatures)
+  - Compressed air or soft brush to clean radiator fins
+  - Wrench set for hose clamp removal
+  - Gasket scraper (if replacing thermostat)
+  - Funnel and container for coolant
+
+tips:
+  - Modern Pajeros have a thermostat that is designed to fail closed (safe) rather than open. If stuck open, the engine will run cold, not hot
+  - Check the radiator cap — a bad cap cannot hold pressure, causing coolant to boil at a lower temperature. Caps are inexpensive (5-10 dollars) and often overlooked
+  - If overheating occurs only when towing or in traffic (not on the highway), suspect fan failure or low coolant. Highway driving keeps the engine cooler due to airflow
+  - Mixing old and new coolant can cause precipitation and blockage. Always flush and refill with fresh coolant when doing major repairs
+  - If the engine overheats despite all repairs, suspect internal engine damage (cracked head, blown gasket). Have a professional inspect with a pressure test
+
+procedure_refs:
+  - label: "Factory procedure — Cooling System (Section 13)"
+    section: "13"
+    manual: "M1"
+
+related:
+  - coolant-flush
+  - water-pump-replacement
+  - thermostat-replacement

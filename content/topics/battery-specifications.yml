@@ -1,0 +1,78 @@
+slug: battery-specifications
+title: Battery — Specifications & Capacity
+category: specs
+difficulty: 1
+time_minutes: 10
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  A strong battery is essential for starting your Pajero IV and powering ancillary systems. Battery capacity (Ah) and
+  cold cranking amperage (CCA) must match your engine's demands. Oversized batteries can overload the alternator;
+  undersized batteries cannot start the engine in cold weather. This guide covers battery selection by engine type.
+
+battery_specifications:
+  petrol_6g75:
+    capacity_ah: "95-100 Ah (most common)"
+    cold_cranking_amps: "720-830 CCA"
+    examples:
+      - "Exide Excell EB955: 95 Ah / 720 CCA"
+      - "Lucas Supreme LS250: 100 Ah / 800 CCA"
+    notes: "The 6G75 petrol engine requires a larger battery than the diesel due to higher compression ratio and starting demand."
+
+  diesel_4m41:
+    capacity_ah: "95-100 Ah (most common)"
+    cold_cranking_amps: "720-830 CCA"
+    examples:
+      - "Exide Excell EB955: 95 Ah / 720 CCA"
+      - "Lucas Supreme LS250: 100 Ah / 800 CCA"
+    notes: "Despite higher compression, diesel engines often use similar battery sizes to petrols. Verify with the old battery or dealership before replacing."
+
+  alternator_output:
+    output_amps: "120-150 A (typical for Pajero IV)"
+    note: "The alternator charges the battery while the engine runs. A weak alternator cannot keep up with high electrical demand (winch, lights, accessories)."
+
+battery_terminals:
+  corrosion_removal:
+    - "Disconnect the negative terminal first (prevents short circuit)"
+    - "Remove corrosion with a wire brush or baking soda solution"
+    - "Reconnect negative terminal last (restores power safely)"
+  terminal_torque_nm: 10
+  terminal_bolts: "M8 bolts, snug but not forceful. Over-tightening can crack the battery case."
+
+cold_weather_performance:
+  temperature_effect: "Battery capacity drops 50% at -20°C and 60% at -30°C"
+  cca_rating_importance: "CCA (Cold Cranking Amps) measures how much current the battery can provide at -17°C. Higher CCA helps in extreme cold."
+  winter_recommendation: "If you live in a cold climate (-20°C or below), consider a battery with 800+ CCA."
+
+battery_lifespan:
+  typical_life: "3-5 years in normal conditions"
+  factors_reducing_life:
+    - "Extreme heat (over 35°C ambient temperature reduces life to 2-3 years)"
+    - "Frequent short trips (alternator doesn't fully charge battery)"
+    - "Leaving lights or accessories on while engine is off"
+    - "Old alternator or regulator not charging properly"
+    - "Deep discharge (complete drain) damages the battery permanently"
+  signs_of_battery_failure:
+    - "Engine cranks slowly or won't start"
+    - "Battery warning light on dashboard"
+    - "Clicking sound when turning the key (low power)"
+    - "Dim headlights or interior lights when starting"
+
+tips:
+  - "Always disconnect the negative terminal first before working on electrical systems — this prevents accidental short circuits."
+  - "Invest in a quality battery from a reputable brand (Exide, Lucas, Bosch, Yuasa). Cheap batteries fail prematurely."
+  - "Have your alternator tested if the battery frequently dies or requires charging. A failing alternator cannot keep the battery charged."
+  - "Clean battery terminals every 6 months, especially in humid or coastal climates where corrosion is rapid."
+  - "In very cold climates, use a battery tender (float charger) during winter storage to keep the battery fully charged."
+  - "Never add distilled water to modern sealed batteries — they are maintenance-free."
+  - "If the battery is more than 3 years old and won't hold a charge, replace it rather than trying to revive it."
+
+procedure_refs:
+  - label: "Factory procedure — Battery & Charging (Section 16)"
+    section: "16"
+    manual: "M1"
+
+related:
+  - battery-replacement
+  - starting-charging-problems

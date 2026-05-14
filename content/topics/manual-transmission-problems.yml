@@ -1,0 +1,71 @@
+slug: manual-transmission-problems
+title: "Manual Transmission Problems — Hard Shifting & Noise"
+category: troubleshoot
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV manual transmission is a robust unit but is subject to wear on synchroniser rings,
+  selector forks, and bearings over high mileage. The most common complaints are hard or crunching
+  gear changes (worn synchros), jumping out of gear under load (worn detents or selector forks),
+  and gear noise at speed (bearing wear). Most of these faults develop progressively — early
+  diagnosis and correct fluid maintenance prevents expensive overhaul. The transfer case (separate
+  unit behind the gearbox) can produce similar symptoms but is diagnosed separately.
+
+symptoms:
+  - "Crunching or grinding when selecting a gear (worn synchroniser on that gear)"
+  - "Hard to engage first or reverse gear, especially when stationary (clutch drag or synchro)"
+  - "Gear jumps out of engagement under load or on overrun (worn selector detent or fork)"
+  - "Whining or growling noise in all gears that changes with road speed (input/output bearing)"
+  - "Noise in neutral with engine running that disappears in gear (layshaft/countershaft bearing)"
+  - "Vibration through the gear lever (worn gearbox mounts or shift linkage)"
+  - "Oil leak at gearbox casing seams or output shaft seal"
+
+tips:
+  - "Isolate gearbox from transfer case noise: the gearbox noise changes with road speed in all drive gears. Transfer case noise typically only appears in 4WD modes or changes between 2H and 4H."
+  - "Crunching when changing gear is almost always synchroniser wear. If it only crunches on one specific gear (e.g., always on 3rd), that synchro is worn and the crunching will worsen over time. Changing to fresh GL-4 fluid may temporarily improve the problem but will not fix a worn synchro."
+  - "Hard engagement of first or reverse from rest, with the clutch fully depressed: the most common cause is clutch drag (clutch not fully releasing). Check clutch pedal free play and hydraulic system before suspecting the gearbox."
+  - "Gear jumping out under load: engage that gear, hold the stick in position by hand while driving, and confirm the noise or jump disappears. If it does, the selector detent spring is weak or the fork is worn. This is a workshop job requiring gearbox removal."
+  - "Whine in neutral with engine running, disappearing in gear: this is the input shaft bearing or layshaft running unloaded. It is not urgent initially but indicates bearing wear that will progress. Monitor the oil for metallic contamination."
+  - "Check gearbox mounts: vibration through the gear lever is often worn rubber engine or gearbox mounts transmitting vibration into the driveline, not internal gearbox damage. Inspect mounts for splitting or collapse before investigating internally."
+  - "Output shaft seal leak: identify which seal is leaking by cleaning the area and noting where fresh oil appears. The rear output shaft seal is the most accessible and is replaceable without removing the gearbox."
+
+parts:
+  - name: "Gearbox output shaft seal (rear)"
+    oem: "MD720958"
+    spec: "Lip-type oil seal at gearbox to propshaft flange"
+    notes: "Replace if oil is leaking at the rear of the gearbox. Can be done in-situ with the driveshaft removed. $15–35."
+    verify: true
+  - name: "Gearbox mount (rubber)"
+    oem: "MR272467"
+    spec: "Rubber-bonded transmission mount"
+    notes: "Replace if collapsed or cracked. $40–80. Simple bolt-on replacement."
+    verify: true
+  - name: "Manual transmission fluid (GL-4 75W-85)"
+    oem: null
+    spec: "API GL-4 75W-85 or 75W-90"
+    quantity: "2.3 L approximately"
+    notes: "First step for any shifting complaint — check and replace fluid before internal diagnosis."
+    verify: false
+
+tools:
+  - "Multimeter or scan tool (to check clutch switch signal if engagement is difficult)"
+  - "Torque wrench"
+  - "17mm Allen socket (drain and fill plugs)"
+
+tips_advanced:
+  - "Synchroniser diagnosis by gear: if crunching only occurs when cold and disappears when warm, the fluid viscosity may be too high for the operating temperature — try a 75W-85 instead of a thicker 80W-90."
+  - "Gearbox overhaul requires complete removal from the vehicle, which is a major job on the Pajero IV due to the integrated transfer case and 4WD system. Expect $1,200–2,500+ at a specialist."
+  - "Factory diagnostic codes for the transfer case (Section 22 of the manual) are read via the Super Select 4WD transfer ECU. Some of these can appear as 'gearbox fault' symptoms but are electrical — always read transfer case codes before condemning the mechanical gearbox."
+
+procedure_refs:
+  - label: "Factory procedure — Manual Transmission (Section 22)"
+    section: "22"
+    manual: "M1"
+
+related:
+  - manual-transmission-fluid
+  - transfer-case-oil-change
+  - 4wd-not-engaging

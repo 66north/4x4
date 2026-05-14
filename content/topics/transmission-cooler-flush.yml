@@ -1,0 +1,61 @@
+slug: transmission-cooler-flush
+title: "Transmission Cooler Flush"
+category: maintenance
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV automatic transmission has an oil cooler integrated into the radiator (a heat
+  exchanger in the lower tank) plus an external cooler on some models. The cooler passages become
+  contaminated with burnt fluid and debris over time. A cooler flush is recommended when replacing
+  the transmission fluid after the transmission has overheated, or when fluid is very dark and
+  smells burnt. It is done in addition to the transmission fluid change, not instead of it.
+
+symptoms:
+  - "Transmission fluid very dark or smells burnt (overheating history)"
+  - "Transmission fluid changed but shifting quality did not improve"
+  - "Transmission overheating warning or harsh shifting in hot weather"
+  - "Dark sludge visible when draining the transmission pan"
+
+parts:
+  - name: "ATF SP-III automatic transmission fluid"
+    oem: null
+    spec: "ATF SP-III (Mitsubishi Genuine or Diamond SP-III equivalent)"
+    quantity: "8–10 L (flush uses more than a standard change)"
+    notes: "Budget for extra fluid — a full flush uses 2–3 times the pan capacity. $15–25 per litre."
+    verify: false
+  - name: "Transmission pan gasket"
+    oem: "MN168276"
+    spec: "Reusable rubber-edge gasket (check condition)"
+    notes: "Replace if hardened or compressed. $15–30."
+    verify: true
+
+tools:
+  - "Drain pan (minimum 10L capacity)"
+  - "10mm socket (transmission pan bolts)"
+  - "Transmission cooler line disconnect tool or flat blade"
+  - "Hand fluid pump"
+  - "Torque wrench"
+
+torque:
+  - component: "Transmission pan bolts"
+    value_nm: 9
+    note: "8–11 Nm. Tighten in crossing pattern."
+
+tips:
+  - "The most practical flush method on a home driveway: disconnect the cooler return line (the line from the cooler back to the transmission), place it in a container, and run the engine for 5–10 seconds at a time, topping up the transmission fluid between short runs. Repeat until clean fluid exits."
+  - "Do not run the engine for more than 10–15 seconds without adding fluid — running the transmission dry damages the pump."
+  - "Identify the cooler return line: it is the lower of the two lines connecting the transmission to the radiator cooler. On the Pajero IV it connects at the transmission side with a push-fit or banjo fitting."
+  - "If the existing fluid is black with a burnt smell, consider dropping the transmission pan first to clean the magnet and inspect for debris before flushing the cooler."
+  - "Cheap ATF degrades faster in a cooler — always use SP-III. If using an aftermarket fluid, confirm it meets Mitsubishi SP-III specification."
+
+procedure_refs:
+  - label: "Factory procedure — Automatic Transmission (Section 23)"
+    section: "23"
+    manual: "M1"
+
+related:
+  - transmission-fluid
+  - transmission-filter-replacement

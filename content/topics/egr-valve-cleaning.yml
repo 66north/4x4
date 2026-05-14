@@ -1,0 +1,83 @@
+slug: egr-valve-cleaning
+title: "EGR Valve & Intake Cleaning — 4M41 Diesel"
+category: maintenance
+difficulty: 3
+time_minutes: 180
+applies_to:
+  engines: [4M41]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The 4M41 3.2 DI-D diesel recirculates exhaust gas through the intake manifold to reduce NOx
+  emissions. Over time — typically 80,000–120,000 km — soot and carbon deposits coat the EGR
+  valve, EGR cooler, and intake manifold, restricting airflow. Symptoms are gradual power loss,
+  black smoke, and rough idle. Unlike a failed EGR valve (which triggers a fault code), a dirty
+  EGR is a maintenance issue with no warning light. Cleaning restores fuel economy and power
+  without replacing parts. The EGR sits at the rear-right of the engine under the plastic cover,
+  secured to the intake manifold with four bolts.
+
+symptoms:
+  - "Gradual power loss over months with no fault code"
+  - "Black smoke from exhaust, especially under hard acceleration"
+  - "Rough or lumpy idle that has worsened over time"
+  - "Increased fuel consumption with no obvious cause"
+  - "Check Engine light with EGR-related codes (P0400 series)"
+  - "Sticky or non-responsive EGR valve on actuation test with scan tool"
+
+parts:
+  - name: "EGR valve — 4M41"
+    oem: "1582A011"
+    spec: "Solenoid-operated EGR valve, intake manifold mounted"
+    notes: "Only replace if valve is seized or fails actuation test after cleaning. $150–350. GenOEM EV113GEN is a compatible aftermarket equivalent."
+    verify: true
+  - name: "EGR valve gasket"
+    oem: "1575A056"
+    spec: "Flat metal gasket, valve-to-manifold"
+    notes: "Replace every time the valve is removed. $5–15."
+    verify: true
+  - name: "EGR pipe gaskets (upper and lower)"
+    oem: "1575A057"
+    spec: "Metal gaskets, EGR cooler pipe connections"
+    notes: "Replace if disturbing the cooler pipes. $5–15 each."
+    verify: true
+  - name: "EGR/intake carbon cleaning solvent"
+    oem: null
+    spec: "Diesel intake cleaner spray (e.g., Liqui-Moly Diesel Intake Cleaner)"
+    notes: "Do not use water or compressed air directly on hot components. $15–25."
+    verify: false
+
+tools:
+  - "Phillips screwdriver (engine cover removal)"
+  - "10mm socket (EGR valve bolts, engine cover)"
+  - "12mm socket and ring spanner (EGR pipe bolts)"
+  - "2\" extension bar"
+  - "Wire brush and plastic scraper (carbon removal)"
+  - "Rags and nitrile gloves (carbon is carcinogenic — wear gloves)"
+
+torque:
+  - component: "EGR valve bolts (to intake manifold)"
+    value_nm: 22
+    note: "20–25 Nm. Use new gasket."
+  - component: "EGR pipe bolts"
+    value_nm: 22
+    note: "20–25 Nm. Use new gaskets if disturbed."
+
+tips:
+  - "The EGR valve is at the rear-right of the 4M41 engine when viewed from the front, mounted on top of the intake manifold. Remove the plastic engine cover (2–3 bolts) to access it."
+  - "Before removing the valve, disconnect the electrical connector and any coolant hoses to the EGR cooler. Have rags ready — residual coolant will drip from the cooler hoses."
+  - "Carbon removal: use a wire brush and plastic scraper to remove deposits from the EGR valve seat, the valve port in the manifold, and the intake manifold runners. An old toothbrush works well in tight areas. Spray intake cleaner solvent to soften heavy deposits."
+  - "Do not use compressed air to blow carbon into the manifold — dislodged carbon particles can enter cylinders and score bores. Wipe out all loose carbon before reinstalling."
+  - "Test the cleaned EGR valve before reinstalling: connect 12V to the solenoid terminals — the valve should open and close cleanly. If it sticks or does not fully open, it needs replacement."
+  - "The intake manifold itself accumulates carbon on the swirl flap ports and manifold walls. If accessible without full manifold removal, clean these areas at the same time. Significant carbon buildup in the manifold usually requires manifold removal for proper cleaning."
+  - "After reassembly, clear any stored EGR fault codes with an OBD-II scanner and perform a test drive including full-throttle acceleration to verify the cleaning has restored performance."
+  - "Service interval: Mitsubishi does not publish a cleaning interval, but 80,000–100,000 km is the community-standard first clean on vehicles used mainly in stop-start city driving. Highway-driven vehicles accumulate deposits more slowly."
+
+procedure_refs:
+  - label: "Factory procedure — Intake & Exhaust (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - air-filter
+  - fault-code-p0400
+  - dpf-warning-light
+  - power-loss

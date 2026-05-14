@@ -1,0 +1,55 @@
+slug: windows-not-working
+title: "Power Windows Not Working — Diagnosis"
+category: troubleshoot
+difficulty: 2
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Power window faults on the Pajero IV are usually a blown fuse, a failed window switch, a worn
+  motor, or a broken regulator cable. The driver's door master switch controls all windows and has
+  a window lock button that disables the passenger switches — check this first. Individual window
+  failures point to the motor or switch for that door; all-window failures point to the main fuse.
+
+symptoms:
+  - "One window not responding to switch (motor or switch fault)"
+  - "All windows stopped working (fuse or master switch fault)"
+  - "Window moves slowly or stops midway (worn motor or jammed regulator)"
+  - "Window works from master switch but not from door switch (door switch fault)"
+  - "Grinding or clicking noise when operating window"
+  - "Window drops into door and won't rise (regulator cable snapped)"
+
+tips:
+  - "Check the window lock button on the driver's master switch — pressing it disables all passenger window switches. This is mistaken for a fault regularly."
+  - "Check fuse 19 (15A) in the interior fuse box for the power window circuit. A blown fuse stops all windows."
+  - "To test if the motor is the fault: apply 12V directly to the motor connector. If it runs, the switch or wiring is at fault. If it does not run, the motor is dead."
+  - "Window regulator cables fray and snap on older vehicles, particularly in humid climates. The window will drop freely into the door when the cable breaks."
+  - "Window switch contacts corrode on doors that are frequently exposed to water ingress. Cleaning the switch contacts with contact cleaner often restores function."
+  - "If a window works only intermittently and gets stuck when hot, the motor brushes are worn — it works when cold but fails when the motor heats up."
+
+parts:
+  - name: "Window switch — driver's master (MR587852)"
+    oem: "MR587852"
+    spec: "4-window master switch with lock button"
+    notes: "Most common switch failure. $60–150. Test all individual switches first before replacing master."
+    verify: true
+  - name: "Window motor — front door (MR130957)"
+    oem: "MR130957"
+    spec: "12V window regulator motor"
+    notes: "Front door motor. Rear door motor may differ. $50–120 remanufactured."
+    verify: true
+  - name: "Window regulator — front door"
+    oem: "MR617063"
+    spec: "Cable-type window regulator assembly"
+    notes: "Replace when cable snaps or regulator jams. Often sold as motor+regulator assembly. $60–150."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Body Electrical (Section 51)"
+    section: "51"
+    manual: "M1"
+
+related:
+  - central-locking-problems
+  - fuse-box-reference

@@ -1,0 +1,72 @@
+slug: fault-code-p0340
+title: "P0340 — Camshaft Position Sensor Circuit Malfunction"
+category: codes
+difficulty: 3
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0340 indicates the ECU is not receiving a valid signal from the camshaft position sensor (CMP).
+  The CMP tells the ECU the position of the camshaft relative to the crankshaft, enabling correct
+  injection timing and variable valve timing (MIVEC on 6G75). A failed CMP sensor can cause hard
+  starting, rough running, or a no-start condition. Unlike P0335 (crankshaft), the engine can sometimes
+  run poorly with a failed camshaft sensor.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Hard starting or extended cranking before start"
+  - "Rough idle or fluctuating RPM"
+  - "Reduced power and hesitation"
+  - "Engine may start but run poorly"
+  - "Fault codes for MIVEC/VVT system appearing alongside"
+
+likely_causes:
+  - "Failed camshaft position sensor"
+  - "Damaged sensor wiring harness or corroded connector"
+  - "Timing belt jumped a tooth (CAM and CRK signals out of sync)"
+  - "MIVEC oil control valve malfunction (6G75 only)"
+  - "Low engine oil pressure affecting MIVEC system operation"
+
+diagnosis:
+  step_1: "Check for companion codes — P0335 (crankshaft) alongside P0340 (camshaft) is very significant and may indicate a jumped timing belt."
+  step_2: "If timing belt codes appear together, do NOT continue running the engine. Have timing checked immediately."
+  step_3: "Locate CMP sensor — mounted on the cylinder head, near the camshaft sprocket."
+  step_4: "Inspect sensor wiring for damage. Check connector for corrosion or oil contamination (oil leaks near the head soak connectors)."
+  step_5: "Test sensor output voltage cycling (0V to 5V) while slowly rotating engine. No output = failed sensor."
+  step_6: "If wiring is intact and sensor is outputting signal, check for MIVEC-related codes on 6G75 engines."
+
+common_fixes:
+  sensor_replacement: "Replace CMP sensor — $50–150 part, $80–200 labor"
+  wiring_repair: "Repair harness — $50–200"
+  timing_belt: "Timing belt inspection/replacement if belt jumped — $450–820"
+
+estimated_repair_cost: "$130–350 (sensor most common); $450–820 if timing belt has jumped"
+
+tips:
+  - "P0340 + P0335 together is a red flag — suspect a jumped timing belt before replacing sensors."
+  - "The CMP sensor is often located near oil contamination zones on the cylinder head. Always inspect the connector for oil intrusion."
+  - "On the 6G75 with MIVEC, low oil level or old, degraded oil can trigger camshaft-related codes without the sensor itself being faulty. Check oil first."
+  - "After replacement, test-drive and monitor with scanner to confirm CAM signal is tracking correctly with CRK signal."
+
+parts:
+  - name: "Camshaft position sensor — 6G75 petrol"
+    oem: "J5T23291"
+    spec: "Hall-effect sensor, intake camshaft"
+    notes: "6G75 has MIVEC on intake cam. Exhaust cam sensor part may differ. $60–150."
+    verify: true
+  - name: "Camshaft position sensor — 4M41 diesel"
+    oem: "MD327107"
+    spec: "Hall-effect sensor"
+    notes: "4M41 diesel CMP sensor. $50–120."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Engine Control (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - fault-code-p0335
+  - timing-belt
+  - check-engine-light

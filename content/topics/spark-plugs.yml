@@ -1,0 +1,82 @@
+slug: spark-plugs
+title: Spark Plug Replacement
+category: maintenance
+difficulty: 1
+time_minutes: 30
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The 6G75 petrol engine has six spark plugs, one per cylinder. Factory service intervals recommend
+  replacement every 40,000 km for standard copper plugs, or every 100,000 km for premium platinum/iridium
+  plugs (which cost more upfront but last longer). Worn plugs increase fuel consumption, reduce starting
+  reliability, and cause hesitation under acceleration. The job is straightforward — no special tools required
+  beyond a spark plug socket.
+
+symptoms:
+  - Scheduled maintenance interval (40,000 km for copper, 100,000 km for premium)
+  - Difficulty starting, especially in cold weather
+  - Rough idle or stumbling during acceleration
+  - Visible spark plug fouling (black soot, oil residue, or gap erosion when inspected)
+  - Reduced fuel economy or loss of performance
+  - Slight hesitation when upshifting under light load
+
+parts:
+  - name: "Spark plug — NGK 4867 (recommended)"
+    oem: "NGK4867"
+    spec: "14mm / 1.0mm gap / medium heat"
+    quantity: "6 required (V6 engine)"
+    notes: "Most popular replacement, direct OEM equivalent. $8–12 each ($48–72 for set of 6)."
+    verify: false
+  - name: "Spark plug — DENSO SK20PR-A8"
+    oem: "SK20PR-A8"
+    spec: "14mm / 1.0mm gap"
+    quantity: "6 required"
+    notes: "DENSO supplies Mitsubishi OEM. $10–14 each ($60–84 for set of 6)."
+    verify: false
+  - name: "Spark plug — Mitsubishi OEM MD340648"
+    oem: "MD340648"
+    spec: "14mm / 1.0mm gap"
+    quantity: "6 required"
+    notes: "Genuine OEM. From Mitsubishi dealer. $25–35 each ($150–210 for set of 6)."
+    verify: false
+  - name: "Spark plug — NGK Iridium LMAR8AI-10 (extended life)"
+    oem: "LMAR8AI-10"
+    spec: "14mm / 1.0mm gap / iridium tip"
+    quantity: "6 required"
+    notes: "Lasts 80,000–100,000 km — reduces service frequency. $20–28 each ($120–168 for set of 6)."
+    verify: false
+
+tools:
+  - Spark plug socket (usually 16mm, with rubber insert to protect the ceramic insulator)
+  - Socket wrench and ratchet
+  - Spark plug gap tool or feeler gauge (to check gap before installation)
+  - Wire stripper or coil pack removal tool (if needed to access plugs under coils)
+  - Clean soft-bristle brush (to clean around spark plug holes)
+  - Engine cover removal tools (plastic clips, if present)
+
+torque_specs:
+  - component: Spark plug into cylinder head
+    value: 18
+    unit: Nm
+    notes: Do not overtighten — ceramic insulators crack easily. Hand-tighten first, then snug with a wrench
+
+tips:
+  - The spark plugs are located under six individual coil packs on top of the engine (one coil per cylinder). Each coil sits directly on a spark plug.
+  - Remove one coil at a time by unclipping the connector and twisting the coil counterclockwise. The spark plug sits directly underneath.
+  - Inspect the spark plug wire or coil boot for cracks, corrosion, or oil residue. Clean if dirty; replace if damaged.
+  - If a spark plug breaks inside the hole during installation, do not force it. Back out carefully with pliers or a screw extractor.
+  - Check the gap on new plugs before installation. Most come pre-gapped to 1.0mm, but factory settings can vary.
+  - Install plugs in a diagonal pattern to avoid cross-threading: 1-4-2-5-3-6 or similar, so you're not tightening adjacent cylinders in sequence.
+  - After replacing all six, start the engine and listen for any unusual knocking. The engine may run slightly rough for 1–2 minutes as the ECU adapts to the new plugs.
+  - If the Check Engine light appears after replacement, scan for misfires (P0300–P0306) and verify coil-to-plug connections are seated firmly.
+
+procedure_refs:
+  - label: "Factory procedure — Ignition System (Section 15)"
+    section: "15"
+    manual: "M1"
+
+related:
+  - oil-change
+  - air-filter
+  - coil-pack-replacement

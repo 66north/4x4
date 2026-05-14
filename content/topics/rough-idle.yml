@@ -1,0 +1,71 @@
+slug: rough-idle
+title: Rough Idle — Causes & Fixes
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  A rough or shaky idle at a stoplight or in neutral indicates an imbalance in combustion. The 4M41
+  diesel should idle smoothly at 650-750 RPM; the 6G75 petrol at 600-800 RPM. If the engine vibrates,
+  stutters, or threatens to stall, a systematic diagnosis can pinpoint whether the issue is ignition,
+  fuel delivery, air intake, or mechanical wear. Most rough idle fixes are inexpensive (spark plugs,
+  fuel injector cleaning) and can prevent more serious damage.
+
+symptoms:
+  - Engine shakes or vibrates noticeably at idle (felt through steering wheel or seat)
+  - RPM fluctuates (bounces between 500-900 RPM instead of steady)
+  - Engine sounds like it might stall but catches itself
+  - Rough idle disappears when accelerating (suggests fuel trim or cylinder imbalance)
+  - Check Engine light illuminated (P0300 or P0301-P0306 misfire codes)
+  - White or black smoke from exhaust when idling (bad combustion)
+  - Hesitation when shifting into Drive (load aggravates the condition)
+
+common_causes_diesel_4m41:
+  glow_plugs: "Failed glow plugs prevent cold starts and rough cold idle. Symptoms: worse in cold, improves as engine warms. Fix: replace glow plugs (see glow-plugs.yml)"
+  fuel_injectors: "Clogged injector produces uneven fuel spray. One cylinder runs lean, causing misfire. Fix: fuel system cleaning or injector replacement (100-300 dollars)"
+  low_compression: "Worn rings or valve leakage cause weak cylinder. Harder to diagnose; requires compression test. Fix: engine rebuild (very expensive)"
+  fuel_filter_clogged: "Restricted fuel flow starves engine during idle. Fix: replace fuel filter (see fuel-filter-diesel.yml)"
+  air_leak: "Vacuum leak in intake manifold allows unmetered air. Fix: inspect hoses, tighten fittings (10-50 dollars)"
+
+common_causes_petrol_6g75:
+  spark_plugs: "Worn or fouled plugs misfire, especially at low RPM. Diesel engines don't use plugs. Fix: replace spark plugs (see spark-plugs.yml)"
+  coil_pack: "Bad coil pack prevents spark on one or more cylinders. Symptoms: misfire codes for specific cylinders. Fix: replace coil pack (50-150 dollars)"
+  fuel_injector: "Clogged injector delivers poor fuel spray. Fix: cleaning (50-150 dollars) or replacement (100-250 dollars)"
+  mass_air_flow_sensor: "MAF sensor reads airflow; if dirty, ECU gets wrong fuel trim. Fix: MAF sensor cleaning or replacement (50-200 dollars)"
+  ignition_timing: "Timing retarded by ECU due to fault code (knock sensor issue). Fix: diagnose code and repair underlying cause"
+
+diagnosis_procedure:
+  step_1: "Scan for codes with OBD2 reader. P0300 (random misfire) suggests fuel/spark/compression. P0301-P0306 (specific cylinder) suggests that cylinder is weak"
+  step_2: "If a specific cylinder code appears, focus on that cylinder. Check spark plug condition (6G75), coil pack (6G75), or fuel injector (both)"
+  step_3: "Check fuel pressure at idle (4M41 diesel should be 270-310 kPa; 6G75 petrol should be 280-320 kPa). Low pressure indicates fuel pump weakness or filter blockage"
+  step_4: "Inspect for vacuum leaks: spray soapy water around intake manifold hoses while idling. If bubbles appear, you've found the leak"
+  step_5: "Check air filter condition. A very dirty filter restricts airflow and leans the mixture. Replace if clogged"
+  step_6: "Measure idle RPM with scan tool. Should be stable within +/- 50 RPM. If bouncing wildly, suspect fuel trim issue or mechanical problem"
+
+tools:
+  - OBD2 scan tool to read fault codes
+  - Fuel pressure gauge (optional, for fuel system checks)
+  - Spark plug gap tool (6G75 petrol)
+  - Soapy water spray (to find vacuum leaks)
+  - Compression gauge (optional, to diagnose mechanical wear)
+
+tips:
+  - Rough idle is rarely dangerous, but ignoring it can lead to worse misfires and poor fuel economy
+  - If rough idle is intermittent (comes and goes), suspect a failing sensor (MAF, O2) rather than worn plugs
+  - Fuel quality matters: poor fuel or water in the tank can cause injector fouling. Use premium fuel from major brands
+  - If rough idle persists after spark plug replacement (6G75), suspect coil pack or fuel injector, not the plugs
+  - Some rough idle can be caused by a failing transmission torque converter (6G75 auto). The converter allows the engine to load differently at idle
+  - Diesel engines (4M41) often have slight vibration at idle due to the combustion process. Some roughness is normal; compare to a known-good vehicle
+
+procedure_refs:
+  - label: "Factory procedure — Engine Control (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - spark-plugs
+  - glow-plugs
+  - fuel-filter-diesel
+  - check-engine-light

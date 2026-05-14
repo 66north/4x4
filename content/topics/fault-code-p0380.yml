@@ -1,0 +1,77 @@
+slug: fault-code-p0380
+title: "P0380 — Glow Plug / Heater Circuit A Malfunction"
+category: codes
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0380 indicates a fault in the glow plug pre-heat circuit on the 4M41 diesel engine. Glow plugs
+  heat the combustion chamber to aid cold starting — without them, a diesel engine is very difficult
+  to start below 5°C. The fault may be in the glow plug relay, the glow plug controller module,
+  the wiring to the plugs, or one or more failed glow plugs. This is a diesel-only code.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Difficult cold starting (especially below 5°C)"
+  - "White smoke on startup (unburned diesel due to cold combustion)"
+  - "Rough idle until engine warms up"
+  - "Glow plug light on dashboard stays on longer than normal or does not illuminate"
+
+likely_causes:
+  - "One or more failed glow plugs (most common)"
+  - "Faulty glow plug relay (relay fails to energise the glow plug circuit)"
+  - "Glow plug control module fault"
+  - "Open circuit wiring to one or more glow plugs"
+  - "Corroded glow plug terminal connection"
+
+diagnosis:
+  step_1: "With engine cold, connect a scanner and check if the glow plug circuit duty cycle activates correctly (should heat for 4–8 seconds below 10°C)."
+  step_2: "Test individual glow plug resistance with multimeter. Remove the common bus bar and test each plug terminal to ground. Good plug: 0.5–2 Ω. Open circuit or very high resistance = failed plug."
+  step_3: "If all plugs test fine, test the relay — apply 12V directly to glow plug bus bar from battery with a fused cable. If plugs heat, relay is faulty."
+  step_4: "Inspect wiring from relay to bus bar for corrosion or open circuit."
+  step_5: "Replace failed plugs, relay, or module as identified."
+
+common_fixes:
+  glow_plugs: "Replace all 4 glow plugs — $60–120 parts, $100–250 labor"
+  relay: "Replace glow plug relay — $30–80 part, $50–100 labor"
+  wiring: "Repair wiring — $50–150"
+
+estimated_repair_cost: "$160–370 (glow plugs most common)"
+
+tips:
+  - "Replace all 4 glow plugs as a set even if only one has failed. The others are the same age and will follow shortly."
+  - "Glow plugs are prone to seizing in the cylinder head after years of heat cycling. Apply penetrating oil (WD-40 or Plus Gas) and let it soak for 30 minutes before removal."
+  - "If a glow plug snaps during removal, the remaining stub must be drilled and extracted — a workshop job."
+  - "The glow plug relay is often mounted in the engine bay fuse/relay box. It is cheap and worth replacing if you cannot identify which plug is failing."
+  - "Glow plugs do not affect warm starting — if the car starts fine when warm but struggles in cold mornings, P0380 is the likely culprit."
+
+parts:
+  - name: "Glow plug — 4M41 diesel (MD319950)"
+    oem: "MD319950"
+    spec: "12V glow plug, M10×1.0 thread"
+    quantity: "4 required"
+    notes: "OEM part. Buy a set of 4. $15–30 each. NGK Y-508J and DENSO DG-114 are equivalent."
+    verify: false
+  - name: "Glow plug — NGK Y-508J (equivalent)"
+    oem: "Y-508J"
+    spec: "12V, M10×1.0 thread"
+    quantity: "4 required"
+    notes: "NGK equivalent to MD319950. $12–25 each."
+    verify: false
+  - name: "Glow plug relay"
+    oem: "MR263239"
+    spec: "12V relay, engine bay fuse box"
+    notes: "Check this if all glow plugs test good. $30–80."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Glow Plug System (Section 16)"
+    section: "16"
+    manual: "M1"
+
+related:
+  - glow-plugs
+  - engine-wont-start
+  - check-engine-light

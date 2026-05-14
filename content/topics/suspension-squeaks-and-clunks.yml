@@ -1,0 +1,67 @@
+slug: suspension-squeaks-and-clunks
+title: Suspension Squeaks & Clunks — Diagnosis
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Suspension noises — squeaks, creaks, or clunks — typically indicate worn bushings, loose bolts,
+  or failed dampers (shocks). Unlike engine knocks, suspension noises are often intermittent and depend
+  on driving conditions (rough road, turning, braking). Most suspension noises are not safety-critical
+  but warrant investigation to prevent secondary damage (e.g., a loose sway bar link can wear a hole in
+  the steering knuckle if left unaddressed). This guide walks you through identifying the source and
+  determining repair urgency.
+
+noise_types_and_causes:
+  squeaking_from_front: "Likely: dry stabilizer bar bushings, worn sway bar links, or worn ball joints. Age alone causes rubber bushings to crack and squeak. Grease can help temporarily; replacement is the long-term fix"
+  creaking_from_rear: "Likely: worn leaf spring bushings (if equipped), worn shock bushings, or a loose body mount. Tow vehicles with worn leaf spring bushings create a rocking motion and loud creaks during turns"
+  clunking_from_front: "Likely: worn ball joints, loose control arm bolts, or a worn shock mount. Clunking is more serious than squeaking — it indicates play in a joint, not just friction"
+  clunking_from_rear: "Likely: worn axle bushings, loose brake caliper bolts, or worn shock mounts. Rear clunks during acceleration or braking indicate differential bushing wear"
+  rattling_metal_noise: "Likely: loose heat shield on shock absorber, loose suspension bracket bolts, or a detached sway bar. Metal-on-metal rattles are usually caused by fastener looseness, not wear"
+
+diagnosis_procedure:
+  step_1: "Identify when the noise occurs: Over bumps only? During turns? During braking? While accelerating? When cold (first morning)?"
+  step_2: "Determine the location: Front left, front right, rear left, rear right. Have a friend listen while you drive, or use a mirror on a stick to look under the vehicle for loose parts"
+  step_3: "Park the vehicle on a flat surface and inspect the suspension visually for obvious damage: cracks in bushings (black rubber parts), leaks from shocks, or loose bolts (use a wrench to test)"
+  step_4: "Bounce the front corner of the vehicle by pressing down on the bumper 3–4 times. It should settle in 1–2 bounces. If it oscillates excessively, the shock may be worn (see shock-absorber-replacement.yml)"
+  step_5: "Check for play in the ball joints: Grab the top and bottom of the tire and twist (while off the ground on a jack). Play indicates a worn ball joint. Also try pulling the wheel straight out — slight play is normal, but excessive play is a failure"
+  step_6: "Inspect all visible bushings for cracks or deterioration. Rubber bushings are the most common wear items"
+  step_7: "Look for loose bolts on the sway bar, control arms, and shock mounts. Tighten any loose bolts using the correct socket size"
+
+common_fixes_and_parts:
+  sway_bar_bushings: "Worn rubber separating the sway bar from its mounts. Cost: $50–$150 parts + labor. DIY difficulty: Moderate (2–3 bolts per bushing, but they may be corroded)"
+  sway_bar_links: "Metal rods connecting the sway bar to the steering knuckle. Wear causes a distinct clinking during turns. Cost: $100–$250 parts + labor. DIY difficulty: Easy (2 bolts per link)"
+  ball_joints: "Allow steering knuckle to move while maintaining alignment. Worn joints create play and a clunking sound when turning. Cost: $300–$600 parts + labor. DIY difficulty: Hard (requires special tools to remove and install). Professional service recommended"
+  shock_bushings: "Rubber isolators at the shock mounting points. Worn bushings create a knocking sound over bumps. Cost: $50–$150 parts + labor. DIY difficulty: Moderate (can be replaced separately from the shock)"
+  control_arm_bushings: "Rubber parts connecting the control arm to the frame. Wear allows excessive movement. Cost: $200–$400 parts + labor. DIY difficulty: Hard (requires control arm removal and pressing tools)"
+
+quick_fixes:
+  tightening_bolts: "Many suspension noises stop after tightening loose bolts. Go around the suspension and test-tighten every bolt with a wrench. Cost: Free"
+  silicone_spray: "Dry bushings sometimes squeak. A shot of silicone spray (WD-40, etc.) can quiet squeaks temporarily. Not a permanent fix. Cost: $5"
+  grease: "Sway bar bushings can be greased from underneath if the bushing is accessible. Use a lithium or white grease (do NOT use oil). Temporary fix. Cost: $5"
+  shock_replacement: "If bouncing excessively over bumps, replace shocks (see shock-absorber-replacement.yml). Cost: $400–$800 parts + labor"
+
+safety_concerns:
+  ball_joint_failure: "Failed ball joints can cause loss of steering control or wheel collapse at highway speed. If play is detected during testing, stop driving immediately and have the vehicle towed"
+  sway_bar_failure: "A detached sway bar causes extreme body roll and loss of control during turns. If you hear a loud clunk and the vehicle suddenly feels unsafe to turn, stop driving"
+  shock_failure: "Worn shocks increase stopping distance and reduce cornering grip. Not immediately dangerous, but handling suffers"
+
+tips:
+  - Many DIY mechanics mistake suspension noises for engine knocks. If the noise is clearly from the wheel wells and not under the hood, it is suspension
+  - Suspension squeaks and creaks are worst in cold weather (morning starts) when rubber is stiff and brittle. Noise often improves as the vehicle warms up
+  - Age and climate have a big impact: Vehicles in salt-belt regions (Canada, northern US) experience more corrosion and bushing deterioration due to salt and moisture
+  - If you are handy, sway bar bushing and link replacement are good DIY projects. Ball joints and control arm bushing removal usually require a press or special tools, warranting professional service
+  - Have a friend listen while driving to localize the noise. Front-end suspension changes affect the entire vehicle handling, so the noise location is critical
+  - Vibration and noise can also come from the exhaust, engine mounts, or body rattles. Isolate the noise by turning off the radio, closing windows, and listening carefully
+
+procedure_refs:
+  - label: "Factory procedure — Suspension & Steering (Section 36)"
+    section: "36"
+    manual: "M1"
+
+related:
+  - shock-absorber-replacement
+  - wheel-alignment
+  - steering-system-maintenance

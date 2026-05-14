@@ -1,0 +1,72 @@
+slug: oxygen-sensor-replacement
+title: "Oxygen Sensor Replacement (6G75 Petrol)"
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The 6G75 V6 petrol engine uses four oxygen sensors (two upstream, two downstream — one per bank)
+  to manage fuel trim and monitor catalytic converter efficiency. A faulty O2 sensor causes rich or
+  lean running, increased fuel consumption, and catalyst damage if left unchecked. Fault codes
+  P0130–P0167 (sensor circuit) and P0420/P0430 (catalyst efficiency) are the most common triggers.
+  Sensors typically last 100,000–150,000 km.
+
+symptoms:
+  - "Check Engine light with P0130–P0167 (O2 sensor circuit fault)"
+  - "P0420 or P0430 — catalyst efficiency below threshold (downstream sensor)"
+  - "Increased fuel consumption with no other obvious cause"
+  - "Rough idle or hunting idle (rich/lean signal causing fuel trim correction)"
+  - "Fuel smell from exhaust (overly rich mixture from failed upstream sensor)"
+
+parts:
+  - name: "Upstream O2 sensor — Bank 1 (front right, firewall side)"
+    oem: "MR507828"
+    spec: "4-wire wideband sensor, M18×1.5 thread"
+    notes: "Bank 1 is the firewall-side bank on the 6G75. $60–140. NGK 92067 is a common aftermarket equivalent."
+    verify: true
+  - name: "Upstream O2 sensor — Bank 2 (front left, radiator side)"
+    oem: "MR507829"
+    spec: "4-wire wideband sensor, M18×1.5 thread"
+    notes: "$60–140. Replace both upstream sensors together if one fails at high mileage."
+    verify: true
+  - name: "Downstream O2 sensor — Bank 1 (post-catalyst)"
+    oem: "MR507830"
+    spec: "4-wire narrowband sensor, M18×1.5 thread"
+    notes: "Monitors catalytic converter output. $50–120."
+    verify: true
+  - name: "Downstream O2 sensor — Bank 2 (post-catalyst)"
+    oem: "MR507831"
+    spec: "4-wire narrowband sensor"
+    notes: "$50–120."
+    verify: true
+
+tools:
+  - "O2 sensor socket (22mm with wire slot)"
+  - "Breaker bar (sensors often seized)"
+  - "Anti-seize compound (for installation)"
+  - "OBD-II scanner (to clear codes)"
+
+torque:
+  - component: "Oxygen sensor"
+    value_nm: 44
+    note: "40–50 Nm. Apply anti-seize to threads — do not get it on the sensing element."
+
+tips:
+  - "Soak sensor threads with penetrating oil (WD-40 or similar) and let it dwell for 30 minutes before removal — sensors seize in the bung after years of heat cycling."
+  - "Replace sensors with the engine cold, not hot — hot metal expands and can strip the thread if the sensor is seized."
+  - "Apply anti-seize to the new sensor threads only — keep it off the last 10 mm near the sensing tip."
+  - "On the 6G75, the upstream sensors are accessible from above (Bank 2, radiator side) and from under the car (Bank 1, firewall side)."
+  - "If P0420 appears after replacing only the upstream sensor, the catalyst itself may be damaged. Check downstream sensor voltage before condemning the catalyst."
+  - "After replacement, clear the fault code and drive one full warm-up cycle. The ECU needs to complete its readiness monitors before reporting pass/fail."
+
+procedure_refs:
+  - label: "Factory procedure — Engine Fuel (Section 13)"
+    section: "13"
+    manual: "M1"
+
+related:
+  - check-engine-light
+  - fault-code-p0420
+  - fault-code-p0171

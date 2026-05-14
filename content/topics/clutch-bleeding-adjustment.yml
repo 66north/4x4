@@ -1,0 +1,73 @@
+slug: clutch-bleeding-adjustment
+title: "Clutch Bleeding & Pedal Adjustment"
+category: maintenance
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Manual transmission Pajero IV models use a hydraulic clutch with a master cylinder at the pedal
+  and a slave cylinder at the gearbox. Air in the hydraulic circuit causes a spongy pedal and
+  incomplete clutch release — symptoms identical to a worn clutch plate. Bleeding removes air
+  from the circuit. Pedal height and freeplay also have factory specifications and affect clutch
+  feel and release point. These checks should be part of any clutch complaint diagnosis before
+  assuming mechanical wear.
+
+symptoms:
+  - "Spongy or soft clutch pedal (air in hydraulic circuit)"
+  - "Clutch not fully releasing — hard to select gears from rest (air or low fluid)"
+  - "Clutch pedal height changed or feels different to normal"
+  - "Clutch fluid level dropping in reservoir (leak in master or slave cylinder)"
+  - "Clutch drag after fluid change or any hydraulic work"
+
+parts:
+  - name: "Clutch fluid"
+    oem: null
+    spec: "DOT 3 or DOT 4 brake fluid (clutch uses the same fluid as brakes)"
+    quantity: "Small quantity — reservoir capacity approx 50 mL"
+    notes: "Top up from a sealed bottle. Old or dark fluid should be fully replaced. $10–15."
+    verify: false
+  - name: "Clutch master cylinder"
+    oem: "MR112449"
+    spec: "Hydraulic master cylinder at clutch pedal"
+    notes: "Replace if fluid leaks past the piston seal or pedal goes to the floor. $60–140."
+    verify: true
+  - name: "Clutch slave cylinder"
+    oem: "MR112450"
+    spec: "Hydraulic slave cylinder at gearbox bellhousing"
+    notes: "Replace if fluid leaks at the gearbox end. Requires gearbox removal on some configurations. $40–100."
+    verify: true
+
+tools:
+  - "Clutch bleeding kit or vacuum bleeder"
+  - "8mm spanner (bleed nipple on slave cylinder)"
+  - "Clear plastic tube and catch bottle"
+  - "Torque wrench"
+
+torque:
+  - component: "Clutch master cylinder mounting nuts"
+    value_nm: 13
+    note: "12–15 Nm."
+  - component: "Slave cylinder bleed nipple"
+    value_nm: 8
+    note: "Do not overtighten — nipple is soft brass."
+
+tips:
+  - "Check the clutch fluid reservoir before bleeding — it is usually the same reservoir as the brake master cylinder, or a separate small reservoir on the firewall near the clutch pedal. Level should be between MIN and MAX."
+  - "Bleeding procedure: attach a clear tube to the slave cylinder bleed nipple, open the nipple 3/4 turn, then pump the clutch pedal slowly to the floor and hold it. Close the nipple before releasing the pedal. Repeat until no bubbles appear in the fluid stream."
+  - "Never let the reservoir run dry while bleeding — air drawn in at the master cylinder will require you to start over."
+  - "Clutch pedal height (from floor to pedal pad): factory specification is approximately 170–180 mm. Adjust via the pedal stopper bolt behind the pedal arm."
+  - "Clutch pedal freeplay (slack before resistance is felt): approximately 1–3 mm. Adjust via the pushrod at the master cylinder."
+  - "If the clutch still drags after a thorough bleed with no air in the system, the fault is mechanical — worn pressure plate, bent clutch plate, or worn release bearing."
+  - "DOT 3/4 brake fluid absorbs moisture over time. If the fluid is more than 2 years old, replace it completely during the bleed rather than just topping up."
+
+procedure_refs:
+  - label: "Factory procedure — Clutch (Section 21)"
+    section: "21"
+    manual: "M1"
+
+related:
+  - manual-transmission-fluid
+  - manual-transmission-problems
+  - brake-fluid-flush

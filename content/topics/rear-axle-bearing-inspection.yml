@@ -1,0 +1,72 @@
+slug: rear-axle-bearing-inspection
+title: "Rear Axle Bearing & Hub Inspection"
+category: maintenance
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV rear axle has sealed hub bearings that support the wheel and transmit drive from
+  the differential to each wheel. The bearings are sealed for life — they cannot be repacked, but
+  can be inspected for play and wear. Bearing failure is rare under normal driving but increases
+  with off-road abuse. Symptoms are a grinding noise when cornering or a rhythmic clicking/clunking
+  at highway speed. Hub bearing inspection is simple and should be part of every major service,
+  especially after off-road trips or high-mileage accumulation (150,000+ km).
+
+symptoms:
+  - "Grinding or growling noise from rear axle that changes pitch with speed"
+  - "Clicking or popping sound during hard cornering (wheel bearing loading)"
+  - "Vibration through the chassis that increases with speed (wheel imbalance or bearing play)"
+  - "Loose or notchy feeling in the wheel when spun by hand (bearing preload worn)"
+  - "Excessive play in the wheel when lifted (check lateral movement at the 3 and 9 o'clock positions)"
+  - "Dust or grease around the wheel seal area (bearing seal failure — internal contamination)"
+
+parts:
+  - name: "Rear hub bearing assembly"
+    oem: "MR589123"
+    spec: "Complete sealed bearing cartridge, press-fit into hub"
+    notes: "Replace the entire hub assembly if bearing is found to be worn or loose. Bearing cannot be repacked. $80–200 per side."
+    verify: true
+  - name: "Hub bolt set (if wheel detached)"
+    oem: "MR589124"
+    spec: "Wheel hub retention bolts, usually 6 per hub"
+    notes: "Replace if stripped or corroded. $15–40 per set."
+    verify: true
+  - name: "Axle shaft seal (if disassembly required)"
+    oem: "MR589125"
+    spec: "Oil seal at the axle shaft/hub interface"
+    notes: "Only replace if axle is removed. $10–25."
+    verify: true
+
+tools:
+  - "Jack and jack stands (to safely lift the vehicle)"
+  - "Wrench or socket for wheel bolts (usually 17mm)"
+  - "Torque wrench"
+
+torque:
+  - component: "Rear wheel bearing preload check"
+    value_nm: 0
+    note: "Spin the wheel by hand after jacking up the vehicle. Should rotate freely with slight resistance (not binding or grinding). If notchy or gritty, bearing is suspect."
+  - component: "Wheel hub bolts"
+    value_nm: 108
+    note: "108–118 Nm. Torque in a star pattern after wheel installation."
+
+tips:
+  - "Wheel bearing inspection is a visual and tactile check — you are feeling for play and listening for noise, not measuring anything with a dial gauge."
+  - "Jack the rear axle (not a wheel), support with jack stands under the frame, and spin each wheel by hand. Listen for grinding. Grasp the wheel at 3 and 9 o'clock and try to wiggle it — there should be no play (wheel should not move side-to-side)."
+  - "A small amount of up-and-down play is normal (less than 2mm), but any side-to-side movement or grinding noise indicates bearing wear."
+  - "The sealed bearing cartridge is a complete unit — there is no adjustment or maintenance. If play is detected, the hub assembly must be replaced by pressing out the old bearing and pressing in a new one. This is a workshop job."
+  - "After off-road driving, check bearings more frequently (every 20,000 km) — mud, water, and rough terrain can accelerate bearing wear."
+  - "Do not ignore early warning signs: a slight grinding that comes and goes may suddenly worsen during a long highway drive, leading to a catastrophic failure with the wheel locking up."
+  - "Never attempt to open or repack a sealed hub bearing. If you suspect bearing damage, the hub must be replaced as a complete assembly. Partial disassembly will destroy the bearing immediately."
+
+procedure_refs:
+  - label: "Factory procedure — Rear Axle (Section 27)"
+    section: "27"
+    manual: "M1"
+
+related:
+  - wheel-alignment
+  - tire-wear-and-alignment
+  - differential-oil-change

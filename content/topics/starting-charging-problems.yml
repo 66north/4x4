@@ -1,0 +1,38 @@
+slug: starting-charging-problems
+title: "Starting & Charging Problems — Diagnosis Guide"
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Starting and charging faults are among the most common reasons a Pajero IV won't start or dies
+  unexpectedly. The system has three key components: the battery (stores energy), the alternator
+  (recharges while running), and the starter motor (cranks the engine). A fault in any one of them
+  produces similar symptoms — this guide walks through isolating which component is the cause.
+
+symptoms:
+  - "Engine won't crank at all (dead silence when turning key)"
+  - "Single click when turning key (starter solenoid engaging but motor not spinning)"
+  - "Rapid clicking when turning key (battery too low to hold starter voltage)"
+  - "Engine cranks slowly — weak, laboured rotation"
+  - "Engine starts fine when warm but struggles after sitting overnight"
+  - "Battery warning light on dashboard while driving"
+  - "Headlights dim at idle, brighten when revved"
+
+tips:
+  - "Start with a voltage test: battery at rest should be 12.5–12.7V fully charged. Below 12.0V means the battery is discharged or failing."
+  - "With engine running, measure battery terminals. 13.2–14.4V = alternator charging. Below 13.0V = alternator fault or high electrical load."
+  - "Jump-starting solves a flat battery but not a failing alternator — if the vehicle dies again after being jump-started, the alternator is the fault."
+  - "Clicking or no-crank with a known-good battery points to the starter motor or its solenoid."
+  - "Corroded battery terminals cause 20–30% of apparent battery failures. Clean them before buying a new battery."
+  - "Cold weather reduces battery capacity by 30–50%. A battery that works fine in summer may fail its first cold morning."
+  - "A battery older than 4 years in a hot climate should be load-tested, not just voltage-tested — voltage can look normal but capacity is gone."
+
+related:
+  - battery-replacement
+  - battery-specifications
+  - alternator-testing
+  - engine-wont-start
+  - fuse-box-reference

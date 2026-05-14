@@ -1,0 +1,72 @@
+slug: air-flow-sensor-diagnosis
+title: "Air Flow Sensor — MAF Diagnosis & Cleaning"
+category: troubleshoot
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The air flow (mass air flow or MAF) sensor measures incoming air volume and density, allowing
+  the ECU to calculate fuel injection duration. A contaminated or failed MAF sensor causes rich
+  running (too much fuel), increased fuel consumption, rough idle, and hesitation on acceleration.
+  Unlike a clogged air filter (obvious restriction), a dirty MAF sends incorrect data to the ECU,
+  so the engine "thinks" more air is entering than actually is. The sensor element is extremely
+  delicate — it must never be touched or sprayed with compressed air, only carefully cleaned with
+  specific solvent.
+
+symptoms:
+  - "Check Engine light with code P0100 (Air Flow Measurement System Malfunction)"
+  - "Check Engine light with code P0101 (Air Flow Measurement System Out of Range)"
+  - "Rough, hesitant idle that improves when the engine warms up"
+  - "Hesitation on hard acceleration from a stop"
+  - "Fuel consumption 15–25% higher than normal"
+  - "Engine runs better with the MAF unplugged (limp-home mode using a default air estimate)"
+  - "Black soot or carbon buildup visible from the exhaust"
+
+parts:
+  - name: "Air flow sensor — 4M41"
+    oem: "MD357058"
+    spec: "Hot-wire type MAF sensor, intake manifold mounted"
+    notes: "Replace if cleaning does not resolve the fault. $120–250."
+    verify: true
+  - name: "Air flow sensor — 6G75"
+    oem: "MD364259"
+    spec: "Hot-wire type MAF sensor"
+    notes: "$120–250."
+    verify: true
+  - name: "Air intake hose (if cracked)"
+    oem: null
+    spec: "Rubber intake hose from air filter to intake manifold"
+    notes: "A cracked hose allows unmetered air past the MAF, causing lean code and rough running. $20–40."
+    verify: false
+
+tools:
+  - "Socket set (intake manifold bolts)"
+  - "MAF sensor cleaning solvent (isopropyl alcohol 90%+ purity ONLY — never use compressed air or water)"
+  - "Soft-bristled brush or lint-free wipe (for gentle cleaning)"
+  - "OBD-II scanner (to read freeze frame data and confirm MAF readings)"
+
+tips:
+  - "The MAF sensor element is a tiny heated wire that measures air passing through it. If you touch the element with your finger, or spray it with compressed air, you will destroy it instantly — the wire is fragile and permanently damaged by contamination."
+  - "Cleaning procedure: remove the sensor from the intake manifold (2–3 bolts), carefully soak the sensor element in isopropyl alcohol for 5 minutes, then gently shake out excess liquid and allow it to air-dry completely (15+ minutes) before reinstalling."
+  - "Never use water, brake cleaner, or compressed air on the MAF sensor. Isopropyl alcohol is the only safe solvent."
+  - "A MAF sensor that reads out of range (code P0101) may be dirty, but could also indicate an air leak after the MAF (cracked hose, loose clamp). Check the intake hose and clamps before replacing the sensor."
+  - "If the vehicle runs better with the MAF unplugged, the sensor is almost certainly the problem. However, with the MAF disconnected, the engine runs in limp-home mode (fixed air estimate) — this works for a short distance but is inefficient and should be treated as a temporary fix only."
+  - "After cleaning or replacing the MAF, clear the fault codes, then drive a complete cycle (cold start, warm-up, highway, idle, acceleration) for the ECU to relearn air flow patterns. A single test drive may not be enough."
+  - "Intake air temperature sensor (IAT) is often mounted near the MAF. If it becomes contaminated or fails (code P0110), similar symptoms appear. Clean or replace together if both are suspect."
+
+tips_advanced:
+  - "Freeze frame data (captured at the moment of fault) shows what the MAF was reading when the code occurred. Compare this to normal readings: roughly 3–8 grams/second at idle, 15–25 g/s at cruise, and 50+ g/s at full load. Out-of-range readings confirm MAF fault."
+  - "Carbon buildup in the intake is a common cause of repeated MAF sensor fouling. If the sensor requires cleaning more than once per year, suspect excessive carbon — a fuel system cleaning or valve deposit cleaner may be needed to address root cause."
+  - "Some shops offer MAF sensor cleaning services for ~$50–100, which is cheaper than replacement. If the sensor is truly contaminated (not defective), cleaning may restore function."
+
+procedure_refs:
+  - label: "Factory procedure — Engine Electrical (Section 17)"
+    section: "17"
+    manual: "M1"
+
+related:
+  - check-engine-light
+  - rough-idle
+  - fault-code-p0100

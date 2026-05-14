@@ -1,0 +1,55 @@
+slug: towing-guide
+title: "Towing Guide — Capacities, Limits & Setup"
+category: reference
+difficulty: 1
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV is rated for 3,000 kg braked towing — one of the highest figures in its class.
+  However, the towing limits involve several interacting figures (GVM, GCM, towball mass) that
+  are easy to exceed without realising. Exceeding any one of them voids insurance and may be
+  illegal. This guide covers the key numbers, what they mean, and what to check before towing.
+
+tips:
+  - "Braked towing capacity: 3,000 kg — the maximum trailer weight when the trailer has its own brakes. This applies when towing at 3,000 kg with a maximum towball mass (TBM) of 180 kg."
+  - "Alternative rating: 2,500 kg braked with a towball mass of up to 250 kg. If your trailer tongue weight exceeds 180 kg, you must stay within the 2,500 kg trailer limit."
+  - "Unbraked towing capacity: 750 kg — the maximum trailer weight when the trailer has no brakes. Most trailers over 750 kg are required by law to have brakes fitted."
+  - "Towball mass (TBM): the downward force the trailer exerts on the tow ball. Too little TBM causes trailer sway; too much overloads the rear axle. Aim for 8–10% of trailer GVM. On a 2,500 kg trailer that is 200–250 kg — check your trailer."
+  - "GVM (Gross Vehicle Mass): 3,030 kg — the maximum total weight of the Pajero including passengers, fuel, luggage, and towball download. Towball download counts toward GVM. With a full load of passengers and gear, it is easy to exceed GVM before you even hitch the trailer."
+  - "GCM (Gross Combination Mass): 6,030 kg — the maximum combined weight of the loaded Pajero and loaded trailer. GCM = your Pajero's actual weight + trailer's actual weight. Do not confuse GCM with towing capacity."
+  - "Trailer brakes required: trailers over 750 kg unloaded (or over 2,000 kg loaded, jurisdiction-dependent) must have brakes. Over 2,000 kg, all trailer wheels must have brakes and an automatic breakaway system is required."
+  - "Tow hitch rating: the towbar fitted to the vehicle must be rated to at least match the trailer weight. Check the towbar's compliance plate — some aftermarket towbars are rated lower than the vehicle's factory limit."
+  - "Mirrors: if the trailer is wider than the vehicle, extended towing mirrors are legally required in most jurisdictions. Standard Pajero IV mirrors are adequate for most trailers up to 2.3 m wide."
+  - "Electrical: the Pajero IV uses a 7-pin flat trailer plug (Australian standard) or 13-pin Euro connector depending on market. Confirm your trailer plug matches before hitching."
+
+torque:
+  - component: "Towbar mounting bolts (to chassis)"
+    value_nm: 0
+    note: "Refer to towbar manufacturer's specification — typically 80–120 Nm depending on bolt grade. Check annually."
+  - component: "Tow ball nut"
+    value_nm: 250
+    note: "250–300 Nm. Use thread-lock compound. Check torque annually."
+
+parts:
+  - name: "Tow ball — 50mm standard"
+    oem: null
+    spec: "50mm tow ball, SAE J684 or AS 4177 rated to minimum 3,500 kg"
+    notes: "Must be rated to at least the maximum trailer weight. $15–40."
+    verify: false
+  - name: "7-pin flat trailer plug socket"
+    oem: null
+    spec: "7-pin flat (Australian/NZ) or 13-pin Euro depending on market"
+    notes: "Confirm plug type matches your trailer. $10–30 for socket replacement."
+    verify: false
+  - name: "Weight distribution hitch"
+    oem: null
+    spec: "For caravans over 2,000 kg — weight distribution hitch recommended to restore steering feel"
+    notes: "A weight distribution hitch redistributes towball download to the front axle. Required for safe towing of heavy caravans. $400–1,200."
+    verify: false
+
+related:
+  - differential-oil-change
+  - tire-pressure-and-wear
+  - transmission-fluid

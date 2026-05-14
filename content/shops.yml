@@ -1,0 +1,19 @@
+shops:
+  - id: autodoc
+    name: AutoDoc
+    region: EU/Global
+    search_url: "https://www.autodoc.co.uk/spares/?keywords={oem}"
+  - id: ebay
+    name: eBay
+    region: Global
+    search_url: "https://www.ebay.co.uk/sch/i.html?_nkw={oem}&LH_ItemCondition=3"
+  - id: amazon
+    name: Amazon
+    region: Global
+    search_url: "https://www.amazon.co.uk/s?k={oem}"
+
+# To add affiliate IDs, append them to each search_url:
+#   AutoDoc: &affid=YOUR_ID
+#   eBay:    &campid=YOUR_ID&toolid=10001
+#   Amazon:  &tag=YOUR_TAG
+feedback_email: "your@email.com"

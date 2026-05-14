@@ -1,0 +1,255 @@
+{
+  "total_specs": 25,
+  "specs": [
+    {
+      "component": "Battery terminal bolts (negative and positive)",
+      "value": 8,
+      "unit": "Nm",
+      "notes": "Snug but not forceful. Over-tightening can crack the battery case",
+      "topic": "Battery Replacement",
+      "topic_slug": "battery-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Brake bleeder valve (on caliper or wheel cylinder)",
+      "value": 10,
+      "unit": "Nm",
+      "notes": "Snug but not forceful. Bleeder valves are delicate and strip easily. Back out only 1/2 turn to 3/4 turn to avoid draining threads",
+      "topic": "Brake Fluid Flush & Bleed",
+      "topic_slug": "brake-fluid-flush",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Crankshaft bolt (if removed)",
+      "value": "200\u2013220",
+      "unit": "Nm",
+      "notes": "Very high torque. Use a new bolt; reuse risks catastrophic crankshaft damage",
+      "topic": "Timing Belt Replacement",
+      "topic_slug": "timing-belt",
+      "engines": "6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Cylinder head bolts (after cover removal)",
+      "value": "See factory manual (multi-step torque sequence)",
+      "unit": "Nm",
+      "notes": "Factory procedure requires a specific torque sequence and angle-tightening (torque-to-yield). DO NOT reuse bolts",
+      "topic": "Timing Belt Replacement",
+      "topic_slug": "timing-belt",
+      "engines": "6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Differential filler/level plug",
+      "value": 25,
+      "unit": "Nm",
+      "notes": "Hand-tighten until snug, then torque to spec. Do not over-tighten",
+      "topic": "Differential Oil Change (Front & Rear)",
+      "topic_slug": "differential-oil-change",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Engine cover fasteners",
+      "value": 3,
+      "unit": "Nm",
+      "notes": "Very light torque; these are plastic clips, not threaded bolts",
+      "topic": "Glow Plug Replacement",
+      "topic_slug": "glow-plugs",
+      "engines": "4M41",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Front differential drain plug",
+      "value": 25,
+      "unit": "Nm",
+      "notes": "Snug the crush washer. Over-torque can damage the aluminum housing",
+      "topic": "Differential Oil Change (Front & Rear)",
+      "topic_slug": "differential-oil-change",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Front shock lower mounting bolt (at steering knuckle)",
+      "value": 100,
+      "unit": "Nm",
+      "notes": "Very high torque; critical for safety. Double-check this bolt before driving",
+      "topic": "Shock Absorber Replacement (Front & Rear)",
+      "topic_slug": "shock-absorber-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Front shock upper mounting bolt (at strut tower)",
+      "value": 60,
+      "unit": "Nm",
+      "notes": "High torque; use a wrench to prevent shock rod from spinning while tightening nut",
+      "topic": "Shock Absorber Replacement (Front & Rear)",
+      "topic_slug": "shock-absorber-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Fuel filter bowl cap",
+      "value": 25,
+      "unit": "Nm",
+      "notes": "Do not overtighten \u2014 ceramic elements can crack",
+      "topic": "Fuel Filter Element Replacement (Diesel)",
+      "topic_slug": "fuel-filter-diesel",
+      "engines": "4M41",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Fuel return line banjo bolt (if present)",
+      "value": 20,
+      "unit": "Nm",
+      "notes": "Ensure copper washer is present on both sides",
+      "topic": "Fuel Filter Element Replacement (Diesel)",
+      "topic_slug": "fuel-filter-diesel",
+      "engines": "4M41",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Fuel supply line union",
+      "value": 20,
+      "unit": "Nm",
+      "notes": "Use two wrenches to prevent line twisting",
+      "topic": "Fuel Filter Element Replacement (Diesel)",
+      "topic_slug": "fuel-filter-diesel",
+      "engines": "4M41",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Glow plug into cylinder head",
+      "value": 15,
+      "unit": "Nm",
+      "notes": "Snug but not forceful \u2014 ceramic elements break easily under excessive torque",
+      "topic": "Glow Plug Replacement",
+      "topic_slug": "glow-plugs",
+      "engines": "4M41",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Radiator drain plug",
+      "value": 10,
+      "unit": "Nm",
+      "notes": "Snug but not forceful \u2014 plastic plugs break easily. Check after tightening that it does not leak",
+      "topic": "Coolant Flush & Refill",
+      "topic_slug": "coolant-flush",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Rear differential drain plug",
+      "value": 25,
+      "unit": "Nm",
+      "notes": "Same as front. Ensure crush washer is seated",
+      "topic": "Differential Oil Change (Front & Rear)",
+      "topic_slug": "differential-oil-change",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Rear shock lower mounting bolt",
+      "value": 100,
+      "unit": "Nm",
+      "notes": "Same as front lower",
+      "topic": "Shock Absorber Replacement (Front & Rear)",
+      "topic_slug": "shock-absorber-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Rear shock upper mounting bolt",
+      "value": 60,
+      "unit": "Nm",
+      "notes": "Same as front upper",
+      "topic": "Shock Absorber Replacement (Front & Rear)",
+      "topic_slug": "shock-absorber-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Serpentine belt tensioner bolt",
+      "value": 30,
+      "unit": "Nm",
+      "notes": "Tensioner is under spring pressure. Support it carefully when loosening",
+      "topic": "Water Pump Replacement",
+      "topic_slug": "water-pump-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Spark plug into cylinder head",
+      "value": 18,
+      "unit": "Nm",
+      "notes": "Do not overtighten \u2014 ceramic insulators crack easily. Hand-tighten first, then snug with a wrench",
+      "topic": "Spark Plug Replacement",
+      "topic_slug": "spark-plugs",
+      "engines": "6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Timing belt tensioner lock bolt",
+      "value": 30,
+      "unit": "Nm",
+      "notes": "Lock the tensioner BEFORE rotating the engine. Failure to do this will strip the threads",
+      "topic": "Timing Belt Replacement",
+      "topic_slug": "timing-belt",
+      "engines": "6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Transmission pan bolts (if removing pan)",
+      "value": 10,
+      "unit": "Nm",
+      "notes": "Several bolts of different sizes; check factory manual for tightening sequence",
+      "topic": "Automatic Transmission Fluid Change",
+      "topic_slug": "transmission-fluid",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Transmission pan drain plug",
+      "value": 25,
+      "unit": "Nm",
+      "notes": "Snug the crush washer. Hand-tighten first, then torque to spec",
+      "topic": "Automatic Transmission Fluid Change",
+      "topic_slug": "transmission-fluid",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Water pump bolts (if replacing)",
+      "value": 20,
+      "unit": "Nm",
+      "notes": "Evenly spaced; tighten in a star pattern",
+      "topic": "Timing Belt Replacement",
+      "topic_slug": "timing-belt",
+      "engines": "6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Water pump mounting bolts",
+      "value": 20,
+      "unit": "Nm",
+      "notes": "Check factory manual for exact torque \u2014 bolts vary by size. Tighten in a cross pattern",
+      "topic": "Water Pump Replacement",
+      "topic_slug": "water-pump-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    },
+    {
+      "component": "Water pump pulley bolt (if removable)",
+      "value": 25,
+      "unit": "Nm",
+      "notes": "Some designs have the pulley fixed to the pump; others allow removal for access",
+      "topic": "Water Pump Replacement",
+      "topic_slug": "water-pump-replacement",
+      "engines": "4M41, 6G75",
+      "years": "2008-2013"
+    }
+  ]
+}

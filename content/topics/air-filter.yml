@@ -1,0 +1,67 @@
+slug: air-filter
+title: Air Filter Replacement
+category: maintenance
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  One of the quickest maintenance tasks on the Pajero IV. A clogged air filter
+  restricts airflow, reduces power, and increases fuel consumption — especially on
+  the 4M41 diesel where the turbo amplifies the effect of restriction.
+  Mitsubishi recommends inspection every 15,000 km and replacement every 30,000 km,
+  or more frequently in dusty conditions (off-road, dirt roads).
+
+symptoms:
+  - Routine maintenance interval reached (30,000 km)
+  - Noticeable drop in performance or throttle response
+  - Increased fuel consumption
+  - Black smoke on acceleration (diesel)
+  - Filter visibly grey/brown with debris when inspected
+
+parts:
+  - name: "Air filter — 4M41 diesel, OEM (1500A029)"
+    oem: "1500A029"
+    spec: "Pleated paper element"
+    notes: "OEM part for 4M41 diesel. Some early 2008 may use 1500A021 — verify with VIN."
+    verify: true
+  - name: "Air filter — 6G75 petrol, OEM (MD620035)"
+    oem: "MD620035"
+    spec: "Pleated paper element"
+    notes: "OEM part for 6G75 petrol. Also listed as 1500A098 in some markets."
+    verify: false
+  - name: "Air filter — DENSO (6G75 petrol)"
+    oem: "260800-0280"
+    spec: "Pleated paper, OEM-equivalent"
+    notes: "DENSO OEM-equivalent for 6G75. $16–22."
+    verify: false
+  - name: "Air filter — Fram CA7142 (6G75 petrol)"
+    oem: "CA7142"
+    spec: "Pleated paper"
+    notes: "Budget option for 6G75. $14–20."
+    verify: false
+  - name: "Air filter — K&N 33-2164 (6G75 petrol, reusable)"
+    oem: "332164"
+    spec: "Washable cotton gauze, 160,000 km service life"
+    notes: "Premium reusable filter for 6G75. Clean every 40,000 km. $45–65."
+    verify: false
+
+tools:
+  - Flat-head screwdriver (airbox clips)
+  - Soft brush or compressed air (to clean airbox housing)
+
+tips:
+  - Inspect the old filter by holding it up to light — if you can't see light through it, replace it.
+  - Take the opportunity to wipe out the inside of the airbox before fitting the new filter.
+  - Off-road drivers should inspect and replace more frequently — dusty conditions load filters quickly.
+  - Performance aftermarket filters (K&N, BMC) are available as a reusable alternative.
+
+procedure_refs:
+  - label: "Factory procedure — Intake & Exhaust (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - oil-change
+  - fuel-filter-diesel

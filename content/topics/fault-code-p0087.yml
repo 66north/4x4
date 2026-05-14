@@ -1,0 +1,68 @@
+slug: fault-code-p0087
+title: "P0087 — Fuel Rail Pressure Too Low"
+category: codes
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [4M41]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0087 means the ECU detected fuel rail pressure below the commanded target. On the 4M41 common-rail
+  diesel, this is a serious code — insufficient fuel pressure causes hard starting, loss of power, and
+  can leave you stranded. Most common causes are a clogged fuel filter, weak high-pressure fuel pump,
+  or a leaking high-pressure injector. Address immediately.
+
+symptoms:
+  - "Hard to start or long cranking before firing"
+  - "Loss of power under load, especially above 2000 RPM"
+  - "Black or white smoke from exhaust"
+  - "Rough idle or engine cutting out"
+  - "Check Engine light illuminated"
+  - "DPF regeneration failing (insufficient fuel pressure)"
+
+likely_causes:
+  - "Clogged fuel filter (most common — replace first)"
+  - "Weak or failing high-pressure fuel pump (Denso HP3/HP4)"
+  - "Leaking injector return line (high-pressure fuel bypassing rail)"
+  - "Blocked fuel pickup in tank (sludge accumulation)"
+  - "Failing fuel pressure regulator on pump"
+  - "Air leak in low-pressure fuel supply line"
+
+diagnosis:
+  step_1: "Replace the fuel filter (1770A023) as a first step — this is cheap and often fixes P0087."
+  step_2: "If code returns after filter change, scan for live fuel rail pressure data. At idle should be 25–35 MPa; under load 100–160 MPa."
+  step_3: "Compare commanded vs actual rail pressure. If actual is consistently below commanded, suspect pump output."
+  step_4: "Check low-pressure supply: clamp the return line briefly and watch rail pressure. If it builds, the HP pump is receiving adequate supply."
+  step_5: "Inspect injector return volumes — remove return lines and crank engine into containers. Any injector returning excessive fuel is leaking internally."
+  step_6: "If pump output is weak and all else checks out, the high-pressure pump requires replacement."
+
+common_fixes:
+  fuel_filter: "Replace 1770A023 — $30–60 parts, 30 min DIY"
+  hp_pump: "High-pressure pump replacement — $600–1200 parts, $300–500 labor"
+  injector_overhaul: "Leaking injector(s) — $200–400 per injector reconditioned, or $500–800 new"
+  return_line: "Repair or replace leaking return line — $50–150"
+
+estimated_repair_cost: "$30–60 (filter first); $800–1700 if pump or injectors needed"
+
+tips:
+  - "Always replace the fuel filter before diagnosing further — it is cheap, takes 30 minutes, and fixes this code in 40% of cases."
+  - "Do not run a common-rail diesel on low fuel — the fuel itself lubricates the high-pressure pump. Repeated low-fuel operation accelerates pump wear."
+  - "Air in the fuel system causes the same symptoms. After filter replacement, prime the system by cycling the ignition 3–4 times before cranking."
+  - "If you've had contaminated fuel (water or wrong fuel type), drain the tank and flush the entire system before replacing the filter — the contamination will destroy the new filter quickly."
+
+parts:
+  - name: "Fuel filter cartridge — 4M41 (1770A023)"
+    oem: "1770A023"
+    spec: "Diesel fuel filter, common-rail compatible"
+    notes: "First thing to replace for P0087. $30–60. Some early 2008 use 1770A021."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Fuel System (Section 13)"
+    section: "13"
+    manual: "M1"
+
+related:
+  - fuel-filter-diesel
+  - power-loss
+  - check-engine-light

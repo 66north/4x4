@@ -1,0 +1,71 @@
+slug: coolant-flush
+title: Coolant Flush & Refill
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Engine coolant degrades over time as additives break down and corrosion products accumulate.
+  Factory intervals call for a complete coolant flush every 40,000 km or every 2 years, whichever comes first.
+  Neglecting this allows scale buildup in the radiator, water jacket, and heater core, reducing cooling efficiency
+  and promoting rust inside the engine block. Both 4M41 diesel and 6G75 petrol use the same coolant specification.
+
+symptoms:
+  - Scheduled maintenance interval (40,000 km or 2 years)
+  - Coolant appearance: brown, rusty, or cloudy (indicates oxidation)
+  - Overheating or slow warm-up during winter
+  - Sweet smell from the exhaust (coolant leak into combustion chamber) or from engine bay
+  - Visible corrosion or white crusty deposits on radiator fins or hoses
+  - Heater not blowing hot air despite engine temperature being normal
+
+parts:
+  - name: Engine coolant — Mitsubishi DaimlerChrysler
+    oem: MB328635 or equivalent
+    notes: Use OEM or equivalent phosphate-free long-life (Red or Pink color). Never mix coolants
+    verify: true
+  - name: Coolant capacity (total system)
+    oem: "7.5 liters (all years)"
+    notes: Confirm capacity in your owner's manual. Overfilling can cause overflow
+    verify: false
+  - name: Radiator drain plug gasket (if replacing)
+    oem: MD069315
+    notes: Optional — many reuse the metal washer. Replace if the washer is crushed or damaged
+    verify: false
+
+tools:
+  - Pan or drain container (minimum 10 liters capacity)
+  - Screwdriver or wrench for radiator drain plug (usually Phillips head or 10mm hex)
+  - Large funnel with a filter or cloth strainer
+  - Soft hose or siphon (to drain hard-to-reach areas if needed)
+  - Coolant mixer or distilled water (to dilute concentrate if using concentrate)
+  - Thermometer (optional, to verify final coolant temperature)
+
+torque_specs:
+  - component: Radiator drain plug
+    value: 10
+    unit: Nm
+    notes: Snug but not forceful — plastic plugs break easily. Check after tightening that it does not leak
+
+tips:
+  - Park the vehicle on level ground and allow the engine to cool completely (at least 1 hour) before starting work. Hot coolant can scald.
+  - The radiator drain plug is on the bottom driver's side of the radiator. Locate it before draining; it may be hidden behind a splash guard.
+  - Drain the radiator first (10 minutes), then drain the coolant reservoir if accessible (held by a clip, pops off easily).
+  - After draining, you may need to remove the lower radiator hose and squeeze its contents into the drain pan.
+  - Flush the system: Close the drain plug, refill with distilled water only, idle the engine for 5–10 minutes, drain again. Repeat twice more until the drained water runs clear.
+  - Refill with 50/50 premixed coolant (or concentrate + distilled water mixed in equal parts). Do not use tap water, which contains minerals that cause scale.
+  - Run the engine with the radiator cap off for 5–10 minutes to purge air bubbles from the system. You will see bubbles rising. Top up as needed.
+  - Reinstall the radiator cap only after the engine has cooled completely.
+  - Check the coolant level again after 100 km of driving. Thermal expansion will draw in more coolant if needed.
+  - Some vehicles have a bleed screw on the thermostat housing (top of engine). If the system is hard to fill (lots of air), open this screw briefly while filling to release trapped air.
+
+procedure_refs:
+  - label: "Factory procedure — Engine Cooling System (Section 13)"
+    section: "13"
+    manual: "M1"
+
+related:
+  - oil-change
+  - thermostat-replacement
+  - radiator-hose-replacement

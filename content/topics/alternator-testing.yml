@@ -1,0 +1,74 @@
+slug: alternator-testing
+title: Alternator Testing & Replacement
+category: maintenance
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The alternator charges the battery while the engine runs. A failing alternator causes the battery
+  to drain, leading to a no-start condition that is often misdiagnosed as a battery fault. Test the
+  alternator before replacing the battery. Output should be 13.2–14.4V at the battery terminals with
+  the engine running. Replacement requires removing the serpentine belt and is a 1–2 hour job.
+
+symptoms:
+  - "Battery warning light on dashboard (red battery icon)"
+  - "Battery repeatedly going flat despite being new"
+  - "Dimming headlights at idle that brighten when engine is revved"
+  - "Whining noise from engine bay that changes with RPM"
+  - "Electrical accessories (windows, lights) behaving erratically"
+  - "Voltmeter reading below 12.5V with engine running"
+
+parts:
+  - name: "Alternator — 4M41 diesel (remanufactured)"
+    oem: "A3TJ0391"
+    spec: "12V / 130A output"
+    notes: "Remanufactured alternator for 4M41. $150–280. OEM new is $400–600. Verify output rating on old unit."
+    verify: true
+  - name: "Alternator — 6G75 petrol (remanufactured)"
+    oem: "A3TJ0481"
+    spec: "12V / 150A output"
+    notes: "Remanufactured alternator for 6G75. $150–280."
+    verify: true
+  - name: "Serpentine belt (replace with alternator)"
+    oem: "MD161162"
+    spec: "6PK1850"
+    notes: "Replace at the same time if not recently changed. $25–35."
+    verify: false
+  - name: "Alternator brush set (if rebuilding)"
+    oem: null
+    spec: "Carbon brushes for Mitsubishi/Bosch alternator"
+    notes: "If alternator output is weak but bearings are good, worn brushes are often the cause. $10–20."
+    verify: false
+
+tools:
+  - "Multimeter (DC voltage range)"
+  - "Belt tensioner wrench"
+  - "13mm, 14mm sockets"
+  - "Torque wrench"
+
+torque:
+  - component: "Alternator mounting bolts"
+    value_nm: 40
+    note: "38–43 Nm."
+  - component: "Alternator B+ terminal nut"
+    value_nm: 10
+    note: "Secure but not forceful — stud threads strip easily."
+
+tips:
+  - "Test before replacing: with engine running at idle, battery voltage should be 13.2–14.4V. Rev to 2000 RPM — should climb to 14.0–14.8V."
+  - "If voltage is 12.5–13.0V at idle, the alternator may just have worn brushes — a $20 fix vs $250 for a full unit."
+  - "A whining noise that changes with engine RPM is typically a failing alternator bearing, not brush wear."
+  - "Disconnect the negative battery terminal before removing the alternator — the B+ terminal is live at all times."
+  - "Remanufactured alternators carry a 1–2 year warranty and are 40–60% cheaper than new OEM. Perfectly acceptable for a non-original repair."
+
+procedure_refs:
+  - label: "Factory procedure — Charging System (Section 16)"
+    section: "16"
+    manual: "M1"
+
+related:
+  - battery-replacement
+  - battery-specifications
+  - starting-charging-problems

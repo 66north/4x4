@@ -1,0 +1,83 @@
+slug: battery-replacement
+title: Battery Replacement
+category: maintenance
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The 12V automotive battery powers the starter, alternator, and all electrical systems. Most
+  batteries last 4–6 years before losing capacity, slower cold-start performance, and eventual
+  complete failure. Replacement is one of the simplest maintenance tasks, requiring only basic
+  hand tools and 15 minutes. Modern batteries use lead-acid chemistry and should be recycled —
+  many retailers offer core return credits.
+
+symptoms:
+  - Engine cranks slowly (sluggish, weak starter turn)
+  - Difficulty starting in cold weather (below 5°C)
+  - Dimming headlights during engine cranking or when running electrical accessories
+  - Click-click-click when turning the key (starter solenoid cannot pull in due to low voltage)
+  - Dashboard warning light for battery/alternator (yellow battery icon)
+  - Battery case is visibly swollen or cracked (internal short or overcharge condition)
+
+parts:
+  - name: "Battery — Mitsubishi OEM (MN111155)"
+    oem: "MN111155"
+    spec: "95 Ah / 720 CCA / 12V"
+    notes: "OEM part for all 2008–2013 Pajero IV (both engines). From Mitsubishi dealer. $180–250."
+    verify: false
+  - name: "Battery — Exide Excell EB955 (recommended)"
+    oem: "EB955"
+    spec: "95 Ah / 720 CCA / 12V"
+    notes: "Direct OEM equivalent, most common replacement. $110–150."
+    verify: false
+  - name: "Battery — Bosch S4 010"
+    oem: "S4010"
+    spec: "95 Ah / 830 CCA / 12V"
+    notes: "Higher CCA than OEM — better in cold climates. $140–190."
+    verify: false
+  - name: "Battery — Lucas Supreme LS250"
+    oem: "LS250"
+    spec: "100 Ah / 800 CCA / 12V"
+    notes: "UK/Commonwealth markets. Slightly larger capacity. $130–180."
+    verify: false
+  - name: "Battery — Yuasa YBX3030"
+    oem: "YBX3030"
+    spec: "95 Ah / 750 CCA / 12V"
+    notes: "Japanese OEM-grade. $120–170. Asia, Europe, Australia."
+    verify: false
+
+tools:
+  - Open-end or adjustable wrench (10mm or 13mm, depending on terminal bolt size)
+  - Screwdrivers (flathead and Phillips, for battery hold-down and corrosion removal)
+  - Wire brush or steel wool (to clean corroded battery terminals)
+  - Battery terminal puller (optional, if terminals are stuck fast)
+  - Baking soda and water (to neutralize spilled battery acid)
+  - Gloves and eye protection (lead-acid batteries contain hazardous material)
+
+torque_specs:
+  - component: Battery terminal bolts (negative and positive)
+    value: 8
+    unit: Nm
+    notes: "Snug but not forceful. Over-tightening can crack the battery case"
+
+tips:
+  - Turn off all electrical accessories and the ignition before starting. This reduces the risk of short-circuiting the alternator
+  - The negative (black) battery terminal should be disconnected FIRST, then the positive (red) terminal. This sequence prevents accidental shorts
+  - If the battery terminals are heavily corroded (white or blue-green crusty buildup), disconnect and clean them with a wire brush and baking soda slurry before installation
+  - When installing the new battery, connect the POSITIVE (red) terminal first, then the NEGATIVE (black). This is the reverse of disconnection and minimizes spark risk
+  - Ensure the battery is sitting flat on the hold-down tray and the bracket is tightened. A loose battery can tip and damage the case or cause intermittent electrical issues
+  - After installation, start the engine and verify the alternator is charging (voltmeter should read 13.5–14.5V at idle, 14.0–14.8V at 2000 RPM)
+  - If the engine does not start after battery replacement, or if the new battery discharges overnight, the alternator may be faulty. Test the alternator output before replacing the battery again
+  - Recycle your old battery at an auto parts store or recycling center. Most retailers offer a $5–$10 core credit, offsetting part of the cost
+  - Battery terminals can be protected from future corrosion with felt washers or dielectric grease applied to the terminal posts
+
+procedure_refs:
+  - label: "Electrical system — Charging & Starting (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - alternator-testing
+  - engine-wont-start

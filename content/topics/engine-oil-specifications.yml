@@ -1,0 +1,64 @@
+slug: engine-oil-specifications
+title: Engine Oil — Specifications & Capacity
+category: specs
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Engine oil is the lifeblood of your engine. Choosing the right grade, type, and capacity keeps the 4M41 diesel
+  and 6G75 petrol running smoothly, protects against wear, and extends engine life. Both engines use the same oil
+  grades but have different capacities. This guide covers oil selection, capacity, and change intervals for your
+  Pajero IV.
+
+specifications:
+  4m41_diesel:
+    capacity_liters: 9.8
+    capacity_liters_note: "Includes 1.3L in oil cooler (full drain and refill)"
+    viscosity_grades:
+      - 5W-30
+      - 5W-40
+      - 10W-40
+    specifications:
+      - ACEA C3 (diesel engines, low SAPS for DPF compatibility)
+      - ACEA A3/B4
+      - ACEA A5/B5
+    change_interval_km: 15000
+    change_interval_months: 12
+    notes: "ACEA C3 is strongly recommended if your vehicle has a DPF (Diesel Particulate Filter). Low-SAPS oils reduce ash buildup in the filter."
+    filter_type: "Spin-on cartridge filter"
+
+  6g75_petrol:
+    capacity_liters: 4.9
+    capacity_liters_note: "Full drain and refill without cooler flush"
+    viscosity_grades:
+      - 5W-30
+      - 5W-40
+      - 10W-40
+    specifications:
+      - ACEA A3/B4
+      - ACEA A5/B5
+    change_interval_km: 15000
+    change_interval_months: 12
+    notes: "For cold climates (-20°C or below), use 5W-30 or 5W-40. For warm climates, 10W-40 is acceptable."
+    filter_type: "Spin-on cartridge filter"
+
+tips:
+  - "Always check the oil level when cold (before starting the engine) using the dipstick. Top up if below the minimum mark."
+  - "Change both oil AND filter together at each service interval. A clogged filter reduces oil flow and damages the engine."
+  - "Never mix oil types or viscosities. Stick to the recommended grade for your climate."
+  - "Diesel engines (4M41) produce more ash and sludge than petrol — the 15,000 km interval is firm. Shorter intervals (10,000 km) are recommended for severe driving."
+  - "Petrol engines (6G75) are more tolerant of slightly extended intervals, but 15,000 km is the factory recommendation."
+  - "Synthetic oils (5W-30) last longer than mineral oils. Most modern Pajero IVs run well on synthetics."
+  - "Using the wrong oil grade or type can void your warranty and cause engine damage."
+
+procedure_refs:
+  - label: "Factory procedure — Engine Lubrication (Section 12)"
+    section: "12"
+    manual: "M1"
+
+related:
+  - oil-change
+  - coolant-specifications
+  - transmission-fluid-specifications

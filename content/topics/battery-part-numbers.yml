@@ -1,0 +1,74 @@
+slug: battery-part-numbers
+title: "Battery Part Numbers — OEM & Aftermarket Cross-Reference"
+category: parts
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Compatible replacement batteries for the Pajero IV (2008–2013), both petrol 6G75 and diesel 4M41.
+  The correct spec is 95–100 Ah / 720–830 CCA (12V, top-terminal). OEM Mitsubishi part number is MN111155.
+  All models below are direct drop-in replacements. Disconnect negative terminal first before replacing.
+
+parts:
+  - name: "Battery — Mitsubishi OEM (MN111155)"
+    oem: "MN111155"
+    spec: "95 Ah / 720 CCA / 12V"
+    notes: "Official OEM part for all 2008–2013 Pajero IV (both 4M41 and 6G75). Available at Mitsubishi dealers. $180–250."
+    verify: false
+
+  - name: "Battery — Exide Excell EB955"
+    oem: "EB955"
+    spec: "95 Ah / 720 CCA / 12V"
+    notes: "Direct OEM equivalent. Most common aftermarket replacement. $110–150. Europe, Asia, Middle East."
+    verify: false
+
+  - name: "Battery — Lucas Supreme LS250"
+    oem: "LS250"
+    spec: "100 Ah / 800 CCA / 12V"
+    notes: "Slightly larger capacity. Compatible with stock alternator. $130–180. UK and Commonwealth regions."
+    verify: false
+
+  - name: "Battery — Bosch S4 010"
+    oem: "S4010"
+    spec: "95 Ah / 830 CCA / 12V"
+    notes: "German quality, higher CCA than OEM. Good for cold climates. $140–190. Global availability."
+    verify: false
+
+  - name: "Battery — Bosch S4 011"
+    oem: "S4011"
+    spec: "100 Ah / 830 CCA / 12V"
+    notes: "Larger capacity Bosch option. Suitable if running accessories (winch, extra lighting). $150–210."
+    verify: false
+
+  - name: "Battery — Yuasa YBX3030"
+    oem: "YBX3030"
+    spec: "95 Ah / 750 CCA / 12V"
+    notes: "Japanese manufacturer. OEM supplier to some Mitsubishi models. $120–170. Asia, Europe, Australia."
+    verify: false
+
+  - name: "Battery — Varta Blue Dynamic G3"
+    oem: "595405083"
+    spec: "95 Ah / 830 CCA / 12V"
+    notes: "German-engineered, 3–5 year warranty. $130–180. Europe and Middle East."
+    verify: false
+
+  - name: "Battery — Optima BlueTop D31M (AGM)"
+    oem: "D31M"
+    spec: "100 Ah / 1000 CCA / 12V AGM"
+    notes: "Premium spiral-wound AGM. Extreme cold/vibration tolerance. $250–350. Use only if stock alternator is in good condition."
+    verify: false
+
+tips:
+  - "Always disconnect the negative (black) terminal first to prevent short circuits."
+  - "Terminal torque: 10 Nm on M8 bolts. Snug, not forceful — over-tightening cracks the battery case."
+  - "Verify alternator output after fitting: should read 13.2–14.4V at battery terminals with engine running."
+  - "Batteries from hot climates (>35°C) degrade faster. If the vehicle lived in a hot region, inspect or replace at 3 years."
+  - "95–100 Ah is the correct range. Going below 80 Ah risks hard starts in winter; above 110 Ah can overload the alternator."
+  - "If the battery keeps dying, test the alternator before replacing the battery again."
+
+related:
+  - battery-specifications
+  - battery-replacement
+  - starting-charging-problems

@@ -1,0 +1,76 @@
+slug: rear-differential-lock-system
+title: "Rear Differential Lock — Air Pump & Diagnosis"
+category: troubleshoot
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV's rear differential has an optional air-operated locking differential that allows
+  both rear wheels to spin together for maximum traction in deep mud or rock crawling. The system
+  uses a 12V DC pump, air lines, and a solenoid-operated air lock chamber. Without the lock
+  engaged, the differential spins wheels independently (normal on-road mode). The lock can fail
+  silently — the light on the dash shows status, but diagnosis requires checking air pressure,
+  pump operation, and electrical signals. A seized or failed air pump is the most common fault.
+
+symptoms:
+  - "Differential lock light on the dashboard flashing or not responding after selector"
+  - "Lock engages but will not disengage (stuck open)"
+  - "Hissing or whistling from the rear axle area when lock attempts engagement"
+  - "Rear diff lock unavailable during off-road operation even though selector was moved"
+  - "Slow response to lock engagement request (pump sluggish or weak)"
+  - "Grinding noise when lock engages or disengages (mechanical seizure)"
+
+tips:
+  - "Check the dashboard indicator first: solid light means lock is engaged, flashing means lock signal is being sent but mechanical engagement is incomplete, no light means electrical signal not reaching the solenoid."
+  - "The rear differential lock is a luxury feature, not essential for normal driving — if it fails, the vehicle remains safely drivable in 2H or 4H without locking."
+  - "The air pump draws power directly from the battery through a relay in the engine bay fuse box. A blown fuse cuts power to the pump immediately — check this before assuming pump failure."
+  - "To test the pump: activate the selector (you will hear a brief 'click' in the engine bay as the relay closes). If no sound and the indicator light doesn't come on, the relay or fuse has failed."
+  - "If the pump runs (audible whining in the engine bay) but the light doesn't illuminate, the solenoid on the rear axle is not receiving signal — check the differential lock detection switch (located on the rear axle assembly)."
+  - "Air line failure: if a line has cracked or detached, air pressure will be lost and the lock will not hold. Inspect lines running along the frame from the pump to the rear axle. Listen for hissing with the lock engaged."
+  - "Do not attempt to drive aggressively on-road with the lock engaged — locking the differential puts extreme stress on driveshafts and suspension. Lock should only be engaged when off-road or in extreme low-speed conditions (below 5 km/h)."
+  - "After off-road use, always unlock the differential immediately on solid ground before returning to paved roads — continuous locking on asphalt causes tyre scrub and driveline damage."
+
+parts:
+  - name: "Rear differential lock air pump (12V DC)"
+    oem: "MR197635"
+    spec: "Electric air pump with integrated pressure switch"
+    notes: "Replace if pump runs but produces no air pressure. $150–350 depending on core exchange."
+    verify: true
+  - name: "Rear differential lock solenoid valve"
+    oem: "MR197636"
+    spec: "2-position solenoid-operated air valve, mounted on axle housing"
+    notes: "Replace if pump runs but lock does not engage. $50–120."
+    verify: true
+  - name: "Differential lock detection switch"
+    oem: "MR197637"
+    spec: "Mechanical or electronic switch indicating lock position"
+    notes: "Replace if lock engages but indicator light doesn't illuminate. $30–80."
+    verify: true
+  - name: "Air line kit (pump to rear axle)"
+    oem: null
+    spec: "Flexible nylon air tubing with compression fittings"
+    notes: "Inspect for cracks, kinks, or detached fittings. Replacement line kits ~$40–60."
+    verify: false
+
+tools:
+  - "Multimeter (to check voltage at pump and solenoid)"
+  - "OBD-II scanner (to read differential lock control codes)"
+  - "Air pressure gauge (to test pump output pressure)"
+  - "13mm socket (solenoid and detection switch removal)"
+
+tips_advanced:
+  - "Pump output pressure: typically 300–400 kPa (45–60 psi). If pump runs but output is below 200 kPa, the pump is worn and should be replaced."
+  - "Detection switch test: with the lock engaged, check for 12V at the detection switch input. If present but light is still off, the switch is faulty."
+  - "Transfer control unit check: on vehicles with integrated ETACS or LSD (limited-slip differential), the lock system communicates via CAN bus. A fault code U code (CAN communication) can prevent lock engagement even if the pump and solenoid are healthy."
+
+procedure_refs:
+  - label: "Factory procedure — Rear Axle (Section 27)"
+    section: "27"
+    manual: "M1"
+
+related:
+  - 4wd-not-engaging
+  - differential-oil-change
+  - fault-code-p0500

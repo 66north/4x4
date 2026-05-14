@@ -1,0 +1,68 @@
+slug: fault-code-p0400
+title: "P0400 — Exhaust Gas Recirculation (EGR) Flow Malfunction"
+category: codes
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Code P0400 indicates the EGR (Exhaust Gas Recirculation) system is not flowing exhaust gas back into the intake as intended.
+  The EGR system reduces emissions by recirculating a small amount of exhaust gas, which reduces combustion temperature and
+  harmful pollutants. A stuck or blocked EGR valve, failed EGR solenoid, or carbon buildup can trigger this code. This is a
+  complex diagnosis requiring careful testing.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Rough idle"
+  - "Hesitation or stumbling during acceleration"
+  - "Loss of power under load"
+  - "Ping or knock sound during acceleration (EGR system failing to cool combustion)"
+  - "Slightly higher exhaust temperature"
+  - "Fault may be intermittent on first startup"
+
+likely_causes:
+  - "EGR valve stuck open or closed due to carbon buildup (most common)"
+  - "Failing EGR solenoid (electrical coil failure)"
+  - "EGR vacuum line disconnected, cracked, or blocked"
+  - "EGR cooler blocked or failed"
+  - "Engine carbon buildup restricting EGR passages"
+  - "ECU reading out of normal range (rare)"
+
+diagnosis:
+  step_1: "Connect OBD-II scanner and retrieve code P0400. Check for freeze frame data (conditions when code was set)."
+  step_2: "Visually inspect EGR vacuum lines (typically routed from intake manifold to EGR valve). Look for disconnects, cracks, or loose connections."
+  step_3: "Check if lines are blocked by creating a slight vacuum with a hand pump. Blockage indicates carbon accumulation in passages."
+  step_4: "Locate the EGR valve (mounted on or near the intake manifold). With the engine cold and ignition off, inspect the valve for visible carbon or corrosion."
+  step_5: "Using an OBD-II scanner with live data, monitor EGR solenoid duty cycle while the engine idles. It should be 0% at idle and increase under load."
+  step_6: "If solenoid duty cycle does not change, the solenoid is likely failing."
+  step_7: "If solenoid appears functional but code persists, the EGR valve may be mechanically stuck. This requires removal and cleaning or replacement."
+
+common_fixes:
+  vacuum_line_repair: "Reseal or replace hose; cost $30-100"
+  egr_solenoid_replacement: "Replace electrical solenoid; cost $200-400 parts, $100-200 labor, total $300-600"
+  egr_valve_cleaning: "Remove and clean carbon buildup; cost $150-300 professional labor"
+  egr_valve_replacement: "Replace valve assembly; cost $300-600 parts, $150-300 labor, total $450-900"
+  fuel_system_cleaning: "Professional carbon cleaning of fuel injectors and intake; cost $200-400"
+  egr_cooler_replacement: "If cooler has failed; cost $800-1500"
+
+estimated_repair_cost: "$200-600 (most common fixes); $800-1500 if cooler or complete system overhaul needed"
+
+tips:
+  - "EGR problems are common on high-mileage vehicles (100,000+ km) due to carbon accumulation."
+  - "A stuck EGR valve can sometimes be freed by running a fuel system cleaner additive through the tank; not always effective but cheap to try first."
+  - "Do NOT attempt to remove the EGR valve without draining coolant first — the cooler is integrated with the cooling system."
+  - "If code returns after repair, carbon may be building up again. Quality fuel and regular fuel injector cleaning help prevent recurrence."
+  - "EGR problems can cause pinging during acceleration — do NOT ignore this as it can damage the engine if prolonged."
+  - "Some older Pajeros have a history of EGR solenoid failures. If replacement fixes the code, monitor for recurrence at future services."
+
+procedure_refs:
+  - label: "Factory procedure — Emission Control (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - power-loss
+  - rough-idle
+  - check-engine-light
+  - fuel-filter-diesel

@@ -1,0 +1,63 @@
+slug: fault-code-p0715
+title: "P0715 — Transmission Input / Turbine Speed Sensor Circuit"
+category: codes
+difficulty: 3
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0715 indicates the Transmission Control Module (TCM) is not receiving a valid signal from the
+  input shaft (turbine) speed sensor inside the automatic transmission. This sensor measures how
+  fast the torque converter turbine is spinning, which the TCM uses to calculate slip and control
+  shift timing. A failed sensor causes erratic or harsh shifting and often triggers limp mode.
+  Usually appears alongside P0700.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Harsh, erratic, or delayed gear shifts"
+  - "Transmission stuck in 3rd gear (limp mode)"
+  - "P0700 (TCM fault) also stored"
+  - "Speedometer may be unaffected (uses separate VSS)"
+
+likely_causes:
+  - "Failed input speed sensor (magnetic pickup inside the transmission)"
+  - "Metal debris on sensor tip (from worn transmission components)"
+  - "Damaged wiring connector inside transmission pan"
+  - "Low or contaminated transmission fluid affecting sensor signal"
+
+diagnosis:
+  step_1: "Check transmission fluid level and condition first. Burnt, dark fluid may cause erratic sensor readings."
+  step_2: "Drop the transmission pan. Inspect the sensor tip — metal shavings on the tip indicate internal wear."
+  step_3: "Test sensor resistance with multimeter: typically 200–1000Ω (check spec for Aisin 5-speed)."
+  step_4: "Inspect the wiring harness inside the pan for chafing or broken wires."
+  step_5: "Replace sensor and wiring harness if necessary. Clean pan and replace filter and fluid."
+
+common_fixes:
+  sensor_replacement: "Input speed sensor — $60–150 part, $200–350 labor (pan drop required)"
+  fluid_change: "Transmission fluid and filter — $150–300 (often done at same time as sensor)"
+
+estimated_repair_cost: "$350–650 (sensor + fluid change together)"
+
+tips:
+  - "Metal shavings on the sensor tip are a warning sign of internal transmission wear. Address the root cause or you will replace the sensor again soon."
+  - "Always replace the transmission fluid and filter when dropping the pan to access the sensor — the labour cost is already paid."
+  - "P0715 + P0720 (output speed sensor) together may indicate a wiring harness issue inside the pan rather than two failed sensors."
+
+parts:
+  - name: "Transmission input speed sensor"
+    oem: "MD758733"
+    spec: "Magnetic pickup, M12 thread"
+    notes: "Inside transmission — pan removal required. $60–150."
+    verify: true
+  - name: "Transmission fluid — ATF SP-III"
+    oem: null
+    spec: "ATF SP-III (Mitsubishi Genuine or equivalent)"
+    quantity: "3.0 L drain-and-refill"
+    notes: "Replace whenever dropping the pan. Wrong fluid causes solenoid and sensor damage."
+    verify: false
+
+related:
+  - fault-code-p0700
+  - transmission-slipping
+  - transmission-fluid

@@ -1,0 +1,85 @@
+slug: check-engine-light
+title: Check Engine Light — Diagnosis & Clearing
+category: troubleshoot
+difficulty: 2
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Check Engine Light (CEL), also called the Malfunction Indicator Lamp (MIL), illuminates
+  whenever the engine ECU detects an emission or engine performance fault. The light alone does
+  not tell you what the problem is — you need a diagnostic scanner to read the fault code. Some
+  faults are minor (faulty oxygen sensor) and car remains drivable; others are serious (timing
+  retarded, misfire) and should be addressed immediately. This guide explains the different types
+  of CEL conditions and how to diagnose them.
+
+symptoms:
+  - Check Engine Light illuminated on the instrument cluster (either steady or blinking)
+  - Blinking/flashing light = active misfire (severe condition, stop driving immediately)
+  - Steady light = fault logged, vehicle is drivable (inspect for secondary symptoms)
+  - Reduced engine power or limp-mode (ECU cuts cylinders or limits boost to protect engine)
+  - Rough idle, hesitation, or poor acceleration
+  - Increased fuel consumption or black smoke
+  - No apparent symptoms (many electrical faults trigger CEL without noticeable change)
+
+light_categories:
+  steady_light: "Fault detected and stored in memory. Vehicle is drivable but should be diagnosed within a few days"
+  blinking_light: "CRITICAL: Active misfire or system fault occurring RIGHT NOW. Stop driving immediately. Blinking CEL indicates engine damage risk (catalytic converter overheating due to misfire)"
+  flash_and_fade: "Temporary fault detected but has since cleared. The code is still stored in memory but the condition has resolved. Example: loose gas cap triggers O2 sensor code, light comes on, you tighten cap, light fades but code remains"
+
+common_codes_and_causes:
+  p0300: "Misfire Detected (Multiple Cylinders) — Bad spark plug, coil pack, fuel injector, compression, ignition timing"
+  p0171: "System Too Lean (running on 4M41 diesel) — Fuel pressure low, clogged fuel injector, air leak in intake"
+  p0174: "System Too Rich (running on 6G75 petrol) — Oxygen sensor faulty, fuel pressure regulator stuck, injectors stuck open"
+  p0133: "Oxygen Sensor Slow Response (O2 sensor circuit) — Contaminated or aged O2 sensor, exhaust leak, wiring fault"
+  p0420: "Catalyst System Efficiency Below Threshold (catalytic converter failing) — Converter damaged, intake valve deposits, misfire overheating converter"
+  p1276: "Fuel Filter Pressure Switch (diesel) — Clogged fuel filter, failed pressure switch, electrical fault"
+  p0470: "Exhaust Pressure Sensor Malfunction (diesel DPF) — DPF overfull (trigger regen), failed DPF pressure sensor"
+  p0500: "Vehicle Speed Sensor Malfunction — Failed speedometer sensor, wiring damage"
+
+diagnosis_procedure:
+  step_1: "If light is blinking: STOP. Do not drive the vehicle at highway speed or accelerate hard. Drive straight to a mechanic. Blinking CEL = active misfire = engine damage risk"
+  step_2: "If light is steady: Note the date and time the light appeared. Has anything unusual occurred (rough start, hesitation, noise)? Did you recently fill up with fuel?"
+  step_3: "Use an OBD2 diagnostic scanner to read the fault code(s). Many auto parts stores (AutoZone, O'Reilly) loan free scanners. Connect to the OBD2 port (usually under steering wheel)"
+  step_4: "Write down all codes displayed (P0123, P0456, etc.) and note how many times each code has been triggered (trip count)"
+  step_5: "Research the code using this website or a factory service manual. Determine if the fault is emissions-related (O2 sensor) or engine-related (misfire, timing)"
+  step_6: "Perform secondary checks based on the code: If P0171 (lean), check fuel pressure, filter, and injector operation. If P0300 (misfire), check spark plugs and ignition coils"
+  step_7: "Repair or replace the faulty component. After repair, clear the code using the scanner and monitor for recurrence"
+
+parts:
+  - name: Diagnostic scanner (OBD2 code reader)
+    oem: "Free loans at auto parts stores, or purchase portable scanners ($30–$100)"
+    notes: A simple code reader is sufficient for DIY diagnosis. MUT-III professional scanners cost $2,000+
+    verify: false
+  - name: Oxygen sensor (O2, common failure)
+    oem: "4M41: MZ690532 | 6G75: MD326584"
+    notes: Very common cause of CEL on vehicles over 100,000 km
+    verify: false
+  - name: Spark plug or coil pack (6G75 petrol, if misfire codes)
+    oem: "Various; see spark-plugs.yml topic"
+    notes: "Misfire codes P0301–P0306 suggest faulty spark or ignition"
+    verify: false
+
+tools:
+  - OBD2 diagnostic scanner (loaned free at auto parts stores or purchased for 30-60 dollars)
+  - Flashlight and screwdrivers to inspect engine for loose wires and corrosion
+
+tips:
+  - Do NOT clear the Check Engine Light without understanding the fault. Many shops clear codes and take your money without fixing anything. The light comes back shortly after
+  - Some codes are intermittent. You may see a code like P0171 (lean) logged, but the condition clears itself if you drive on the highway. This is often a loose connector or a sensor entering/exiting a failure window
+  - Fuel cap issues: A loose or missing fuel cap triggers P0455 (evaporative emission system leak). Tighten the cap and re-scan. Code often clears on its own after a few drive cycles
+  - Avoid disconnecting the battery to clear the CEL. This erases all diagnostic history and makes troubleshooting harder. Use a scanner to clear codes after fixing the fault
+  - If codes keep coming back after repair: The underlying cause may not be fixed. Re-scan and look for new codes. If the same code returns, you may have replaced the wrong part (e.g., a bad ignition coil, not the spark plug)
+  - Professional diagnosis costs $100–$200 at an independent shop but saves money vs. guessing and replacing parts randomly
+
+procedure_refs:
+  - label: "On-board diagnostics — Engine Control (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - spark-plugs
+  - oxygen-sensor-replacement
+  - fuel-filter-diesel
+  - dpf-warning-light

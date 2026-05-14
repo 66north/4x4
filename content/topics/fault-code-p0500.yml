@@ -1,0 +1,63 @@
+slug: fault-code-p0500
+title: "P0500 — Vehicle Speed Sensor Malfunction"
+category: codes
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0500 indicates the ECU is not receiving a valid signal from the vehicle speed sensor (VSS).
+  The VSS provides road speed data to the ECU, ABS module, and speedometer. Without it, the
+  speedometer will read zero, ABS may activate unexpectedly, and the automatic transmission
+  may not shift correctly. Usually caused by a failed sensor or damaged wiring.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Speedometer reads zero at all times"
+  - "Erratic speedometer behaviour (needle bouncing)"
+  - "Automatic transmission staying in low gears or shifting erratically"
+  - "ABS light or traction control light also illuminated"
+  - "Idle speed higher than normal (ECU using air/fuel map that ignores vehicle speed)"
+
+likely_causes:
+  - "Failed vehicle speed sensor"
+  - "Damaged wiring or corroded connector at VSS"
+  - "ABS wheel speed sensor failure feeding speed data to ECU"
+  - "Damaged tone ring (reluctor ring) on the transmission output shaft"
+
+diagnosis:
+  step_1: "Verify speedometer is reading zero. If speedometer works but code is present, the sensor signal may be intermittent."
+  step_2: "Locate VSS — typically on the transmission output shaft (accessible from underneath)."
+  step_3: "Inspect wiring harness from VSS to connector for damage, chafing, or water ingress."
+  step_4: "With vehicle raised and in neutral, slowly rotate a wheel by hand. VSS should output a cycling AC voltage (0.5–5V AC)."
+  step_5: "No output = failed sensor or broken wiring. Check wiring continuity to ECU before condemning the sensor."
+  step_6: "If wiring is intact, replace the VSS."
+
+common_fixes:
+  vss_replacement: "Replace VSS — $40–120 part, $80–150 labor"
+  wiring_repair: "Repair damaged wiring — $50–150"
+
+estimated_repair_cost: "$120–270 (sensor most common)"
+
+tips:
+  - "The VSS is mounted in an exposed location under the vehicle and is prone to connector corrosion. Inspect the connector carefully before condemning the sensor."
+  - "If the ABS light is also on alongside P0500, the ABS wheel speed sensors may be providing the speed signal — check those as well."
+  - "A faulty VSS can cause the automatic transmission to hunt between gears at low speeds. This is often misdiagnosed as a transmission fault."
+  - "After replacement, a road test is essential to confirm the speedometer reads correctly and the code does not return."
+
+parts:
+  - name: "Vehicle speed sensor — 4M41 / 6G75"
+    oem: "MB618423"
+    spec: "Reed-switch or Hall-effect, M18×1.5 thread"
+    notes: "Mounted on transmission output shaft. $40–120."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Speed Sensors (Section 35)"
+    section: "35"
+    manual: "M1"
+
+related:
+  - check-engine-light
+  - transmission-slipping

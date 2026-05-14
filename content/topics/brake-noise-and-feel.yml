@@ -1,0 +1,75 @@
+slug: brake-noise-and-feel
+title: Brake Noise & Poor Braking Feel
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Brake noise (squealing, grinding, creaking) and poor feel (soft pedal, extended stopping distance)
+  are often signs of worn pads, moisture in fluid, or air in the brake lines. While some noise is cosmetic,
+  grinding and a soft pedal indicate safety issues. Diagnosis is straightforward: inspect pads for wear,
+  check fluid condition, and bleed air if the pedal is soft.
+
+symptoms:
+  - High-pitched squealing when braking (usually front pads, often ceramic pads are louder)
+  - Grinding sound and metal-on-metal feel (brake pads worn to backing plate)
+  - Soft or spongy brake pedal (air in lines or moisture in fluid)
+  - Extended stopping distance (degraded pads, moisture in fluid, or air in system)
+  - Brake pedal fades during repeated hard braking (fluid boiling due to high temperature)
+  - Uneven braking (one wheel locks up before others, or vehicle pulls to one side)
+  - Creaking noise when braking (suspension or brake caliper movement, not pad wear)
+
+noise_diagnosis:
+  squeal: "Usually front brake pads nearing wear limit. Not a safety issue yet, but replace soon. Some ceramic pads squeal normally — consider semi-metallic pads if annoying"
+  grinding: "Brake pads worn completely to metal backing plate. Dangerous — stop driving immediately and get repair. Rotor may be damaged"
+  creaking: "Caliper bracket loose or suspension bushing worn. Not immediately dangerous, but needs attention. Inspect fasteners"
+  clicking: "Air in brake lines or wheel cylinder leaking. Could develop into soft pedal. Bleed brakes (see brake-fluid-flush.yml)"
+
+pedal_feel_diagnosis:
+  soft_spongy: "Air in lines or water in fluid. Bleed brakes immediately. Soft pedal is a safety issue — do not drive without repair"
+  hard_pedal: "Power brake booster failing (check engine for vacuum leak). Or brake system very effective and normal on newer vehicles"
+  fade_on_hard_braking: "Fluid boiling due to high temperature. Upgrade to high-temp fluid or install cooling ducts. Common when towing"
+  uneven_braking: "Caliper sticking on one side, or uneven pad wear. Inspect both sides. One stuck caliper can lock one wheel"
+  pedal_goes_to_floor: "Severe fluid leak or cylinder failure. Do NOT drive. Have towed to repair shop"
+
+common_causes:
+  worn_brake_pads: "Most common cause of noise and reduced stopping power. Pads should be 3-4mm thick minimum. Fix: replace pads and inspect rotors (see brake-pads-front.yml)"
+  glazed_rotors: "Rotors become shiny and hard from repeated high-temp braking. Pads don't grip well. Fix: resurface or replace rotors (100-250 dollars labor)"
+  air_in_lines: "Introduced during brake fluid change or from a leak. Causes soft pedal. Fix: bleed brakes (see brake-fluid-flush.yml)"
+  moisture_in_fluid: "Hygroscopic brake fluid absorbs water from air. Lowers boiling point. Fix: fluid flush and refill (50-150 dollars)"
+  brake_fluid_leak: "Worn hose, leaking caliper, or master cylinder failure. Causes soft pedal and potential brake loss. Fix: locate and seal leak, bleed system"
+  caliper_sticking: "Corrosion or piston seal failure. One caliper applies uneven braking. Fix: clean or replace caliper (150-350 dollars)"
+
+inspection_checklist:
+  item_1: "Look at brake pads through the wheel spokes. If less than 3mm of friction material remains, replace them"
+  item_2: "Inspect rotor surface for scoring (deep grooves). Light scoring is normal; heavy scoring requires rotor replacement"
+  item_3: "Check brake fluid level in master cylinder. Should be between min and max marks. Top up if low"
+  item_4: "Check fluid color. Light brown = normal. Dark brown/black = time for a flush. Fluid should be replaced every 2 years"
+  item_5: "Inspect brake hoses for cracks, leaks, or bulging. Hoses should be firm, not soft or mushy"
+  item_6: "Test pedal feel in an empty parking lot. Pedal should be firm and consistent. Soft or fading pedal means air or moisture in system"
+
+tools:
+  - Jack and jack stands (to safely lift vehicle)
+  - Wheel chocks (to prevent rolling)
+  - Socket set for caliper bolts
+  - Brake fluid (DOT 3 or DOT 4)
+  - Bleed kit or manual pump (if bleeding brakes)
+
+tips:
+  - Brake noise is usually not a safety issue unless it's grinding (metal-on-metal). Squealing is annoying but your brakes still work
+  - Brake pads are a wear item; expect to replace them every 40,000-80,000 km depending on driving style (frequent hard braking wears pads faster)
+  - Brake rotors often last 100,000+ km if pads are changed before metal touches rotor. Let pads wear too long and rotors will need replacement too
+  - Moisture in brake fluid lowers boiling point from 205°C (dry) to 140°C (saturated). This is why fluid flush is recommended every 2 years
+  - If your brakes feel different after a repair, it may just be new pads bedding in (first 100 km). Pedal feel will normalize
+
+procedure_refs:
+  - label: "Factory procedure — Brake System (Section 35)"
+    section: "35"
+    manual: "M1"
+
+related:
+  - brake-pads-front
+  - brake-fluid-flush
+  - suspension-squeaks-and-clunks

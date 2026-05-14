@@ -1,0 +1,74 @@
+slug: transmission-slipping
+title: Transmission Slipping or Delayed Shifts
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  All Pajero Gen IV models come with 5-speed automatic transmission. If the transmission slips (engine
+  RPM jumps but vehicle speed doesn't), hesitates before engaging a gear, or shift points feel wrong,
+  the transmission fluid is likely degraded, internal friction material is worn, or solenoid valves are
+  stuck. This is a serious condition that worsens over time and can lead to complete transmission failure
+  if ignored. Early diagnosis and fluid changes can often resolve the issue.
+
+symptoms:
+  - Engine RPM rises but vehicle acceleration is delayed (slipping between gears)
+  - Shift feel is mushy or delayed (1-2 seconds of hesitation before engaging)
+  - Transmission shifts too early or too late (shift points inconsistent with driving conditions)
+  - Whining or grinding noise from transmission during acceleration
+  - Overheating: transmission cooler temp exceeds 70°C at idle
+  - Vehicle will not move or moves very slowly despite engine running (internal failure)
+  - Check Engine light with transmission-related code (P0870, P0875, etc.)
+
+diagnosis_procedure:
+  step_1: "Check transmission fluid level while engine is warm and idling. Dipstick should read FULL on the warm mark. Low fluid causes slipping. Top up if needed"
+  step_2: "Inspect fluid color and smell. Bright red and odorless = good. Dark brown/black or burnt smell = degraded fluid. Condition directly affects shift quality"
+  step_3: "Scan for transmission codes (P0870 = pressure too low, P0875 = pressure too high, P0750 = shift solenoid fault). Codes pinpoint the fault"
+  step_4: "Test shift feel: In an empty parking lot, shift from P to D. Should engage smoothly. If delayed or abrupt, note the delay. Repeat through all gears"
+  step_5: "Perform a load test: Accelerate gently to 40 km/h. Transmission should upshift smoothly through gears 1-5. Note if shifts are delayed, firm, or flared"
+  step_6: "Check transmission cooler temperature with scan tool if available (should be 50-70°C at highway speed). High temp indicates overheating, fluid breakdown, or internal slippage"
+
+fluid_quality_impact:
+  new_fluid: "Bright red, odorless. Excellent friction modifiers and hydraulic pressure. Smooth, firm shifts"
+  degraded_fluid: "Dark brown, burnt smell. Friction modifiers burned off. Slipping and delayed shifts common"
+  contaminated_fluid: "Particulates (metal, rubber) visible. Usually indicates internal wear. Fluid change alone may not resolve slipping"
+  overfilled: "Excessive fluid causes foaming, overheating, and poor shift quality. Check level and drain if over-full"
+
+common_causes:
+  fluid_degradation: "Most common cause in high-mileage vehicles. Fix: complete fluid and filter change (see transmission-fluid.yml). Often restores shift quality"
+  worn_friction_material: "Torque converter clutch or planetary gears worn. Fluid change helps temporarily, but long-term fix is transmission overhaul (very expensive)"
+  stuck_solenoid_valve: "Shift solenoid sticks, preventing gear engagement. Fix: solenoid replacement or transmission flush (100-300 dollars)"
+  low_fluid: "Gradual seepage or overfilled reservoir lead to low level. Fix: top up and inspect for leaks (see oil-leak.yml)"
+  transmission_overheat: "Towing or continuous city driving causes fluid breakdown. Fix: install transmission cooler (150-300 dollars) or reduce load"
+
+immediate_actions:
+  action_1: "Do NOT drive aggressively or tow until transmission is repaired. Slipping generates heat, which accelerates failure"
+  action_2: "Have transmission scanned for codes to rule out electrical faults (solenoid) vs. mechanical wear"
+  action_3: "Perform a fluid change immediately. Many slipping issues resolve after fresh fluid + filter"
+  action_4: "Monitor transmission temperature. If it exceeds 100°C, pull over and cool down. Overheating can cause catastrophic failure"
+  action_5: "If slipping persists after fluid change, transmission may have internal wear. Get a professional diagnosis (150-300 dollars for inspection)"
+
+tools:
+  - OBD2 scan tool to read transmission codes
+  - Transmission fluid dipstick (included in vehicle)
+  - Transmission fluid and filter (see transmission-fluid.yml)
+  - Thermometer (optional, to measure cooler temperature)
+
+tips:
+  - Transmission fluid condition is critical. Even small particles (wear debris) can accumulate and cause solenoid sticking
+  - Transmission slipping feels different from engine power loss. If RPM jumps but speed doesn't, it's transmission. If both lag, it's engine"
+  - Some slipping is normal during cold-start before fluid warms. If slipping persists after 5-10 minutes of driving, something is wrong"
+  - Automatic transmissions have no "neutral" on the highway. Always use P (park) or N (neutral) when stopped; avoid coasting in N"
+  - If transmission suddenly fails to move the vehicle, stop immediately. Continued driving can damage the transmission beyond repair"
+
+procedure_refs:
+  - label: "Factory procedure — Automatic Transmission (Section 05 or 30)"
+    section: "05"
+    manual: "M1"
+
+related:
+  - transmission-fluid
+  - power-loss
+  - check-engine-light

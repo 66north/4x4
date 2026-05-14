@@ -1,0 +1,97 @@
+slug: fluid-capacities
+title: "Fluid Capacities — Quick Reference"
+category: reference
+difficulty: 1
+time_minutes: 5
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Complete fluid capacity reference for the 2008–2013 Pajero IV. Use these figures when performing
+  drain-and-refill services. Always verify with dipstick or sight glass after filling — actual capacity
+  varies slightly depending on how completely the old fluid drains.
+
+parts:
+  - name: "Engine oil — 4M41 diesel (with filter change)"
+    oem: null
+    spec: "5W-30 ACEA C3 (DPF) or 5W-40 ACEA B4 (non-DPF)"
+    quantity: "6.5–7.0 L"
+    notes: "Fill to MIN mark, run 30 seconds, recheck. Overfilling causes oil burning."
+    verify: false
+
+  - name: "Engine oil — 6G75 petrol (with filter change)"
+    oem: null
+    spec: "5W-30 or 5W-40 API SL/SM"
+    quantity: "4.9 L"
+    notes: "Fill to MIN mark first, run engine briefly, top to MAX. Do not overfill."
+    verify: false
+
+  - name: "Automatic transmission fluid (Aisin 5-speed)"
+    oem: null
+    spec: "ATF SP-III (Mitsubishi Genuine or equivalent)"
+    quantity: "3.0 L drain-and-refill / 8.0–9.0 L full dry fill"
+    notes: "Check with engine warm, running, selector in Park. Use dipstick hot-check procedure."
+    verify: false
+
+  - name: "Coolant — total system capacity"
+    oem: null
+    spec: "Mitsubishi Genuine or ASTM D3306 compliant"
+    quantity: "9.5 L (radiator + block + heater core + expansion tank)"
+    notes: "Fill expansion tank to MAX. Run engine with heater on full to purge air pockets, then top up."
+    verify: false
+
+  - name: "Front differential oil"
+    oem: null
+    spec: "API GL-5 80W-90 (or 75W-90 synthetic)"
+    quantity: "1.5 L approx."
+    notes: "Fill until fluid drips from filler hole. Limited-slip diff requires GL-5 LS additive."
+    verify: false
+
+  - name: "Rear differential oil"
+    oem: null
+    spec: "API GL-5 80W-90 (or 75W-90 synthetic)"
+    quantity: "2.0 L approx."
+    notes: "Same levelling-plug fill method. Check for LSD (Torsen) — use GL-5 LS fluid if equipped."
+    verify: false
+
+  - name: "Transfer case fluid"
+    oem: null
+    spec: "ATF SP-III or equivalent"
+    quantity: "1.0–1.2 L approx."
+    notes: "Often overlooked. Change every 40,000 km. Same levelling-plug fill method."
+    verify: false
+
+  - name: "Power steering fluid"
+    oem: null
+    spec: "Mitsubishi Genuine PSF or Dexron II/III ATF"
+    quantity: "0.9 L reservoir (0.5 L typical top-up)"
+    notes: "Check at MIN/MAX marks on reservoir. Top up only — full flush rarely needed."
+    verify: false
+
+  - name: "Brake fluid"
+    oem: null
+    spec: "DOT 4"
+    quantity: "0.5 L reservoir (full system ~0.8 L)"
+    notes: "Top up to MAX only. Do NOT mix DOT 3 and DOT 4. Flush every 60,000 km or 3 years."
+    verify: false
+
+  - name: "Windscreen washer fluid"
+    oem: null
+    spec: "Water + screen wash concentrate"
+    quantity: "3.5 L reservoir"
+    notes: "Use screen wash concentrate in cold climates to prevent freezing in reservoir and lines."
+    verify: false
+
+tips:
+  - "Engine oil: always fill to MIN mark on dipstick, run engine 30 seconds, then recheck. Never trust volume alone."
+  - "Transmission: check level with engine warm and running, selector in Park. Hot-check procedure differs from cold."
+  - "Coolant: fill to MAX on expansion tank. Run engine with heater on full to purge air pockets, then top up."
+  - "Brake fluid: if topping up before pad replacement, do NOT fill to MAX — compressing caliper pistons will overflow the reservoir."
+  - "Differential oil: fill until fluid drips from the filler hole — that is the correct level, no guessing needed."
+  - "Transfer case fluid is the most commonly forgotten fluid on 4WD vehicles. Check it at every 40,000 km service."
+
+related:
+  - engine-oil-specifications
+  - coolant-specifications
+  - transmission-fluid-specifications
+  - maintenance-schedule

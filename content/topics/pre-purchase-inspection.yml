@@ -1,0 +1,44 @@
+slug: pre-purchase-inspection
+title: "Pre-Purchase Inspection Checklist"
+category: reference
+difficulty: 1
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV is a capable and reliable vehicle when maintained, but specific failure points
+  become expensive at high mileage. This checklist covers the known weak spots to inspect
+  before buying a used example. A professional pre-purchase inspection ($150–200 at an
+  independent mechanic) is always worthwhile, but walking through this list yourself first
+  filters out the worst examples before paying for a formal check.
+
+symptoms:
+  - "Any of the following checks revealing a fault — use as a go/no-go filter before committing"
+
+tips:
+  - "ENGINE — Check oil filler cap for creamy or mayonnaise-like residue (coolant in oil = head gasket or oil cooler fault). Any milky contamination is a serious warning."
+  - "ENGINE — Check coolant colour in the overflow reservoir. Mitsubishi Pajero IV uses blue HOAT coolant. If it is orange, green, or brown, the coolant has been mixed incorrectly — accelerated corrosion of the cooling system is likely."
+  - "ENGINE — With the engine warm and idling, watch for white smoke from the exhaust that persists after warm-up. Persistent white smoke = coolant burning. Black smoke at idle = EGR or injector issue."
+  - "ENGINE — Ask about EGR cleaning history on 4M41 diesel models. Carbon buildup in the EGR and intake manifold is universal on these engines — if it has never been cleaned at 100,000+ km, budget for the job."
+  - "ENGINE — Check the crankshaft pulley (harmonic balancer) for signs of the rubber ring delaminating or the pulley wobbling. Crankshaft pulley failure is a known Pajero IV fault — a failed pulley throws belts and can cause accessory drive and alternator failure."
+  - "TRANSMISSION — Test all 4WD modes: 2H, 4H, 4HLc, 4LLc. All should engage cleanly within 2–3 seconds with no grinding. Flashing 4WD light indicates a mode that has not fully engaged."
+  - "TRANSMISSION — On automatics, check for smooth, firm gear changes at low speed, cruise, and hard acceleration. Delayed engagement from Park to Drive, or slipping between gears, indicates worn clutch packs."
+  - "DRIVETRAIN — Drive slowly in a tight circle in each direction and listen for clicking from the front wheels — CV joint wear. Any clicking on full lock needs investigation."
+  - "DRIVETRAIN — On models with rear diff lock: test it on a loose surface (gravel or grass). One rear wheel should spin while the other stays stationary (unlocked); with the lock engaged, both should turn at the same speed."
+  - "SUSPENSION — Check all four shock absorbers for oil leaks (wet or oily around the shaft seal). Bounce each corner — the vehicle should settle after one oscillation, not continue bouncing."
+  - "SUSPENSION — Listen for clunks or knocking over bumps at slow speed (5–20 km/h). Clunking indicates worn suspension bushings, ball joints, or sway bar links."
+  - "BRAKES — Brake from 60 km/h — the vehicle should stop straight with no pulling, pulsing, or grinding. ABS sensors fail on Pajero IVs used in dusty conditions; an ABS light on the dash with no other faults is a common inexpensive fix."
+  - "BODY — Inspect door sills, rear wheel arches, and the area under the rear bumper for rust. Pajero IVs used near the coast or on unsealed roads with no undersealing are prone to corrosion in these areas."
+  - "BODY — Check all four windows go up and down fully. Slow or jerky operation = worn regulator. Window that stops mid-travel = motor or fuse."
+  - "ELECTRONICS — Check all dashboard warning lights extinguish after start. A 4WD, ABS, or airbag light remaining on indicates a known fault."
+  - "ELECTRONICS — Test the air conditioning. On 6G75 petrol models the AC compressor is driven by the serpentine belt; on 4M41 diesel, check cold air output and listen for compressor clutch noise."
+  - "SERVICE HISTORY — Ask for evidence of timing belt replacement on 4M41 diesel models. The factory interval is 90,000 km — if it is not in the history, it should be budgeted immediately. A snapped timing belt is a catastrophic engine failure."
+  - "TAKATA AIRBAG RECALL — Pajero IV (NS/NT/NW/NX models) were subject to a mandatory Takata airbag inflator recall. Verify the recall has been completed via the NEVDIS/VIN check system in Australia, or the relevant recall database in your country. Do not purchase a vehicle with an outstanding airbag recall."
+
+related:
+  - maintenance-schedule
+  - timing-belt
+  - check-engine-light
+  - 4wd-not-engaging
+  - egr-valve-cleaning

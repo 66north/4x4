@@ -1,0 +1,73 @@
+slug: dpf-warning-light
+title: DPF Warning Light & Regeneration (Diesel)
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Diesel Particulate Filter (DPF) traps soot from the 4M41 diesel exhaust and periodically
+  regenerates (burns soot at high temperature) to clean itself. If you mostly drive short distances
+  at low speeds, the engine never gets hot enough for regeneration, and soot accumulates. The ECU
+  monitors DPF loading and illuminates a warning light when it exceeds 90%. Many owners can resolve
+  this with a single long highway drive; others may need dealer intervention. Understanding DPF
+  regeneration cycles helps you maintain this system and avoid costly repairs.
+
+symptoms:
+  - Orange or amber warning light on dashboard (Emissions, DPF, or Engine light)
+  - Reduced engine power (ECU enters limp-mode to reduce soot production)
+  - Black smoke from the exhaust during acceleration (soot being partially burned)
+  - Loud fan noise from the rear undercarriage (cooling fans for DPF casing)
+  - Increased fuel consumption or rough idle
+  - Error codes P0470 (DPF differential pressure sensor) or similar in diagnostic scanner
+
+dpf_regeneration_cycle:
+  theory: "The DPF regenerates automatically at high temperature (typically above 550°C). Passive regeneration happens during highway driving. Active regeneration is triggered by ECU if passive regen fails"
+  passive: "Highway driving at sustained RPM (>2000) and load heats the engine and exhaust, causing soot to burn naturally. One 30+ km highway drive at 80+ km/h can trigger passive regen"
+  active: "If passive regen is insufficient (too much city driving), the ECU injects diesel into the exhaust (fuel dousing) to raise DPF temperature. This triggers fuel consumption dip and loud fan noise lasting 10–30 minutes"
+  maintenance: "City driving only (short trips, low RPM) prevents regen cycles and allows soot to accumulate. Highway driving or trailer towing promotes frequent regen"
+
+parts:
+  - name: DPF replacement (if physically blocked or damaged)
+    oem: "4M41: Various (MZ690XXX depending on model)"
+    notes: Very expensive ($1,500–$2,500 OEM). Avoid replacement unless filter is cracked or totally blocked
+    verify: false
+  - name: DPF differential pressure sensor (if light persists after regen)
+    oem: "4M41: MD327269 or similar"
+    notes: Sensor failure can trigger warning lights even if DPF is clean. Replace if scan tool shows pressure sensor fault
+    verify: false
+  - name: Diesel fuel additive (FBC — Fuel-Borne Catalyst)
+    oem: "Techron Diesel Inject (Chevron), Power Service +Cetane"
+    notes: Optional; may help restore regen capability on severely loaded DPFs
+    verify: false
+
+tools:
+  - Diagnostic scanner (MUT-III or equivalent) to read DPF soot load percentage (optional but helpful)
+  - Gas station pump access to diesel fuel
+
+diagnosis_and_recovery:
+  step_1: "Do not panic. Most DPF lights resolve with a single highway drive. Do not immediately take the vehicle to a dealer or disable the DPF"
+  step_2: "Drive on the highway for at least 30–50 km at steady RPM (2500+ RPM), maintaining speed around 100+ km/h. This heats the exhaust and triggers passive regeneration"
+  step_3: "During passive regen, you may notice: increased fuel consumption (5–10%), louder fan noise, slight smell from exhaust (normal). The regen process takes 10–30 minutes"
+  step_4: "After the highway drive, the light should extinguish or enter a dimmer 'low' state. If light stays bright after the drive, proceed to Step 5"
+  step_5: "If light persists, use a diagnostic scanner to read soot load (%) and fault codes. If load is still high (>95%), another highway drive may be needed. If codes show pressure sensor fault, the sensor may be faulty"
+  step_6: "Avoid short trips and idling. Each trip should be at least 20–30 km at highway speeds (>80 km/h) to trigger regen. Multiple short trips in a day without highway time allows soot to re-accumulate"
+
+tips:
+  - Some owners report that towing (loaded trailer) helps trigger regen due to sustained high load and engine heat. If you frequently tow, DPF issues are less common
+  - Fuel quality matters. Low-quality diesel with high sulfur content loads the DPF faster. Use premium/branded fuel (Shell, Caltex, major chains)
+  - If the warning light comes on after every few days of city driving, the vehicle is not accumulating enough highway time for regen. Increase highway driving or consider a long trip to reset the system
+  - Never disable the DPF or remove it (illegal in most countries and voids emissions compliance). Modern engines are tuned for DPF back-pressure; removing it causes ECU relearning issues and potential damage
+  - If your vehicle is in limp-mode (reduced power) due to DPF load, this is intentional — the ECU reduces soot production to prevent catastrophic overloading. Do not try to "clear" the light or force more power; it will only make the situation worse
+  - Mechanic tip: If a DPF regen costs $300+ at a dealer, ask if an independent shop can perform a forced regen via scan tool (may be cheaper)
+
+procedure_refs:
+  - label: "DPF system — Emission Control (Section 17 or 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - check-engine-light
+  - engine-wont-start
+  - fuel-filter-diesel

@@ -1,0 +1,73 @@
+slug: fault-code-p0300
+title: "P0300 — Random/Multiple Cylinder Misfire Detected"
+category: codes
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Code P0300 indicates the ECU has detected random misfires across multiple cylinders. A misfire occurs when one or more
+  cylinders fail to ignite the fuel-air mixture, causing power loss, rough idle, and hesitation. Unlike P0301-P0306 (which
+  point to a specific cylinder), P0300 means the problem affects multiple cylinders randomly. Common causes are weak spark,
+  fuel delivery issues, or air leaks.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Rough idle (noticeable vibration)"
+  - "Hesitation or stumbling during acceleration"
+  - "Loss of power, especially under load"
+  - "Black smoke from exhaust (overfueling)"
+  - "Fuel smell from exhaust"
+  - "Poor fuel economy"
+  - "Engine may run and then stall"
+
+likely_causes:
+  - "Worn spark plugs (most common; every 60,000 km on 6G75)"
+  - "Failing ignition coil or coil pack"
+  - "Fuel injector malfunction or contamination"
+  - "Fuel pressure too low (weak fuel pump or clogged filter)"
+  - "Vacuum leak (unmeasured air leans the mixture)"
+  - "Water or contamination in fuel tank"
+  - "Compression issue (worn rings, valve leakage)"
+  - "Engine oil dirty or wrong viscosity"
+
+diagnosis:
+  step_1: "Connect OBD-II scanner and retrieve code P0300. Check for codes P0301-P0306 (specific cylinder misfires) or other codes."
+  step_2: "If additional codes present, address them first (e.g., P0100 air flow, P0400 EGR)."
+  step_3: "Inspect all four spark plugs. Look for worn electrodes (gap > 1.3 mm), fouling (black deposit), or damage. Worn plugs are the most common cause."
+  step_4: "If plugs appear worn (60,000+ km since last change), replace all four. This alone resolves the code in 40% of cases."
+  step_5: "If plugs are newer, check fuel pressure at the fuel rail (should be 280-320 kPa at idle). Low pressure indicates fuel pump or filter problem."
+  step_6: "Inspect for vacuum leaks by spraying soapy water around intake manifold hoses while idling. Bubbles indicate a leak."
+  step_7: "Check fuel quality — if fuel was recently obtained from an unfamiliar station, suspect fuel contamination."
+  step_8: "If spark plugs and fuel are good, have compression tested. Low compression indicates internal engine wear."
+
+common_fixes:
+  spark_plugs: "Replace all four plugs; cost $30-80 parts, $150-300 labor if professional, total $180-380"
+  fuel_filter: "Replace if dirty or clogged; cost $30-60"
+  fuel_pump: "Replace if pressure is low (300+ in labor, $400-800 for pump and labor)"
+  ignition_coil: "Replace failing coil; cost $100-200 per coil, up to $400-800 for all four"
+  vacuum_leak: "Reseal or replace hoses; cost $50-200"
+  fuel_injector_cleaning: "Professional fuel system cleaning; cost $150-300"
+
+estimated_repair_cost: "$200-400 (spark plugs most common); $400-800 if fuel pump or coil replacement needed"
+
+tips:
+  - "Start with spark plug replacement — it's the most common cause and cheapest fix."
+  - "If P0300 appears after refueling at an unfamiliar station, suspect fuel contamination. Drain tank and refill with quality fuel from a trusted brand."
+  - "Vacuum leaks (cracked hoses, loose fittings) are the second most common cause. Spray soapy water to find them — bubbles reveal the leak."
+  - "Do NOT ignore this code. Continued driving with misfires damages the catalytic converter (very expensive)."
+  - "If misfire codes appear only on cold mornings, suspect failing glow plugs (4M41 diesel) or old battery (weak cold start)."
+  - "Water in fuel is common in humid climates or after driving through flooded roads. A fuel dryer additive may help; if not, drain tank."
+
+procedure_refs:
+  - label: "Factory procedure — Engine Control (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - spark-plugs
+  - rough-idle
+  - power-loss
+  - fuel-filter-diesel
+  - check-engine-light

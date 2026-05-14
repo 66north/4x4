@@ -1,0 +1,59 @@
+slug: ac-recharge
+title: "Air Conditioning Recharge (Regas)"
+category: maintenance
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV AC system uses R134a refrigerant. A recharge (regas) restores cooling performance
+  when refrigerant has leaked out over time. This is a workshop job — the system must be evacuated,
+  leak-tested, and charged to the exact specification weight. Overcharging is as damaging as
+  undercharging. Do not use DIY top-up cans without confirming there is no active leak.
+
+symptoms:
+  - "AC gradually losing cooling performance over months or years"
+  - "Compressor cycling rapidly (low-pressure cutout activating)"
+  - "AC vents blowing slightly cool but not cold"
+  - "Previously recharged system that has lost performance again"
+
+parts:
+  - name: "R134a refrigerant (workshop charge)"
+    oem: null
+    spec: "R134a, system capacity 650–750g (verify on underhood sticker)"
+    notes: "Exact charge weight is on a sticker near the AC compressor. Do not estimate — overcharge damages the compressor. Workshop only."
+    verify: false
+  - name: "AC compressor oil (PAG 46)"
+    oem: null
+    spec: "PAG 46 polyalkylene glycol compressor oil"
+    quantity: "Add if compressor or drier replaced"
+    notes: "Only required if a component was replaced. Normal regas does not require oil top-up."
+    verify: false
+  - name: "Receiver-drier (replace if system was opened)"
+    oem: "MR315352"
+    spec: "AC receiver-drier / accumulator"
+    notes: "Replace any time the AC system is opened to atmosphere. The desiccant saturates with moisture quickly. $40–80."
+    verify: true
+  - name: "AC compressor — 4M41 / 6G75"
+    oem: "AKC200A203F"
+    spec: "Sanden scroll compressor, 12V clutch"
+    notes: "Replace if compressor is seized or not building pressure. $300–600 remanufactured."
+    verify: true
+
+tips:
+  - "Always fix the leak before recharging. A regas on a leaking system is money wasted — the gas will be gone again within weeks or months."
+  - "The refrigerant charge weight label is on a sticker in the engine bay near the AC components. Australian/Middle East variants may differ from European spec."
+  - "If the system has been empty for more than a few months, replace the receiver-drier at the same time — moisture contamination damages the compressor."
+  - "A workshop regas with a proper machine costs $80–150 and includes vacuum test, leak check, and accurate charge. This is the only correct way to recharge AC."
+  - "Clicking or rattling from the AC compressor under load indicates bearing wear — stop using the AC and have the compressor inspected before it seizes and destroys the system."
+  - "Dual-zone systems (front + rear) share the same refrigerant loop but have independent blower motors. If only one zone fails, check that zone's blower before assuming a refrigerant fault."
+
+procedure_refs:
+  - label: "Factory procedure — Air Conditioning (Section 55)"
+    section: "55"
+    manual: "M1"
+
+related:
+  - ac-not-cooling
+  - heater-not-working

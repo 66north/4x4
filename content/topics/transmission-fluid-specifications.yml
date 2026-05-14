@@ -1,0 +1,70 @@
+slug: transmission-fluid-specifications
+title: Transmission Fluid (ATF) — Specifications & Capacity
+category: specs
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV uses a 5-speed automatic transmission (Aisin) that relies on transmission fluid for lubrication, cooling,
+  and pressure. Degraded or incorrect fluid causes slipping, delayed shifts, and eventual transmission failure. This guide
+  covers ATF type, capacity, and service intervals for your 5-speed automatic transmission.
+
+specifications:
+  transmission_type:
+    name: "Aisin 5-Speed Automatic"
+    vehicles_all: "All 2008-2013 Pajero IV models with automatic transmission"
+
+  fluid_type:
+    recommended:
+      - "Mitsubishi MM Genuine ATF SP-III (preferred)"
+      - "Diamond ATF SP-III"
+      - "Other OEM SP-III equivalent fluids"
+    note: "ATF SP-III is compatible with most modern automatic transmissions. Do NOT mix brands or types."
+    viscosity: "ISO VG 46 (approximate, ATF-specific)"
+
+  capacity:
+    service_drain_liters: 3.0
+    full_service_liters: "4-5"
+    notes:
+      - "Service capacity (drain and refill without dropping the pan) is approximately 3.0L"
+      - "Full service capacity (with pan removal and filter change) is 4-5L"
+      - "Always refer to your dipstick reading when topping up — use the WARM marks, not cold"
+
+  fluid_color_condition:
+    new_fluid: "Bright red, clean"
+    normal_wear: "Dark red to brown after 40,000-80,000 km"
+    worn_fluid: "Black or burnt-smelling; indicates overheating or internal wear"
+    action_if_worn: "Change fluid immediately. Worn fluid causes slipping and transmission damage."
+
+service_intervals:
+  normal_driving: "Every 40,000-60,000 km or 2 years"
+  severe_driving: "Every 20,000 km if towing, desert driving, or frequent heavy loads"
+  symptoms_requiring_early_service:
+    - "Delayed shift engagement (1-2 second pause before gear engages)"
+    - "Slipping (RPM jumps but vehicle speed doesn't)"
+    - "Burnt smell from transmission"
+    - "Overheating warning light or high transmission temperature"
+
+tips:
+  - "Check transmission fluid level when the engine is warm and transmission is in Park. The dipstick has separate marks for warm checks."
+  - "Overfilled transmission fluid causes foaming, overheating, and poor shift quality. Never exceed the MAX mark on the dipstick."
+  - "Transmission fluid loses its friction modifiers over time. Even if the level is correct, old fluid causes poor shifts and slipping."
+  - "If your transmission starts slipping or shifting roughly, change the fluid and filter immediately. A clogged filter restricts pressure and damages the transmission."
+  - "Transmission fluid absorbs moisture (hygroscopic). Leaving the cap off or driving through water can introduce water into the fluid, causing corrosion."
+  - "If transmission fluid is black or smells burnt, the transmission is overheating. Check for:
+      - Radiator or transmission cooler blockage
+      - Damaged fan or thermostat
+      - Worn internal friction material (requires transmission overhaul)"
+  - "Never use power steering fluid or engine oil in the transmission — it will cause immediate failure."
+
+procedure_refs:
+  - label: "Factory procedure — Automatic Transmission (Section 23 or 30)"
+    section: "23"
+    manual: "M1"
+
+related:
+  - transmission-slipping
+  - transmission-fluid
+  - engine-oil-specifications

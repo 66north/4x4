@@ -1,0 +1,72 @@
+slug: fault-code-p0420
+title: "P0420 — Catalyst System Efficiency Below Threshold (Bank 1)"
+category: codes
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0420 means the downstream oxygen sensor is reading an exhaust pattern too similar to the upstream
+  sensor, indicating the catalytic converter is not converting pollutants efficiently. The catalytic
+  converter typically lasts 150,000–200,000 km but degrades with oil burning, lead fuel, and severe
+  misfires. Before replacing the expensive cat, confirm the oxygen sensors are not the cause of the
+  false reading. This is a petrol-only code.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "No noticeable drivability symptoms in early stages"
+  - "Slight sulphur (rotten egg) smell from exhaust"
+  - "Failed emissions test"
+  - "May appear alongside P0300 (misfire) codes which accelerate catalyst damage"
+
+likely_causes:
+  - "Worn or degraded catalytic converter (age/mileage)"
+  - "Faulty downstream oxygen sensor giving false reading (most cost-effective to check first)"
+  - "Oil burning contaminating the catalyst (check for P0301–P0306)"
+  - "Previous severe misfires that melted catalyst internals"
+  - "Lead contamination (incorrect fuel used)"
+
+diagnosis:
+  step_1: "Check for other active codes. P0300–P0306 (misfires) alongside P0420 means misfires damaged the cat. Fix misfires first."
+  step_2: "Check downstream oxygen sensor (Bank 1, after cat). A faulty sensor can trigger P0420 without the cat being damaged."
+  step_3: "Using a scanner, monitor upstream and downstream O2 sensor voltage at steady cruise. Upstream should oscillate (0.1–0.9V). Downstream should be relatively steady (~0.6–0.8V for a good cat)."
+  step_4: "If downstream oscillates like upstream, the cat is not functioning. If downstream is flat with sensor unplugged, check sensor wiring."
+  step_5: "Inspect for oil consumption — excessive oil burning fills the cat with hydrocarbons and destroys it."
+  step_6: "If sensors are confirmed good and cat is failing, replacement is the only remedy."
+
+common_fixes:
+  oxygen_sensor: "Replace downstream O2 sensor — $80–180 part, $80–150 labor"
+  catalytic_converter: "Replace catalytic converter — $400–1200 (OEM), $200–500 (aftermarket), plus $150–300 labor"
+  upstream_o2: "Replace upstream O2 sensor if also faulty — $80–180 part"
+
+estimated_repair_cost: "$160–330 (O2 sensor first); $600–1500 if cat replacement needed"
+
+tips:
+  - "Always replace the oxygen sensor before the catalytic converter — a $150 O2 sensor fix is much better than a $1200 cat."
+  - "P0420 after spark plug replacement or misfire repair is common — misfires send raw fuel into the cat, which can melt the ceramic substrate."
+  - "Aftermarket catalytic converters are significantly cheaper than OEM ($200–500 vs $800–1200), but may not last as long."
+  - "Engine oil leaking past valve stem seals or piston rings will destroy even a new catalytic converter. Fix the oil consumption first."
+  - "P0420 alone does not affect drivability — you can drive safely while diagnosing, but the vehicle will fail an emissions test."
+
+parts:
+  - name: "Downstream O2 sensor — Bank 1 (after cat)"
+    oem: "MQ604018"
+    spec: "4-wire wideband lambda sensor"
+    notes: "Check this before replacing the catalytic converter. $80–180."
+    verify: true
+  - name: "Upstream O2 sensor — Bank 1 (before cat)"
+    oem: "MQ604017"
+    spec: "4-wire wideband lambda sensor"
+    notes: "Upstream sensor — may need replacement if downstream test reveals upstream fault. $80–180."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Emission Control (Section 14)"
+    section: "14"
+    manual: "M1"
+
+related:
+  - fault-code-p0300
+  - check-engine-light
+  - rough-idle

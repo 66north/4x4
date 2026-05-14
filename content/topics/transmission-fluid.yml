@@ -1,0 +1,82 @@
+slug: transmission-fluid
+title: Automatic Transmission Fluid Change
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  All Pajero Gen IV models (2008–2013) come with 5-speed automatic transmission. The transmission
+  fluid (ATF) serves as coolant, lubricant, and hydraulic medium for valve actuation. Over 60,000 km,
+  the fluid oxidizes, additives break down, and friction modifiers deteriorate, reducing shift quality
+  and transmission efficiency. Factory service intervals call for fluid changes every 60,000 km or
+  earlier if the vehicle is used for towing or heavy city driving.
+
+symptoms:
+  - Scheduled maintenance interval (60,000 km, or 40,000 km if towing)
+  - Transmission fluid appears dark brown or smells burnt (indicates overheating or oxidation)
+  - Sluggish or delayed shift response (transmission hesitates 1–2 seconds before engaging gears)
+  - Shuddering during acceleration (worn friction material in torque converter or fluid breakdown)
+  - Overheating: transmission cooler temperature exceeds 65°C at idle (should be below 60°C)
+  - Leaking red fluid under the vehicle (ATF is bright red when new, darkens with age)
+
+parts:
+  - name: Automatic transmission fluid (ATF, Dexron III or equivalent)
+    oem: Mitsubishi ATF or equivalent (Mobil ATF, Shell ATF recommended)
+    notes: "Capacity: Approximately 8–10 liters for drain-and-refill. Check dipstick after refilling"
+    verify: true
+  - name: Transmission pan drain plug gasket/washer
+    oem: MZ690339
+    notes: Always replace the crush washer. Reusing can cause leaks
+    verify: true
+  - name: Transmission pan (if replacing, due to damage or rust)
+    oem: MD701693 (aluminum pan, newer units) or steel pan (2008–2009)
+    notes: Optional unless the pan is dented or cracked
+    verify: false
+  - name: Transmission filter (if changing with pan)
+    oem: MD606433
+    notes: Strongly recommended to replace filter if removing the pan. Screen can be cleaned, but filter is cheap insurance
+    verify: false
+
+tools:
+  - Transmission pan drain wrench or socket (usually 17mm hex)
+  - Pan or drain container with 10+ liters capacity
+  - Gasket scraper or plastic scraper to remove old pan gasket material without scratching
+  - Rags and shop towels in large quantity (ATF is messy)
+  - Hand pump or electric oil pump to refill transmission (much faster than a funnel)
+  - Transmission fluid dipstick to check final level (already in vehicle)
+
+torque_specs:
+  - component: Transmission pan drain plug
+    value: 25
+    unit: Nm
+    notes: Snug the crush washer. Hand-tighten first, then torque to spec
+  - component: Transmission pan bolts (if removing pan)
+    value: 10
+    unit: Nm
+    notes: Several bolts of different sizes; check factory manual for tightening sequence
+
+tips:
+  - Perform this service when the transmission is warm (idle the engine for 5 minutes before draining). Warm fluid flows faster and carries more contaminants out
+  - The transmission pan is mounted under the vehicle, below the transmission. You will need to raise the vehicle on a lift or jack stands to access it safely
+  - Drain the pan slowly — ATF is hot and can cause burns. Position the drain pan directly below the drain plug
+  - Let the pan drain for at least 15 minutes. Some residual fluid will remain in the pan and torque converter (maybe 2 liters), so expect the system to need less than full capacity for a complete refill
+  - If the pan is being removed: Unbolt the pan carefully (8–12 bolts). The pan will be heavy and full of fluid — support it as it comes loose
+  - Scrape the pan sealing surface clean of old gasket material. Use a plastic scraper to avoid scratching the aluminum surface
+  - If replacing the transmission filter: Remove the old filter (usually screws into a nipple inside the pan) and screw the new one in finger-tight plus 3/4 turn. O-ring sealing is critical
+  - Reinstall the pan with a new gasket, tightening bolts in a cross pattern (alternating opposite sides) to ensure even seating
+  - Refill the transmission with ATF to the "COLD" mark on the dipstick if the transmission is at room temperature, or "HOT" if the transmission is still warm
+  - After refilling, start the engine and move the shift lever through all gears (P-R-N-D) several times while holding the brake. This circulates the new fluid through the torque converter
+  - Recheck the dipstick after this procedure. The level may have changed as air bubbles purge from the system
+  - Drive the vehicle gently for 10–15 km, then recheck the transmission temperature and fluid level. A proper fluid change improves shift quality noticeably
+
+procedure_refs:
+  - label: "Factory procedure — Automatic Transmission (Section 30, if available, or Section 05)"
+    section: "05"
+    manual: "M1"
+
+related:
+  - transmission-filter-replacement
+  - transmission-cooler-flush
+  - oil-change

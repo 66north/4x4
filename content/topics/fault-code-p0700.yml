@@ -1,0 +1,58 @@
+slug: fault-code-p0700
+title: "P0700 — Transmission Control System Malfunction"
+category: codes
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0700 is a generic alert code meaning the Transmission Control Module (TCM) has detected a fault
+  and stored its own fault code. P0700 itself does not describe the specific fault — it is the TCM
+  signalling the ECU that there is a transmission problem. You must read the TCM fault codes separately
+  using an OBD-II scanner that supports enhanced (manufacturer-specific) codes. Common companion codes
+  include P0715 (input speed sensor), P0720 (output speed sensor), and P0750–P0770 (solenoid faults).
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Transmission warning light (if equipped)"
+  - "Harsh or erratic gear shifts"
+  - "Transmission stuck in single gear (limp mode)"
+  - "Delayed engagement when selecting Drive or Reverse"
+  - "Slipping between gears"
+
+likely_causes:
+  - "Low or contaminated transmission fluid (check this first)"
+  - "Faulty transmission solenoid (shift solenoids A/B or pressure control solenoid)"
+  - "Failed input or output speed sensor"
+  - "Transmission range sensor (gear selector position sensor) fault"
+  - "Wiring harness fault inside transmission pan"
+  - "Mechanical transmission failure (clutch packs, valve body)"
+
+diagnosis:
+  step_1: "Check transmission fluid level and condition. Low, dark, or burnt-smelling fluid is a likely cause — change fluid and filter before further diagnosis."
+  step_2: "Using a scanner with transmission code support, read the specific TCM codes stored alongside P0700."
+  step_3: "P0715 — replace input speed sensor. P0720 — replace output speed sensor. P0750/P0755 — solenoid A or B fault."
+  step_4: "Inspect transmission harness connector (under the transmission pan if accessible) for water intrusion or corroded pins."
+  step_5: "If solenoid codes are present, drop the transmission pan, replace the fluid and filter, and inspect the solenoid harness."
+  step_6: "If mechanical symptoms persist after electrical diagnosis, a transmission specialist is required."
+
+common_fixes:
+  fluid_change: "Transmission fluid and filter change — $150–300"
+  speed_sensor: "Input or output speed sensor replacement — $60–150 part, $100–200 labor"
+  solenoid: "Replace faulty shift solenoid — $80–200 part, $200–400 labor (requires pan drop)"
+  range_sensor: "Transmission range sensor — $80–180 part, $100–200 labor"
+
+estimated_repair_cost: "$150–300 (fluid change most common first step); $300–800 for solenoid or sensor; $1500+ for mechanical rebuild"
+
+tips:
+  - "P0700 alone tells you nothing specific — you must read the TCM's own codes with a scanner that supports Mitsubishi enhanced codes (not just generic OBD-II)."
+  - "Transmission fluid degradation is the most common cause. If fluid is dark brown or smells burnt, a full fluid and filter change may resolve the issue."
+  - "Limp mode (stuck in 3rd gear) is the TCM protecting the transmission from further damage. Do not ignore it."
+  - "A basic OBD-II scanner may show P0700 but not the specific sub-codes. A Mitsubishi-compatible scanner (or Snap-on/Autel with enhanced support) is needed."
+  - "If the transmission worked perfectly before a fluid change and now has issues, the wrong fluid type was likely used. ATF SP-III is required — not generic Dexron III."
+
+related:
+  - transmission-slipping
+  - transmission-fluid
+  - check-engine-light

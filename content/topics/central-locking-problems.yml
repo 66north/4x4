@@ -1,0 +1,63 @@
+slug: central-locking-problems
+title: "Central Locking & Remote Key Problems"
+category: troubleshoot
+difficulty: 2
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Central locking and remote key faults on the Pajero IV fall into two categories: remote key
+  (keyfob/transponder) issues and the physical locking actuator system. A dead key battery is the
+  most common cause of remote failure. Actuator faults affect individual doors. The ETACS module
+  (Electronic Time and Alarm Control System, Section 52 of the service manual) governs the entire
+  body electronics including locking, alarm, and immobiliser.
+
+symptoms:
+  - "Remote key not working (no lock/unlock response)"
+  - "One door not locking or unlocking with central locking"
+  - "Alarm triggering unexpectedly or not arming"
+  - "Immobiliser light flashing — engine won't start"
+  - "Central locking works from inside switch but not from remote"
+  - "Doors locking but not unlocking (or vice versa)"
+
+tips:
+  - "Replace the remote key battery first (CR2032 coin cell). This fixes 60% of remote key complaints. Key should respond within 1 metre of the vehicle after battery change."
+  - "After replacing the key battery, you may need to re-sync the remote: sit in the vehicle, insert key in ignition, press lock button 5 times within 10 seconds, then press unlock once. Confirm with a lock/unlock cycle."
+  - "If only one door fails, the fault is the door actuator motor for that door — not the ETACS module or remote."
+  - "The Pajero IV immobiliser uses a transponder chip in the key. A worn or damaged key may start the engine intermittently. Have the key copied before it fails completely."
+  - "Check fuse 12 (20A) in the engine bay fuse box for the ETACS/body control system if all locking functions fail simultaneously."
+  - "Water ingress in door actuators is common on older vehicles. A door actuator that works intermittently in dry weather but fails after rain usually has a corroded motor."
+  - "Alarm false triggers are often caused by a faulty bonnet/boot switch — the alarm thinks the bonnet is being opened. Spray the switch contacts with contact cleaner."
+
+parts:
+  - name: "Remote key battery (CR2032)"
+    oem: null
+    spec: "CR2032 3V lithium coin cell"
+    notes: "First thing to try. $2–5 at any supermarket or pharmacy. Replace every 2–3 years."
+    verify: false
+  - name: "Door lock actuator — front door"
+    oem: "MR554175"
+    spec: "12V linear actuator with position feedback"
+    notes: "Replace if one door fails to lock/unlock. $30–80 each."
+    verify: true
+  - name: "Door lock actuator — rear door"
+    oem: "MR554174"
+    spec: "12V linear actuator"
+    notes: "Rear door variant. $30–80 each."
+    verify: true
+  - name: "Remote key / keyfob (replacement)"
+    oem: "6370A167"
+    spec: "2-button or 4-button depending on market"
+    notes: "Replacement key must be programmed to the vehicle ETACS module — dealer or locksmith required. $80–200 including programming."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Security & ETACS (Section 52)"
+    section: "52"
+    manual: "M1"
+
+related:
+  - windows-not-working
+  - fuse-box-reference
+  - engine-wont-start

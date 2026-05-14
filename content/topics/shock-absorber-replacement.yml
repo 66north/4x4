@@ -1,0 +1,95 @@
+slug: shock-absorber-replacement
+title: Shock Absorber Replacement (Front & Rear)
+category: maintenance
+difficulty: 2
+time_minutes: 90
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Shock absorbers dampen suspension movement, keeping the vehicle stable during braking, cornering,
+  and rough roads. The 4M41 and 6G75 Pajero models use telescopic shock absorbers both front and rear.
+  Worn shocks (60,000–100,000 km lifespan) cause bouncy ride quality, reduced cornering stability,
+  extended braking distance, and accelerated wear on tires and suspension bushings. Replacement is
+  straightforward and can be done at home with common tools, though alignment check is recommended
+  after front shock replacement.
+
+symptoms:
+  - Vehicle bounces excessively after driving over bumps (oscillates 3+ times instead of settling in 1)
+  - Noticeable body roll during cornering or lane changes (loss of dampening)
+  - Uneven tire wear, especially inner/outer edges (unstable suspension geometry)
+  - Reduced braking stability or extended stopping distance (suspension not controlling weight transfer)
+  - Fluid leak visible on shock body (seal failure, shock cannot be repaired)
+  - Clunking or squeaking noise from suspension during turns or over bumps
+
+parts:
+  - name: Shock absorber — front, driver side
+    oem: "4M41: MD372878 | 6G75: MD372877 (or equivalent KYB, Monroe, Bilstein)"
+    notes: "OEM shocks are reliable; aftermarket options available for sport or comfort preference"
+    verify: true
+  - name: Shock absorber — front, passenger side
+    oem: "Same as driver side"
+    notes: Always replace both front or both rear shocks together for balanced handling
+    verify: true
+  - name: Shock absorber — rear, both sides
+    oem: "4M41: MD372782 | 6G75: MD372781"
+    notes: Rear shocks differ from front. Verify correct part number before ordering
+    verify: true
+  - name: Shock mounting rubber bushings (if damaged or cracked)
+    oem: "MZ690xxx (varies by position)"
+    notes: "Optional — bushings can be replaced separately without replacing the shock"
+    verify: false
+
+tools:
+  - Socket set and wrenches (usually 12-16mm for shock mounting bolts)
+  - Jack and jack stands (minimum 2-ton capacity jack to safely lift vehicle and remove wheels)
+  - Wheel chocks (wooden blocks or purchased chocks to prevent vehicle from rolling while suspended)
+  - Shock removal tool or penetrating oil like WD-40 or Liquid Wrench for stubborn mounting bolts
+  - Torque wrench with 50-100 Nm range for mounting bolts
+
+torque_specs:
+  - component: Front shock upper mounting bolt (at strut tower)
+    value: 60
+    unit: Nm
+    notes: "High torque; use a wrench to prevent shock rod from spinning while tightening nut"
+  - component: Front shock lower mounting bolt (at steering knuckle)
+    value: 100
+    unit: Nm
+    notes: "Very high torque; critical for safety. Double-check this bolt before driving"
+  - component: Rear shock upper mounting bolt
+    value: 60
+    unit: Nm
+    notes: Same as front upper
+  - component: Rear shock lower mounting bolt
+    value: 100
+    unit: Nm
+    notes: Same as front lower
+
+replacement_procedure:
+  step_1: "Loosen lug nuts on the wheel to be removed while the vehicle is still on the ground (for mechanical advantage)"
+  step_2: "Lift the vehicle on a jack and support with jack stands. Remove the wheel"
+  step_3: "Locate the shock mounting bolts: One at the top (shock tower), one at the bottom (axle/frame bracket)"
+  step_4: "Unbolt the lower mounting bolt first, then the upper. The shock will pull free"
+  step_5: "Install the new shock by reversing the steps: Insert upper bolt and finger-tighten, then lower bolt and finger-tighten. Torque both bolts to spec with a wrench"
+  step_6: "Reinstall the wheel and torque lug nuts to 100 Nm in a star pattern"
+  step_7: "Repeat for the remaining three shocks (or do both fronts/rears together if you prefer)"
+  step_8: "Lower the vehicle and test drive on a smooth road to verify firm but comfortable ride quality"
+
+tips:
+  - Do NOT attempt to compress the shock by hand or with a vice. Shocks contain pressurized nitrogen gas (on some models) and can explode if incorrectly handled
+  - When the old shock is removed, it may still feel slightly bouncy due to residual gas pressure. This is normal. Dispose of it as hazardous waste at a recycling center
+  - If the mounting bolts are severely corroded (common in salt-belt climates), spray with penetrating oil 30 minutes before removal and use a socket with a cheater bar for additional leverage
+  - Many people replace front shocks and forget the rear, or vice versa. For best handling, replace all four shocks in one go. Mismatched dampening causes uneven ride and handling
+  - Aftermarket shocks (Bilstein, KYB, Monroe) are available in sport (firmer) or comfort (softer) versions. Choose based on your driving preference
+  - After installation, get a wheel alignment done (front end only, for front shock replacement). Misalignment causes uneven tire wear and poor handling
+  - Some aftermarket shocks come with different mounting hardware. Ensure bolts match the original spec before installation
+  - The upper shock mounting point is inside the wheel well, but the bolt extends through the shock tower on top of the engine bay. You may need to remove the plastic engine cover or wheel well liner for access
+
+procedure_refs:
+  - label: "Factory procedure — Suspension (Section 36)"
+    section: "36"
+    manual: "M1"
+
+related:
+  - suspension-squeaks-and-clunks
+  - wheel-alignment

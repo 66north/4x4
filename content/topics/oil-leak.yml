@@ -1,0 +1,77 @@
+slug: oil-leak
+title: Oil Leak — Diagnosis & Repair
+category: troubleshoot
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Oil leaks are one of the most common complaints on older Pajero models. While some leaks are
+  minor (slow seepage), others indicate serious problems (blown gaskets, cracked block). The key is
+  identifying the leak source quickly before oil starvation causes engine damage. Most leaks are from
+  worn gaskets or seals and are manageable repairs; a few require professional intervention.
+
+symptoms:
+  - Oil spots or puddles under the vehicle (check color and location)
+  - Burning oil smell from the engine bay or exhaust
+  - Low oil level on dipstick despite recent top-up
+  - Visible oil residue on engine block, valve cover, or pan
+  - Black or brown discoloration on engine exterior (accumulated oil)
+  - Smoke from the engine during acceleration (oil dripping on hot surfaces)
+
+leak_diagnosis:
+  step_1: "Park on a clean surface (white cardboard or paper) and inspect the drips. Dark brown/black = engine oil. Reddish = transmission fluid. Green/pink = coolant. Locate the drip pattern"
+  step_2: "Check oil level on dipstick. If low, note how much was added at last service and how quickly it's being consumed (mL per 1000 km)"
+  step_3: "Start the engine and look for active leaks with the engine running. The leak will weep or drip from the source. Use a flashlight and examine valve cover gasket, oil pan, timing cover"
+  step_4: "Inspect for external evidence: oil residue on the block, pan bolts, or gasket edges. Wipe with a clean rag and re-inspect after 5 minutes of driving"
+  step_5: "Common sources (by location): valve cover gasket (top of engine), oil pan gasket (bottom), timing cover (front), oil filter housing (side), crankshaft seal (rear)"
+
+common_leak_sources:
+  valve_cover_gasket: "Most common. Symptoms: oil on top of engine, dripping onto exhaust manifold. Cost: 50-150 dollars labor + gasket. DIY: Easy"
+  oil_pan_gasket: "Second most common. Symptoms: drips directly under engine. Cost: 100-300 dollars labor + gasket. DIY: Moderate (need to support engine)"
+  timing_cover_gasket: "Harder to access. Symptoms: oil on front of engine. Cost: 200-400 dollars labor + gasket. DIY: Hard"
+  crankshaft_seal: "Rear seal failure. Symptoms: oil on transmission bell housing. Cost: 300-600 dollars labor + seal. DIY: Very hard (requires transmission removal)"
+  oil_filter_housing: "Worn housing or bad gasket. Symptoms: oil around filter. Cost: 50-150 dollars labor + housing. DIY: Easy (if accessible)"
+  overfilled_oil: "Too much oil can cause seepage past seals. Check dipstick — oil should be between min and max. Drain excess if needed"
+
+parts:
+  - name: Gasket assortment kit (valve cover, oil pan, timing cover)
+    oem: Various OEM or aftermarket sets
+    notes: Buying a gasket kit is cheaper than buying individual gaskets
+    verify: false
+  - name: Oil (for top-up and drain after repair)
+    oem: "4M41: 5W-40 or 5W-30 diesel oil | 6G75: 5W-30 petrol oil"
+    notes: Use OEM specification to avoid voiding warranty
+    verify: false
+  - name: Crankshaft seal (if rear leaking)
+    oem: "Various, depends on engine"
+    notes: Requires transmission removal; professional service recommended
+    verify: false
+
+tools:
+  - Gasket scraper or plastic scraper to remove old gasket material
+  - Socket set and screwdrivers for bolt removal
+  - Torque wrench for reinstallation
+  - Flashlight to inspect source
+  - Jack and jack stands (if accessing pan or underside)
+  - Clean rags and shop towels
+
+tips:
+  - Do not ignore small leaks. A slow 5 mL/day leak becomes 150 mL/month and can starve the engine of oil
+  - Always replace gaskets, never reuse. Old gaskets are compressed and lose sealing ability
+  - When removing a valve cover or pan, support the engine with a block of wood or engine hoist to avoid straining adjacent components
+  - Apply a thin bead of gasket maker (RTV silicone) on both sides of the new gasket for a better seal
+  - Tighten gasket bolts in a cross pattern (alternating opposite sides) to ensure even seating
+  - After repair, monitor oil level for 500 km to confirm the leak has stopped
+  - If a leak returns within weeks of repair, the gasket may not have seated properly or bolts may have loosened; re-torque and inspect
+
+procedure_refs:
+  - label: "Factory procedure — Engine Lubrication (Section 12)"
+    section: "12"
+    manual: "M1"
+
+related:
+  - oil-change
+  - engine-wont-start
+  - coolant-flush

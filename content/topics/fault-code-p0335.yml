@@ -1,0 +1,65 @@
+slug: fault-code-p0335
+title: "P0335 — Crankshaft Position Sensor Circuit Malfunction"
+category: codes
+difficulty: 3
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0335 means the ECU is not receiving a valid signal from the crankshaft position sensor (CKP).
+  The CKP tells the ECU the exact rotational position and speed of the crankshaft, which is essential
+  for calculating ignition timing and fuel injection. Without it, the engine will not start or will
+  stall immediately. This is a critical code — the vehicle will typically not run.
+
+symptoms:
+  - "Engine cranks but will not start (most common)"
+  - "Engine starts then immediately stalls"
+  - "Check Engine light illuminated"
+  - "No-start condition with no other obvious cause"
+  - "Intermittent stalling at speed (sensor intermittently losing signal)"
+
+likely_causes:
+  - "Failed crankshaft position sensor (Hall-effect sensor failure)"
+  - "Damaged wiring harness or connector (chafing, rodent damage)"
+  - "Reluctor wheel (trigger wheel) damage — tooth missing or bent"
+  - "Air gap too large between sensor and reluctor wheel"
+  - "Sensor contaminated with metal debris"
+
+diagnosis:
+  step_1: "Confirm no-start or stall condition. Connect scanner and verify P0335 is active (not historical)."
+  step_2: "Locate the CKP sensor — mounted on the engine block near the crankshaft pulley."
+  step_3: "Inspect wiring harness from sensor to ECU for damage, chafing on metal edges, or corroded connector."
+  step_4: "With ignition on (engine off), measure sensor output voltage: should cycle between 0V and 5V when slowly rotating engine by hand."
+  step_5: "Verify air gap between sensor tip and reluctor wheel: should be 0.5–1.5 mm."
+  step_6: "If wiring and gap are correct and sensor gives no output, replace the CKP sensor."
+
+common_fixes:
+  sensor_replacement: "Replace CKP sensor — $50–120 part, $100–200 labor"
+  wiring_repair: "Repair or replace damaged harness section — $50–200"
+  reluctor_wheel: "Replace damaged reluctor wheel — $100–300 part (rare)"
+
+estimated_repair_cost: "$150–320 (sensor replacement most common)"
+
+tips:
+  - "P0335 almost always means a no-start. If the engine is running and this code appears, it is likely intermittent — diagnose the wiring first."
+  - "The CKP sensor is a wear item on high-mileage vehicles. Replace it proactively if other sensors on the harness are showing age."
+  - "Wiring harness damage near the crankshaft pulley is common — the lower engine gets heat cycling and vibration that degrades insulation."
+  - "After replacement, clear the code and test-drive over 20 km including highway speeds before confirming the repair."
+
+parts:
+  - name: "Crankshaft position sensor — 4M41 / 6G75"
+    oem: "MD328275"
+    spec: "Hall-effect sensor, M6 mounting bolt"
+    notes: "Compatible with both engines. Verify against VIN at dealer. $50–120."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Engine Control (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - fault-code-p0340
+  - check-engine-light
+  - engine-wont-start

@@ -1,0 +1,59 @@
+slug: 4wd-not-engaging
+title: "4WD Not Engaging — Diagnosis Guide"
+category: troubleshoot
+difficulty: 3
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV uses a Super Select 4WD system (SS4-II) with four modes: 2H (rear-wheel drive),
+  4H (part-time 4WD high), 4HLc (4WD high with centre diff locked), and 4LLc (4WD low with
+  centre diff locked). Engagement problems are usually electrical (4WD selector switch, transfer
+  case motor, or wiring) rather than mechanical. The 4WD indicator light on the dashboard confirms
+  the system status — a flashing light indicates an incomplete shift.
+
+symptoms:
+  - "4WD indicator light flashing or not illuminating after selector switch change"
+  - "Transfer case makes grinding or clicking during mode change"
+  - "Vehicle not responding as expected in 4WD (understeer suggests 2H only)"
+  - "4WD engages but low range won't engage (or vice versa)"
+  - "Selector dial turns but no mode change occurs"
+  - "4WD light on permanently — system stuck in one mode"
+
+tips:
+  - "For 2H→4H shifts: vehicle must be below 100 km/h. The shift occurs within 1–2 seconds with a light click. If the indicator flashes, the shift is incomplete — stop, select 2H, and try again."
+  - "For 4H→4LLc: stop the vehicle, select Neutral, then move to 4LLc. Never shift to low range while moving."
+  - "A flashing 4WD indicator means the transfer case actuator motor is running but has not completed the shift. Most common causes: speed too high, tyres spinning, or actuator motor fault."
+  - "Front differential engagement on models with locking front diff: the front diff lock indicator should illuminate within 3–5 seconds. Delay usually means the actuator motor is slow or its connector is corroded."
+  - "If 4WD was never used for a long time, the transfer case may be stiff. Engage and disengage several times while driving slowly — this frees up the actuator."
+  - "Check the transfer case fluid — low or degraded fluid causes actuator motor strain and slow shifts."
+  - "The 4WD system uses the ABS wheel speed sensors to detect speed conditions for engagement. ABS faults can prevent 4WD engagement."
+
+parts:
+  - name: "Transfer case actuator motor"
+    oem: "MR197635"
+    spec: "12V DC actuator with position sensor"
+    notes: "Replace if motor runs but shift does not complete, or motor does not run at all. $150–350."
+    verify: true
+  - name: "4WD selector switch"
+    oem: "MR453449"
+    spec: "Rotary selector, 4-position"
+    notes: "Replace if selector turns but sends no signal. $80–180."
+    verify: true
+  - name: "Transfer case fluid — ATF SP-III"
+    oem: null
+    spec: "ATF SP-III"
+    quantity: "1.1 L"
+    notes: "Check and replace if degraded — low fluid causes actuator strain."
+    verify: false
+
+procedure_refs:
+  - label: "Factory procedure — Transfer Case (Section 25)"
+    section: "25"
+    manual: "M1"
+
+related:
+  - transfer-case-oil-change
+  - differential-oil-change
+  - fault-code-p0500

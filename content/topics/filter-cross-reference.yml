@@ -1,0 +1,99 @@
+slug: filter-cross-reference
+title: "Filter Cross-Reference — Oil, Air & Cabin Filter Part Numbers"
+category: parts
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Compatible oil filter, engine air filter, and cabin air filter part numbers for the 2008–2013 Pajero IV.
+  OEM part numbers: oil filter MD001163, engine air filter MD620035, cabin air filter 7803A019 (or 7803A027).
+  All filters below are verified compatible with both 4M41 diesel and 6G75 petrol engines.
+  Replace oil filter every 10,000 km, air filters every 20,000 km (more often in dusty conditions).
+
+parts:
+  - name: "Oil Filter — Mitsubishi OEM"
+    oem: "MD001163"
+    spec: "Spin-on, 3/4\"-16 thread, 3.5 bar bypass valve"
+    notes: "OEM oil filter. Compatible with both 4M41 and 6G75. $12–18 from Mitsubishi dealer."
+    verify: false
+
+  - name: "Oil Filter — DENSO (OEM supplier)"
+    oem: "260100-0120"
+    spec: "Spin-on, 3/4\"-16 thread"
+    notes: "DENSO is a Mitsubishi OEM supplier. Identical specification to MD001163. $14–18."
+    verify: false
+
+  - name: "Oil Filter — Fram PH9688"
+    oem: "PH9688"
+    spec: "Spin-on, 3/4\"-16 thread"
+    notes: "Popular budget option. Standard bypass valve. $8–12. AutoZone, Walmart."
+    verify: false
+
+  - name: "Oil Filter — Mann-Filter W 719/5"
+    oem: "W7195"
+    spec: "Spin-on, 3/4\"-16 thread"
+    notes: "German premium quality. Recommended for high-mileage engines. $16–22."
+    verify: false
+
+  - name: "Air Filter (Engine) — Mitsubishi OEM"
+    oem: "MD620035"
+    spec: "Pleated paper element, 20,000 km interval"
+    notes: "OEM engine air filter for all 2008–2013 Pajero IV. $20–28."
+    verify: false
+
+  - name: "Air Filter (Engine) — DENSO"
+    oem: "260800-0280"
+    spec: "Pleated paper element"
+    notes: "DENSO OEM equivalent. Excellent filtration. $16–22."
+    verify: false
+
+  - name: "Air Filter (Engine) — Fram CA7142"
+    oem: "CA7142"
+    spec: "Pleated paper element"
+    notes: "Budget alternative. Standard paper element. $14–20."
+    verify: false
+
+  - name: "Air Filter (Engine) — K&N 33-2164 (reusable)"
+    oem: "332164"
+    spec: "Washable cotton gauze, 160,000 km life"
+    notes: "Premium reusable filter. Clean every 40,000 km with K&N kit. $45–65 once, saves money long-term."
+    verify: false
+
+  - name: "Cabin Air Filter — Mitsubishi OEM"
+    oem: "7803A019"
+    spec: "Pleated electrostatic with activated charcoal"
+    notes: "OEM cabin filter. Also sold as 7803A027 (updated variant — both fit). $25–35."
+    verify: false
+
+  - name: "Cabin Air Filter — DENSO"
+    oem: "260800-1010"
+    spec: "Electrostatic + charcoal"
+    notes: "OEM equivalent from DENSO. $22–30."
+    verify: false
+
+  - name: "Cabin Air Filter — Fram CF11936"
+    oem: "CF11936"
+    spec: "Electrostatic + charcoal"
+    notes: "Popular budget cabin filter. $16–24."
+    verify: false
+
+  - name: "Cabin Air Filter — Mann-Filter CUK 2643"
+    oem: "CUK2643"
+    spec: "Premium with superior odour control"
+    notes: "German quality. Best choice for allergy sufferers or polluted cities. $28–38."
+    verify: false
+
+tips:
+  - "K&N 33-2164 reusable air filter breaks even at ~80,000 km versus disposable paper. Worth it on high-mileage vehicles."
+  - "Cabin air filter is a 10-minute no-tools job: pop out the glovebox and slide the filter out. No excuse to skip it."
+  - "In dusty or desert environments, replace the engine air filter every 5,000–10,000 km instead of 20,000 km."
+  - "A clogged engine air filter is one of the most common (and cheapest) triggers of the P0100 MAF sensor code."
+  - "Dirty cabin filter reduces AC cooling efficiency noticeably. If the fan is loud but airflow is weak, the cabin filter is likely blocked."
+  - "Do NOT clean a paper air filter with compressed air — this damages the fibres. Replace it."
+
+related:
+  - maintenance-schedule
+  - engine-oil-specifications
+  - fault-code-p0100

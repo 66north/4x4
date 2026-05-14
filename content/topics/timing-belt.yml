@@ -1,0 +1,89 @@
+slug: timing-belt
+title: Timing Belt Replacement
+category: maintenance
+difficulty: 4
+time_minutes: 240
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The 6G75 petrol engine is an interference engine — if the timing belt breaks, pistons will collide
+  with open valves, causing catastrophic internal damage (bent valves, damaged piston crowns, broken
+  rings). Factory service intervals call for replacement every 100,000 km or 10 years, whichever comes
+  first. This is a complex, time-consuming job requiring cylinder head removal, specialized tools, and
+  precise timing procedures. Most owners have this performed at a dealership or experienced independent shop.
+  The 4M41 diesel does NOT have a timing belt (uses a chain), so diesel owners can ignore this procedure.
+
+symptoms:
+  - Scheduled maintenance interval (100,000 km or 10 years, whichever comes first)
+  - Visual inspection shows cracking, fraying, or separation of the belt rubber
+  - Visible oil leaks from the timing cover (water pump or cover gasket deterioration)
+  - Noise: chirping or squealing from the front of the engine (belt slipping on pulleys)
+  - Engine misfire or rough idle (timing has drifted due to belt wear)
+  - Previous owner records indicate original belt has never been replaced
+
+parts:
+  - name: Timing belt
+    oem: MD019366 or MD019368
+    notes: Two variants exist. Verify your vehicle's specific part via VIN before ordering. Lifetime part if replaced at factory interval
+    verify: true
+  - name: Timing belt tensioner
+    oem: MD159620
+    notes: Always replace tensioner when replacing belt — reusing old tensioners is a false economy
+    verify: true
+  - name: Water pump assembly
+    oem: MD303031
+    notes: Strongly recommended to replace water pump at the same time — labor overlaps completely
+    verify: true
+  - name: Front timing cover gasket kit
+    oem: Various (MZ690571, MZ690572)
+    notes: Several gaskets are removed during this job. Buying a gasket set is more economical than individual gaskets
+    verify: false
+  - name: Engine coolant (1-2 liters)
+    oem: MB328635 or equivalent
+    notes: Small amount needed after removing water pump
+    verify: false
+
+tools:
+  - Timing belt tool kit with crankshaft and camshaft synchronization tools (specialized, most shops own these)
+  - Cylinder head torque wrench with 20-100 Nm range, must be accurate to +/- 5 percent
+  - Socket set and wrenches with specialty bits for timing cover bolts
+  - Jack and jack stands with minimum 2-ton capacity to lift vehicle and access front end
+
+torque_specs:
+  - component: Timing belt tensioner lock bolt
+    value: 30
+    unit: Nm
+    notes: Lock the tensioner BEFORE rotating the engine. Failure to do this will strip the threads
+  - component: Water pump bolts (if replacing)
+    value: 20
+    unit: Nm
+    notes: Evenly spaced; tighten in a star pattern
+  - component: Cylinder head bolts (after cover removal)
+    value: "See factory manual (multi-step torque sequence)"
+    unit: Nm
+    notes: Factory procedure requires a specific torque sequence and angle-tightening (torque-to-yield). DO NOT reuse bolts
+  - component: Crankshaft bolt (if removed)
+    value: 200–220
+    unit: Nm
+    notes: Very high torque. Use a new bolt; reuse risks catastrophic crankshaft damage
+
+tips:
+  - This job involves cylinder head removal and is beyond the scope of a typical weekend DIY project. Mistakes result in bent valves or misaligned timing, both catastrophic failures.
+  - The factory procedure spans several pages and requires multiple specialized tools. Strongly recommend professional shop installation.
+  - If you proceed DIY: Set aside a full weekend. Document every step with photos. Never rotate the engine without the timing belt properly tensioned — you risk bent valves.
+  - After installation, the engine may not start on the first try. This is normal — air in fuel lines (if the pump was disturbed) may prevent ignition. Prime the fuel system by cycling the ignition key without cranking, or crank for 10 seconds and rest, repeat 2–3 times.
+  - Always replace the tensioner, water pump, and all timing cover gaskets in one job. The labor cost is negligible compared to pulling the engine again if these items fail prematurely.
+  - Do not attempt this job without access to a service manual and proper timing tools. Many independent shops have these tools and charge $1,200–$1,800 in labor. A botched DIY job can cost $3,000+ in engine damage repairs.
+
+procedure_refs:
+  - label: "Factory procedure — Engine (Section 11)"
+    section: "11"
+    manual: "M1"
+  - label: "Cylinder head bolt torque sequence — Engine Mechanical Section"
+    section: "11"
+    manual: "M1"
+
+related:
+  - water-pump-replacement
+  - cylinder-head-gasket-replacement

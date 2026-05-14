@@ -1,0 +1,66 @@
+slug: rear-axle-noise-diagnosis
+title: "Rear Axle Noise — Whining, Clunking & Grinding"
+category: troubleshoot
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Rear differential noise often begins as a subtle whine and progresses through clunking to
+  grinding if ignored. The noises come from worn gears, low oil level, bearing wear, or play
+  between the differential case and the housing. Early diagnosis is critical — a small whine
+  may be corrected by an oil change, but a loud grinding often means metal-to-metal contact and
+  imminent failure. Noise character and when it occurs (acceleration, coasting, cornering) help
+  identify the source.
+
+symptoms:
+  - "High-pitched whining from the rear axle during acceleration (worn gears or low oil)"
+  - "Whining that increases with speed and changes pitch (bearing wear or differential starvation)"
+  - "Clunking or banging from the axle during hard acceleration (driveshaft play or loose axle bracket)"
+  - "Grinding noise when turning sharply (bearing load test or worn differential)"
+  - "Noise that gets louder over weeks or months (progressive gear wear)"
+  - "Knocking from the axle on bumps or hard braking (worn engine/transmission mount affecting driveshaft angle, not necessarily axle fault)"
+
+tips:
+  - "The first step is always to check the differential oil level and condition. A noisy differential with dark, burnt-smelling oil is an oil starvation problem — low level or degraded oil viscosity. Change the oil and re-test before assuming mechanical failure."
+  - "Differentiate between bearing noise and gear noise: bearing noise is a grinding or growl that changes with cornering load (louder on tight turns). Gear noise is a whine that changes with engine load (louder on hard acceleration)."
+  - "Whining during acceleration specifically points to gear mesh wear (pinion and ring gear contact deteriorating). Whining at cruise on a level road points to bearing wear (load-dependent). Whining at any engine speed (even idle) suggests differential starvation from low oil."
+  - "Clunking or banging during hard acceleration often comes from U-joint or driveshaft play, not the differential itself. Isolate the noise by coasting (no engine torque) — if the noise disappears, it's likely the driveshaft or transmission mount, not the rear axle."
+  - "If the noise is reproducible with the vehicle parked (engine running, no load on the differential), you may have a pump whine from the differential lock system, not bearing/gear wear. Listen carefully for a separate electric motor whine."
+  - "Test at different loads: gentle acceleration on flat ground, hard acceleration, cornering under load, and coasting. Each load condition causes different noise, helping pinpoint the source."
+  - "Once a gear or bearing has begun to fail, the damage accelerates exponentially. A vehicle that whines quietly today may be unable to drive tomorrow if the noise comes from advanced bearing wear."
+  - "Differential lock engagement sometimes masks underlying noise because locking stiffens the whole axle assembly. If the differential lock makes the noise disappear temporarily, the underlying issue (bearing play or gear wear) is still present and will worsen when the lock is disengaged."
+
+parts:
+  - name: "Differential oil — API GL-5 80W-90"
+    oem: null
+    spec: "Premium hypoid gear oil"
+    quantity: "Rear differential ~2.0L"
+    notes: "If noise started after sitting idle or in cold weather, low oil level may be the cause. Refill to the filler plug level and retest. $20–30."
+    verify: false
+  - name: "Rear differential assembly (full replacement)"
+    oem: null
+    spec: "If gear noise persists after oil change, differential overhaul or replacement is required"
+    notes: "This is a major repair ($1,500–2,500+ labour). First confirm diagnosis with a scan tool and oil analysis."
+    verify: false
+
+tools:
+  - "Multimeter (to test for differential lock system voltage interference)"
+  - "OBD-II scanner (to read any active codes related to differential pressure or lock status)"
+  - "Oil sample kit (to send drained oil for metal particle analysis)"
+
+tips_advanced:
+  - "Metal particle analysis from an oil change is the most reliable way to confirm internal gear/bearing damage. A professional analysis service can quantify wear and estimate remaining component life."
+  - "Differential pressure and backlash checks require special tools (torque wrench, dial indicator) and are workshop procedures. If noise is suspected, a dealer or differential specialist can perform these checks."
+  - "On vehicles with rear differential lock, an engagement/disengagement cycle may temporarily reduce noise by redistributing internal lubricant. This is a diagnostic test, not a fix."
+
+procedure_refs:
+  - label: "Factory procedure — Rear Axle (Section 27)"
+    section: "27"
+    manual: "M1"
+
+related:
+  - differential-oil-change
+  - rear-axle-bearing-inspection
+  - rear-differential-lock-system

@@ -1,0 +1,67 @@
+slug: transmission-filter-replacement
+title: "Automatic Transmission Filter Replacement"
+category: maintenance
+difficulty: 2
+time_minutes: 60
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV INVECS-III 5-speed automatic transmission has an internal filter (strainer) inside
+  the transmission pan. Mitsubishi does not publish a filter replacement interval — it is treated as
+  part of a fluid change at major overhauls. In practice, replacing the filter with every second or
+  third fluid change (every 80,000–120,000 km) is good preventive maintenance, particularly if the
+  pan drops show metallic debris or dark sludge. The filter is accessed by removing the transmission
+  pan.
+
+symptoms:
+  - "Routine transmission service or high-mileage preventive maintenance"
+  - "Metallic debris on drain plug magnet when dropping the pan"
+  - "Sluggish or delayed gear engagement, especially cold"
+  - "Transmission shudder during torque converter lock-up (4th/5th gear cruise)"
+
+parts:
+  - name: "Transmission filter (strainer)"
+    oem: "MN168273"
+    spec: "Internal oil strainer, press-fit into valve body"
+    notes: "Press-fit removal — prise out carefully. Clean the housing before refitting. $30–70."
+    verify: true
+  - name: "Transmission pan gasket"
+    oem: "MN168276"
+    spec: "Rubber-edge gasket"
+    notes: "Replace any time the pan is removed. $15–30."
+    verify: true
+  - name: "ATF SP-III"
+    oem: null
+    spec: "ATF SP-III"
+    quantity: "Approx 4 L refill after pan drop"
+    notes: "Pan drop removes approximately 4 L of the 8–9 L total capacity. Top up and check level. $15–25/L."
+    verify: false
+
+tools:
+  - "10mm socket (transmission pan bolts)"
+  - "Drain pan (minimum 5L)"
+  - "Magnet (to collect debris from pan)"
+  - "Torque wrench"
+
+torque:
+  - component: "Transmission pan bolts"
+    value_nm: 9
+    note: "8–11 Nm in a crossing pattern. Do not overtighten — pan rail is aluminium."
+
+tips:
+  - "The transmission drain plug (if present) drains only the pan — drop the pan to access the filter and inspect for debris."
+  - "Inspect the pan magnet carefully: fine grey metallic fuzz is normal bearing and clutch wear; larger particles or flakes indicate internal damage requiring further investigation."
+  - "The strainer is press-fit into the valve body. Prise it off gently — do not use excessive force. Confirm the O-ring comes out with the old filter, not left in the housing."
+  - "Clean the pan with solvent before reinstalling — old sludge reduces the capacity of the new filter immediately."
+  - "Refill with ATF SP-III only. Check fluid level with the engine warm at operating temperature, selector in Park, on a level surface."
+  - "After refilling, cycle through all gear positions (P-R-N-D-3-2-1-P) to fill the valve body before checking the final level."
+
+procedure_refs:
+  - label: "Factory procedure — Automatic Transmission (Section 23)"
+    section: "23"
+    manual: "M1"
+
+related:
+  - transmission-fluid
+  - transmission-cooler-flush

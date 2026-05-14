@@ -1,0 +1,75 @@
+slug: fault-code-p0171
+title: "P0171 — System Too Lean (Bank 1)"
+category: codes
+difficulty: 3
+time_minutes: 60
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  P0171 means the ECU's long-term fuel trim is adding more than ~10% extra fuel to compensate for
+  a lean air-fuel mixture. The engine is getting too much air or too little fuel relative to what the
+  MAF sensor expects. Common causes include vacuum leaks (unmeasured air), a dirty MAF sensor,
+  or a weak fuel pump. This is a petrol-only code — the 4M41 diesel does not use the same fuel trim system.
+
+symptoms:
+  - "Check Engine light illuminated"
+  - "Rough idle or hunting idle (RPM fluctuating)"
+  - "Hesitation on acceleration from low RPM"
+  - "Slightly poor fuel economy"
+  - "Engine may stall at idle when A/C is switched on"
+
+likely_causes:
+  - "Vacuum leak — cracked hose, loose intake boot, or faulty PCV hose (most common)"
+  - "Dirty or faulty MAF sensor (underreporting actual airflow)"
+  - "Clogged fuel injectors (insufficient fuel delivery)"
+  - "Weak fuel pump (low rail pressure reducing fuel delivery)"
+  - "Faulty oxygen sensor (Bank 1, upstream — giving false lean reading)"
+  - "Air filter extremely clogged (less likely to cause lean, but affects MAF reading)"
+
+diagnosis:
+  step_1: "Check for other codes — P0100 (MAF) or P0300 (misfire) present alongside P0171 narrows diagnosis quickly."
+  step_2: "Inspect all vacuum hoses, intake duct, and PCV hose for cracks or loose connections. Spray soapy water around joints at idle — bubbles indicate a leak."
+  step_3: "Check long-term fuel trim (LTFT) with a scanner. Above +10% confirms lean condition; above +20% is significant."
+  step_4: "Clean or replace MAF sensor. MAF sensor cleaning resolves P0171 in a significant number of cases."
+  step_5: "If LTFT is still high after fixing vacuum leaks and cleaning MAF, check fuel pressure at rail (should be 280–320 kPa at idle)."
+  step_6: "If fuel pressure is low, replace fuel filter then retest. If still low, test fuel pump."
+
+common_fixes:
+  vacuum_leak: "Reseal or replace intake/vacuum hoses — $30–150"
+  maf_cleaning: "Clean MAF sensor with MAF cleaner spray — $10–20 DIY"
+  maf_replacement: "Replace MAF sensor — $200–400 part, $100–150 labor"
+  fuel_filter: "Replace fuel filter — $30–60"
+  injector_cleaning: "Professional fuel system clean — $150–300"
+
+estimated_repair_cost: "$20–150 (vacuum leak or MAF clean); $300–600 if MAF replacement or fuel pump needed"
+
+tips:
+  - "Start with a vacuum leak check — they are free to diagnose and cheap to fix. A cracked PCV hose is the most commonly missed cause."
+  - "MAF sensor cleaning is a 10-minute job and worth trying before replacing the sensor."
+  - "Do NOT use carburettor cleaner on the MAF sensor — it damages the hot-wire element. Use only MAF-specific spray."
+  - "If P0171 appears alongside P0174 (Bank 2 lean), the cause is almost certainly a large vacuum leak or a bad MAF — both banks can't coincidentally run lean independently."
+  - "A code that appears only after hard acceleration may indicate a weak fuel pump unable to maintain pressure under demand."
+
+parts:
+  - name: "MAF sensor — 6G75 (MR985184)"
+    oem: "MR985184"
+    spec: "Hot-wire mass airflow sensor"
+    notes: "Clean first with MAF spray before replacing. $200–400 OEM."
+    verify: true
+  - name: "MAF sensor cleaner spray"
+    oem: null
+    spec: "CRC MAF Sensor Cleaner or equivalent"
+    notes: "NOT carb cleaner. Spray only — do not wipe or touch the sensor wire. $10–20."
+    verify: false
+
+procedure_refs:
+  - label: "Factory procedure — Engine Control (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - fault-code-p0100
+  - rough-idle
+  - power-loss
+  - check-engine-light

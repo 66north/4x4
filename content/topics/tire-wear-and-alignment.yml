@@ -1,0 +1,74 @@
+slug: tire-wear-and-alignment
+title: Uneven Tire Wear & Alignment Issues
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Uneven tire wear (inner or outer edge worn faster than center) is a warning sign of alignment problems,
+  suspension wear, or tire pressure issues. While tires are a normal wear item, uneven wear shortens their
+  lifespan and increases replacement cost. Early diagnosis and correction can extend tire life by 20,000-30,000 km.
+  This guide covers diagnosing the cause and correcting alignment.
+
+symptoms:
+  - Inner or outer edges of tires worn significantly more than the center
+  - Scalloping or cup-wear pattern (dips around the tire circumference indicate suspension bounce)
+  - One tire worn much faster than others (possible alignment issue affecting one axle)
+  - Vibration or shimmy in the steering wheel at highway speed (tire imbalance or worn suspension)
+  - Vehicle pulls to one side when braking (possible brake caliper sticking, not alignment)
+  - Sidewall bulges or flat spots (tire damage or extreme imbalance)
+  - Excessive tire noise or humming at highway speeds
+
+wear_patterns_and_causes:
+  inner_outer_wear: "Both inner and outer edges worn, center relatively new. Cause: underinflation. Fix: check and adjust tire pressure to spec (see tire spec in owner manual)"
+  outer_edge_wear: "Outer edge of tire worn faster. Cause: excessive cornering loads or positive camber (wheel tilted outward). Fix: wheel alignment"
+  inner_edge_wear: "Inner edge of tire worn faster. Cause: negative camber (wheel tilted inward) or aggressive cornering. Fix: wheel alignment"
+  center_wear: "Center of tire worn faster than edges. Cause: overinflation. Fix: reduce tire pressure to spec"
+  scalloping_cups: "Dips around tire circumference. Cause: worn shock absorbers or suspension bushings. Fix: replace shocks and inspect bushings (see shock-absorber-replacement.yml)"
+  one_tire_only: "One tire worn dramatically faster than others. Cause: alignment issue affecting that axle, or that tire was underinflated. Fix: alignment and check pressure"
+  feathering: "Tread ribs worn at an angle. Cause: alignment issue or worn suspension geometry. Fix: alignment to resolve"
+
+alignment_basics:
+  camber: "Angle of the wheel relative to vertical (0 degrees = perpendicular). Positive = outer edge lower, negative = outer edge higher. Factory spec is near zero"
+  caster: "Angle of the steering axis relative to vertical. Affects directional stability. Factory spec is 2-4 degrees positive"
+  toe: "Angle of the wheel relative to forward direction. Toe-in (pointing inward) or toe-out (pointing outward). Factory spec is slight toe-in, 0-5mm total"
+  thrust_angle: "Rear axle alignment relative to front. If misaligned, vehicle pulls at highway speed"
+
+diagnosis_procedure:
+  step_1: "Visually inspect all four tires. Measure tread depth with a penny (Lincoln's head should be at least half-buried in tread). Depth less than 1.6mm is legal minimum, but safety drops significantly below 4mm"
+  step_2: "Check tire pressure on all four wheels with an accurate gauge. Compare to the spec in your owner's manual (usually inside driver's door jamb or fuel door). Pressure should be warm (after 1 hour of driving or sitting in sun)"
+  step_3: "Inspect wear pattern: Is it even across all four tires, or is one or two wearing faster? Is it inner, outer, or center?"
+  step_4: "Check vehicle for other symptoms: vibration, pull to one side, or steering wheel vibration. These suggest suspension wear or imbalance"
+  step_5: "Schedule wheel alignment. Most shops charge 100-200 dollars and will print a report showing before/after specs. Do this before replacing tires"
+  step_6: "If after alignment, tires continue to wear unevenly, suspect worn suspension bushings or bent components. Inspect chassis"
+
+tire_pressure_importance:
+  underinflation: "Tire flexes excessively; edges touch ground more than center. Causes inner/outer edge wear. Also increases rolling resistance and fuel consumption"
+  overinflation: "Tire is stiff; center touches ground more than edges. Causes center wear. Reduces traction and comfort"
+  temperature_effect: "Tire pressure increases 7-10 kPa for every 10°C rise. Check pressure when tires are cold (before driving or after 1 hour parked in shade)"
+  front_rear_different: "Some vehicles specify different pressures for front and rear (e.g., 240 kPa front, 270 kPa rear). Check your spec"
+
+tools:
+  - Tire pressure gauge (analog or digital)
+  - Tread depth gauge (or penny test)
+  - Wheel alignment shop equipment (use a professional, not DIY)
+  - Jack and jack stands (to lift tire for inspection)
+
+tips:
+  - Wheel alignment drifts gradually. Get aligned every 20,000 km or if you notice uneven wear or pulling
+  - Tire pressure changes seasonally. Check pressure more often in winter (cold air contracts) and summer (heat expands)"
+  - Worn suspension (shocks, bushings, ball joints) affects alignment. Before spending money on alignment, have suspension inspected"
+  - Rotating tires every 10,000 km helps even out wear. Pattern: X (front-left to rear-right, front-right to rear-left)"
+  - Some uneven wear is normal in high-performance driving or aggressive cornering. Minimize hard cornering to extend tire life"
+
+procedure_refs:
+  - label: "Factory procedure — Suspension & Steering (Section 36)"
+    section: "36"
+    manual: "M1"
+
+related:
+  - shock-absorber-replacement
+  - suspension-squeaks-and-clunks
+  - brake-noise-and-feel

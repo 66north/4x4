@@ -1,0 +1,68 @@
+slug: manual-transmission-fluid
+title: "Manual Transmission Fluid — Check & Replacement"
+category: maintenance
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Manual transmission Pajero IV models use a separate gear oil for the gearbox, distinct from the
+  transfer case fluid. The gearbox oil lubricates the gear sets, synchronisers, and bearings. It
+  is not changed at regular intervals like engine oil — Mitsubishi treats it as a lifetime fill,
+  but in practice the fluid degrades through heat cycling and moisture absorption, especially in
+  vehicles used off-road or for towing. Inspection at 80,000 km and replacement every 80,000–
+  100,000 km is good preventive maintenance. Worn or contaminated fluid accelerates synchro wear
+  and causes hard gear selection.
+
+symptoms:
+  - "Routine service interval (80,000–100,000 km)"
+  - "Hard or notchy gear changes, especially when cold"
+  - "Metallic contamination or dark colour found when inspecting fluid"
+  - "Gear whine or noise during acceleration (indicating oil starvation)"
+  - "Difficulty engaging specific gears (synchro wear exacerbated by low or degraded fluid)"
+
+parts:
+  - name: "Manual transmission fluid"
+    oem: null
+    spec: "API GL-4 75W-85 or 75W-90 gear oil"
+    quantity: "Approximately 2.3 L (fill to filler plug level)"
+    notes: "Confirm correct specification in your owner's handbook — do not use GL-5 without verification, as GL-5 additives can damage synchroniser rings. $15–25 per litre."
+    verify: false
+  - name: "Drain plug washer — gearbox"
+    oem: "MZ690340"
+    spec: "Copper crush washer, M20"
+    notes: "Replace every time the drain plug is removed. $2–5."
+    verify: false
+
+tools:
+  - "17mm hex key / Allen socket (drain and filler plugs)"
+  - "Drain pan (minimum 3L)"
+  - "Torque wrench"
+  - "Hand-operated fluid pump (for refilling through the side filler hole)"
+
+torque:
+  - component: "Gearbox drain plug"
+    value_nm: 35
+    note: "33–38 Nm with new copper washer."
+  - component: "Gearbox filler plug"
+    value_nm: 35
+    note: "33–38 Nm. Confirm filler plug is removable before draining."
+
+tips:
+  - "Always confirm the filler plug can be removed before draining — if it is seized you will not be able to refill."
+  - "The filler/level hole is on the side of the gearbox casing, typically at mid-height. Fill until fluid drips from the filler hole — this is the correct level. Do not estimate by volume."
+  - "Manual gearbox fluid is different from the transfer case fluid. Both have separate drain and filler plugs. The gearbox is forward in the drivetrain; the transfer case is behind it. Do not confuse the two."
+  - "GL-4 and GL-5 are NOT interchangeable. GL-5 additives (extreme pressure sulphur compounds) corrode yellow metal alloys used in synchroniser rings on many manual gearboxes. Use GL-4 unless the manual specifies GL-5 or GL-4/5 dual-rated fluid."
+  - "If the drained fluid is dark, smells burnt, or contains metallic particles, inspect the drain plug magnet carefully. Fine metallic fuzz is normal wear; larger flakes indicate accelerated component wear and the gearbox should be inspected before assuming fluid replacement alone will fix it."
+  - "After an off-road water crossing (especially where the gearbox was submerged), change the fluid as soon as possible. Water contamination destroys synchronisers rapidly — water-contaminated gear oil looks milky or has a grey tint."
+
+procedure_refs:
+  - label: "Factory procedure — Manual Transmission (Section 22)"
+    section: "22"
+    manual: "M1"
+
+related:
+  - transfer-case-oil-change
+  - differential-oil-change
+  - manual-transmission-problems

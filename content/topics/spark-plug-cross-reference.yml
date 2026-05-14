@@ -1,0 +1,84 @@
+slug: spark-plug-cross-reference
+title: "Spark Plug Cross-Reference — 6G75 Petrol Engine"
+category: parts
+difficulty: 1
+time_minutes: 15
+applies_to:
+  engines: [6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Compatible spark plugs for the 6G75 3.8L V6 petrol engine (2008–2013 Pajero IV). You need 4 plugs per service.
+  OEM spec: 14mm thread, 19mm reach, 1.0–1.1 mm gap, medium heat range. Replace every 60,000 km.
+  OEM Mitsubishi part number is MD340648, equivalent to NGK 4867 and DENSO SK20PR-A8.
+  Diesel 4M41 owners: see the Glow Plug reference instead.
+
+parts:
+  - name: "Spark Plug — Mitsubishi OEM (MD340648)"
+    oem: "MD340648"
+    spec: "14mm / 1.0mm gap / medium heat"
+    quantity: "6 required (V6 engine)"
+    notes: "Official OEM part. Equivalent to NGK 4867. From Mitsubishi dealer. $25–35 each."
+    verify: false
+
+  - name: "Spark Plug — NGK 4867"
+    oem: "NGK4867"
+    spec: "14mm / 1.0mm gap / medium heat"
+    quantity: "6 required (V6 engine)"
+    notes: "Most common replacement. Direct OEM equivalent. Best value. $8–12 each ($32–48 set of 4)."
+    verify: false
+
+  - name: "Spark Plug — DENSO SK20PR-A8"
+    oem: "SK20PR-A8"
+    spec: "14mm / 1.0mm gap / medium heat"
+    quantity: "6 required (V6 engine)"
+    notes: "DENSO is an OEM supplier to Mitsubishi. Excellent quality. $10–14 each ($40–56 set of 4)."
+    verify: false
+
+  - name: "Spark Plug — Bosch 0241235699"
+    oem: "0241235699"
+    spec: "14mm / 0.9–1.0mm gap / medium heat"
+    quantity: "6 required (V6 engine)"
+    notes: "German quality. Runs slightly cooler than NGK — suitable for normal use. $12–16 each."
+    verify: false
+
+  - name: "Spark Plug — Champion RC10YMC"
+    oem: "RC10YMC"
+    spec: "14mm / 1.0mm gap / medium heat"
+    quantity: "6 required (V6 engine)"
+    notes: "Budget option. Works correctly but shorter service life than NGK/DENSO. $6–10 each."
+    verify: false
+
+  - name: "Spark Plug — NGK Iridium LMAR8AI-10 (extended life)"
+    oem: "LMAR8AI-10"
+    spec: "14mm / 1.0mm gap / iridium tip"
+    quantity: "6 required (V6 engine)"
+    notes: "Premium iridium option. Lasts 80,000–100,000 km — reduces replacement frequency. $20–28 each ($80–112 set of 4)."
+    verify: false
+
+tools:
+  - "14mm spark plug socket (deep ceramic-padded type)"
+  - "1/2\" drive ratchet and extension"
+  - "Spark plug gap gauge (to verify 1.0–1.1 mm gap)"
+  - "Torque wrench"
+
+torque:
+  - component: "Spark plug into cylinder head"
+    value_nm: 20
+    note: "18–22 Nm. Hand-thread first to avoid cross-threading, then torque."
+
+tips:
+  - "Always replace all 4 plugs as a set — mixing old and new causes uneven combustion."
+  - "Pre-gap check: most plugs come set to 1.0 mm. Confirm before installation with a gap gauge."
+  - "Hand-thread each plug first to avoid cross-threading the aluminium cylinder head."
+  - "Worn spark plugs (60,000+ km) are the single most common cause of P0300 random misfire code."
+  - "If replacing after misfire: also check coil packs and plug leads while you have access."
+  - "Do not use carburettor cleaner or compressed air on plugs — inspecting them tells you engine condition (black = rich mixture, white = lean)."
+
+procedure_refs:
+  - label: "Factory procedure — Engine Control (Section 80)"
+    section: "80"
+    manual: "M1"
+
+related:
+  - fault-code-p0300
+  - maintenance-schedule

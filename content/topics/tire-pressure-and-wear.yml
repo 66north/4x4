@@ -1,0 +1,73 @@
+slug: tire-pressure-and-wear
+title: "Tire Pressure & Wear Inspection"
+category: reference
+difficulty: 1
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Correct tire pressure and regular wear inspection are the easiest preventive maintenance tasks
+  and have the biggest impact on safety, fuel economy, and tire life. Under-inflated tires generate
+  excessive heat and wear rapidly; over-inflated tires lose grip and can fail suddenly. Wear
+  patterns reveal suspension and alignment issues. Tire pressure should be checked monthly and
+  before long trips. The door jamb label on the driver's side shows the factory-recommended
+  pressures for your vehicle.
+
+tire_pressures:
+  - condition: "Normal driving (on-road)"
+    front: "240 kPa (35 psi)"
+    rear: "280 kPa (41 psi)"
+    note: "Check pressure when tires are cold (at least 3 hours after driving)"
+  - condition: "Heavy load or towing (add 20–30 kPa)"
+    front: "260 kPa (38 psi)"
+    rear: "310 kPa (45 psi)"
+    note: "Heavier load requires higher pressure. Check placard on vehicle for specific recommendations."
+  - condition: "Off-road or rough terrain (reduce 20–50 kPa for grip)"
+    front: "200–220 kPa (29–32 psi)"
+    rear: "230–260 kPa (33–38 psi)"
+    note: "Lower pressure increases tire contact patch for traction. Re-inflate to normal when returning to paved roads."
+
+symptoms:
+  - "Tire pressure warning light on dashboard (some vehicles have TPMS)"
+  - "Uneven or excessive tire wear on one edge or side"
+  - "Cupping (scalloped wear pattern) suggesting suspension or imbalance issue"
+  - "Bulge or flat spot on the tire sidewall (impact damage or internal failure)"
+  - "Tire tread depth below 1.6 mm (legal minimum in most countries; 3 mm is safer for wet conditions)"
+  - "Pulling to one side during straight-line driving (alignment issue)"
+
+parts:
+  - name: "Tire pressure gauge (portable)"
+    oem: null
+    spec: "0–350 kPa range, analog dial or digital"
+    notes: "Carry one in the vehicle for regular pressure checks. ~$10–30."
+    verify: false
+  - name: "Air compressor (portable or workshop)"
+    oem: null
+    spec: "12V DC portable compressor for roadside inflation"
+    notes: "Useful for top-ups after puncture repair or seasonal pressure changes. ~$30–80."
+    verify: false
+
+tools:
+  - "Tire pressure gauge"
+  - "Tread depth gauge or penny (for wear measurement)"
+  - "Jack and jack stands (if rotating tires)"
+
+tips:
+  - "Check tire pressure when cold: at least 3 hours after the last drive, or before driving. Pressure rises 5–10 kPa per 10°C increase in temperature while driving, giving a false high reading if you check immediately after driving."
+  - "Tread depth test with a penny: insert a penny upside-down into the tread. If you can see the top of the penny, tread is below 1.6 mm and the tire is legally worn out. For safety in wet conditions, replace at 3 mm (where you can barely see the top of the penny)."
+  - "Wear pattern diagnosis: Wear on both outer edges (centre tread intact) indicates over-inflation. Wear in the centre (edges intact) indicates under-inflation. Wear on one edge only indicates alignment issue or one side of suspension sagging. Scalloped or cupped wear (rhythmic dips) suggests wheel imbalance or suspension wear (worn shocks, ball joints)."
+  - "Tire rotation (front ↔ rear every 20,000 km) extends tire life by 10–20%. The front tires wear faster on most vehicles, so rotation distributes wear evenly."
+  - "Seasonal pressure change: tire pressure drops ~1 kPa per 1°C drop in ambient temperature. In winter, expect pressure to drop 20–30 kPa; in summer, it may rise 20–30 kPa. Adjust accordingly."
+  - "Off-road pressure reduction (for sand, mud, or very rough terrain) increases the tire contact patch for traction. Never reduce below 200 kPa, as rim damage may occur. Always re-inflate to normal pressure before driving on pavement."
+  - "Typical Pajero IV tire size: 265/70R16 or 285/75R16. Load index and speed rating are printed on the sidewall (e.g., 112H = 1060 kg per tire, H = 210 km/h max). Always replace with the same size unless upgrading to a larger approved size (check owner's manual). Mixing tire brands, tread patterns, or sizes can cause handling issues and uneven wear."
+
+procedure_refs:
+  - label: "Factory procedure — Front Suspension (Section 31)"
+    section: "31"
+    manual: "M1"
+
+related:
+  - wheel-balance-tire-runout
+  - wheel-alignment
+  - tire-specifications

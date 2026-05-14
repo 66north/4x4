@@ -1,0 +1,36 @@
+slug: ac-not-cooling
+title: "Air Conditioning Not Cooling — Diagnosis Guide"
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  The Pajero IV uses a dual-zone automatic climate control system with front and rear outlets.
+  When the AC stops cooling, the cause is usually low refrigerant (slow leak), a failed compressor
+  clutch, a blocked condenser, or a faulty pressure sensor. This guide walks through diagnosing the
+  most common causes before committing to a regas or compressor replacement.
+
+symptoms:
+  - "Air from vents is warm or only slightly cool"
+  - "Cooling works only when driving at speed (condenser airflow-dependent fault)"
+  - "AC compressor not cycling on (clutch not engaging)"
+  - "AC light illuminated but no cold air"
+  - "System blows cold briefly then reverts to warm"
+  - "Rear AC not working but front is fine (separate blower motor fault)"
+
+tips:
+  - "Check the cabin air filter first — a blocked filter severely restricts airflow and makes the AC appear to not cool even when the refrigerant charge is correct."
+  - "With engine running and AC on, listen for the compressor clutch engaging — a click from the front of the engine bay followed by a slight RPM drop confirms the compressor is running."
+  - "No click = compressor not engaging. Could be low refrigerant (safety cutout), failed clutch, or blown AC fuse."
+  - "Check the AC fuse in the engine bay fuse box before any other diagnosis — a blown fuse is a 2-minute fix."
+  - "Cooling that works at highway speed but fails in traffic usually means the condenser fan is not running — check the condenser fan fuse and relay."
+  - "If the system cools briefly then stops, the high-pressure cutout is tripping — suspect overcharged refrigerant or a blocked condenser."
+  - "Refrigerant leaks are the most common cause of gradual AC failure on a 10+ year-old vehicle. A UV dye test or electronic sniffer confirms the leak location."
+  - "AC recharges (regassing) are a workshop job requiring certified refrigerant handling equipment — do not attempt to top up with DIY cans on a system that hasn't been leak-tested."
+
+related:
+  - ac-recharge
+  - heater-not-working
+  - fuse-box-reference

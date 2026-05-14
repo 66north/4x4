@@ -1,0 +1,58 @@
+slug: heater-not-working
+title: "Heater Not Working — Diagnosis Guide"
+category: troubleshoot
+difficulty: 2
+time_minutes: 30
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  When the heater blows cold or lukewarm air, the cause is usually a stuck-open thermostat (engine
+  never reaches temperature), a blocked heater core, or low coolant level. On the dual-zone climate
+  system, a faulty blend door actuator can also prevent hot air from reaching the cabin even when
+  the engine is warm. Diagnose in order — thermostat is cheapest and most common.
+
+symptoms:
+  - "Heater blows cold or barely warm air even after engine reaches temperature"
+  - "Temperature gauge stays low (thermostat stuck open)"
+  - "Only one zone (front or rear) producing warm air"
+  - "Gurgling or bubbling sounds from dashboard (air in heater core)"
+  - "Sweet coolant smell inside cabin (heater core leak)"
+  - "Windows fogging excessively from inside (heater core weeping)"
+
+tips:
+  - "Feel the heater hoses (the two hoses running through the firewall) with the engine warm. Both should be hot. If the outlet hose is cold, the heater core is blocked."
+  - "If the temperature gauge never reaches midpoint, the thermostat is stuck open — this prevents the engine reaching the temperature needed to heat the heater core."
+  - "Check coolant level in the expansion tank first. Low coolant means the heater core may not be getting flow."
+  - "Gurgling from the dashboard indicates air in the heater core. Bleed the cooling system by running the engine with the heater on max and the expansion tank cap removed until bubbles stop."
+  - "A sweet smell inside the cabin or fogged windows with a film on the inside of the glass is almost always a leaking heater core. This requires dashboard removal — a major workshop job ($500–1200 labour)."
+  - "If only the rear zone is cold, check the rear blower motor — it is separate from the front unit and has its own fuse."
+  - "Blend door actuator faults produce a clicking noise from behind the dashboard and incorrect temperature response. These are common on high-mileage vehicles and require dashboard access."
+
+parts:
+  - name: "Thermostat — OEM (MD315295)"
+    oem: "MD315295"
+    spec: "Opens at 88°C"
+    notes: "First thing to replace if engine runs cold. $20–40. See thermostat-replacement guide."
+    verify: false
+  - name: "Heater core — Pajero IV"
+    oem: "7820A025"
+    spec: "Aluminium core, dual-pass"
+    notes: "Replace only if leaking — requires full dashboard removal. $80–150 part, $500–1200 labour."
+    verify: true
+  - name: "Blend door actuator (front climate)"
+    oem: "7820A028"
+    spec: "12V servo motor"
+    notes: "Replace if temperature control is erratic or clicking from dashboard. $40–100 part."
+    verify: true
+
+procedure_refs:
+  - label: "Factory procedure — Heater & Air Conditioning (Section 54)"
+    section: "54"
+    manual: "M1"
+
+related:
+  - thermostat-replacement
+  - ac-not-cooling
+  - coolant-flush
+  - overheating

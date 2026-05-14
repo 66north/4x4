@@ -1,0 +1,71 @@
+slug: glow-plugs
+title: Glow Plug Replacement
+category: maintenance
+difficulty: 2
+time_minutes: 45
+applies_to:
+  engines: [4M41]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Diesel engines require glow plugs to preheat the combustion chamber for cold starts. The 4M41
+  has four glow plugs, one per cylinder, controlled by the engine ECU. A failed glow plug causes
+  hard cold starts, white smoke on startup, and rough idling until the engine warms. If all four
+  glow plugs fail, the engine becomes nearly impossible to start below 5°C. Replacement is straightforward
+  but requires care to avoid breaking the ceramic element inside the bore.
+
+symptoms:
+  - Difficulty starting in cold weather (below 10°C)
+  - White smoke on cold startup (incomplete combustion)
+  - Rough idle for 30+ seconds after a cold start
+  - Check Engine light with glow plug-related code (P0380, P0671–P0674)
+  - Hesitation or stumbling during warm-up phase
+  - One or more glow plug indicator lights not illuminating on the dashboard
+
+parts:
+  - name: Glow plug element — 4M41 diesel
+    oem: MD319950
+    notes: Common across all 2008–2013 years. Buy a set of 4 for consistency
+    verify: true
+  - name: Glow plug gasket/sealing washer (if removing head)
+    oem: ME050451
+    notes: Only necessary if removing cylinder head; not required for simple plug swap
+    verify: false
+
+tools:
+  - Glow plug socket (usually 10mm or 12mm hex bit, with a rubber insert to protect ceramic element)
+  - Standard socket wrench and ratchet
+  - Spark plug gap tool or feeler gauge (to check plug burn condition if inspecting old plugs)
+  - Thermal jacket or insulated socket (recommended to avoid shocking the ceramic with temperature changes)
+  - Engine cover removal tools (plastic clips or screws, depending on year/model)
+
+torque_specs:
+  - component: Glow plug into cylinder head
+    value: 15
+    unit: Nm
+    notes: Snug but not forceful — ceramic elements break easily under excessive torque
+  - component: Engine cover fasteners
+    value: 3
+    unit: Nm
+    notes: Very light torque; these are plastic clips, not threaded bolts
+
+tips:
+  - Glow plugs are located on top of the engine, under a plastic cover (labeled "ENGINE" or similar). Carefully remove plastic clips to expose them.
+  - The glow plug connectors are a single multi-pin connector block on the driver's side. You may need to unclip it to access the plugs, or work around it.
+  - If a plug breaks inside the bore during removal, stop and consult a professional. Broken ceramic can score the cylinder head and require machine work.
+  - Cold soak the vehicle overnight before replacement if possible — cold metal breaks less easily than warm. Do not remove glow plugs from a hot engine.
+  - After installing new plugs, allow the engine to idle for 2–3 minutes before driving. The ECU learns glow plug resistance on startup.
+  - Premature glow plug failure (before 80,000 km) often indicates a fuel injection timing issue or water in the fuel. If you replace plugs and they fail again quickly, have the injection pump checked.
+  - Some 2008–2009 models use MD319913 instead of MD319950. Always cross-reference your VIN with a dealer parts catalog.
+
+procedure_refs:
+  - label: "Factory procedure — Engine Ignition System (Section 15)"
+    section: "15"
+    manual: "M1"
+  - label: "Glow plug control circuit — Section 80"
+    section: "80"
+    manual: "M1"
+
+related:
+  - fuel-filter-diesel
+  - coolant-flush
+  - oil-change

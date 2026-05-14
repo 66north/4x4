@@ -1,0 +1,97 @@
+slug: belt-sizes-models
+title: "Belt Part Numbers — Serpentine & Timing Belt Cross-Reference"
+category: parts
+difficulty: 2
+time_minutes: 20
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2008, 2009, 2010, 2011, 2012, 2013]
+description: >
+  Compatible serpentine (accessory) belt and timing belt part numbers for the 2008–2013 Pajero IV.
+  Serpentine belt (both engines): OEM MD161162, profile 6PK1850 (6-rib poly-V, 1850mm).
+  Timing belt (6G75 petrol): OEM MD360360, 1440mm / 108-tooth. Replace every 120,000 km.
+  Timing belt (4M41 diesel): OEM MD362047, 1600mm / 80-tooth. Replace every 120,000 km.
+  WARNING: Timing belt failure destroys the engine. Never skip or delay this service.
+
+parts:
+  - name: "Serpentine Belt — Mitsubishi OEM (both engines)"
+    oem: "MD161162"
+    spec: "6PK1850 — 6-rib poly-V, 1850mm"
+    notes: "OEM part for both 4M41 and 6G75. Replace every 50,000–100,000 km. $35–50."
+    verify: false
+
+  - name: "Serpentine Belt — Gates 6PK1850 (both engines)"
+    oem: "6PK1850"
+    spec: "6-rib poly-V, 1850mm"
+    notes: "Gates is a Mitsubishi OEM supplier. Direct equivalent to MD161162. $25–35."
+    verify: false
+
+  - name: "Serpentine Belt — Dayco 1850K6 (both engines)"
+    oem: "1850K6"
+    spec: "6-rib poly-V, 1850mm"
+    notes: "Good budget alternative to Gates. $22–32."
+    verify: false
+
+  - name: "Serpentine Belt — Contitech 6PK1850 (both engines)"
+    oem: "6PK1850C"
+    spec: "6-rib poly-V, 1850mm"
+    notes: "German Continental quality. Premium option. $28–40."
+    verify: false
+
+  - name: "Timing Belt — Mitsubishi OEM (6G75 petrol)"
+    oem: "MD360360"
+    spec: "1440mm / 108-tooth / T2.5 profile"
+    notes: "OEM timing belt for 6G75. Replace every 120,000 km. Replace water pump (MD318281) at same time. $40–60 belt only; $150–220 full kit."
+    verify: false
+
+  - name: "Timing Belt — Gates T108T025 (6G75 petrol)"
+    oem: "T108T025"
+    spec: "1440mm / 108-tooth / T2.5 profile"
+    notes: "Gates OEM-equivalent timing belt for 6G75. $35–50."
+    verify: false
+
+  - name: "Timing Belt — Dayco 94108 (6G75 petrol)"
+    oem: "94108"
+    spec: "1440mm / 108-tooth"
+    notes: "Budget timing belt option for 6G75. $30–45."
+    verify: false
+
+  - name: "Timing Belt — Mitsubishi OEM (4M41 diesel)"
+    oem: "MD362047"
+    spec: "1600mm / 80-tooth / T5 profile"
+    notes: "OEM timing belt for 4M41 diesel. Different spec to petrol — do not mix. Replace every 120,000 km. $50–75 belt only."
+    verify: false
+
+  - name: "Timing Belt — Gates T80T005 (4M41 diesel)"
+    oem: "T80T005"
+    spec: "1600mm / 80-tooth / T5 profile"
+    notes: "Gates OEM-equivalent timing belt for 4M41 diesel. $40–60."
+    verify: false
+
+  - name: "Timing Belt Tensioner Pulley (6G75)"
+    oem: "MD361286"
+    spec: "Idler pulley — replace with belt"
+    notes: "Always replace tensioner and idler when doing timing belt. Pulley failure mid-service = wasted work. $30–50."
+    verify: false
+
+  - name: "Water Pump (6G75 — replace with timing belt)"
+    oem: "MD318281"
+    spec: "Coolant water pump"
+    notes: "Labour cost to reach the water pump overlaps with timing belt. Replace at same time to avoid repeat labour. $50–100."
+    verify: false
+
+tips:
+  - "Timing belt replacement is professional-only work. Incorrect installation causes engine failure (bent valves, broken pistons)."
+  - "Always replace the tensioner pulley and water pump when doing the timing belt. The extra parts cost $80–150 but save a second labour bill if either fails."
+  - "A cracked or glazed serpentine belt squeals at cold start. This is your warning — replace before it breaks and leaves you stranded."
+  - "Serpentine belt is DIY-friendly (20–30 min). Timing belt is not — always use a mechanic with Mitsubishi experience."
+  - "The 4M41 diesel and 6G75 petrol use different timing belt profiles and lengths. Always confirm engine type before ordering."
+  - "Keep your serpentine belt service receipt. If it breaks within the expected interval, the supplier may honour a warranty claim."
+
+procedure_refs:
+  - label: "Factory procedure — Engine Mechanical (Section 11)"
+    section: "11"
+    manual: "M1"
+
+related:
+  - maintenance-schedule
