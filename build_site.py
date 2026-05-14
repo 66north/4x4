@@ -85,7 +85,7 @@ YEAR_ORDER   = ["2008_eur", "2008_ge", "2009", "2010", "2011", "2012", "2013"]
 # Site configuration (easily changeable for production deployment)
 # ---------------------------------------------------------------------------
 
-BASE_URL = "http://localhost:8000"  # Change to production URL when available
+BASE_URL = "https://66north.github.io"
 SITE_NAME = "Gen IV Manual"  # Change when final site name is decided (e.g., "Shogun Manual", "Montero Manual")
 
 # ---------------------------------------------------------------------------
