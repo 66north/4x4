@@ -1,0 +1,377 @@
+slug: buyers-guide
+title: "Buyer's Guide — Gen 3 & Gen 4 (NM–NX)"
+description: >
+  What to check before buying a used Mitsubishi Pajero (Montero / Shogun) Gen 3 (2000–2006) or
+  Gen 4 (2007–2021). Covers engine-specific issues, corrosion hotspots, 4WD system checks,
+  recalls, and what to prioritise when inspecting any example.
+applies_to:
+  engines: [4M41, 6G75]
+  years: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+          2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
+related:
+  - pre-purchase-inspection
+  - egr-valve-cleaning
+  - dpf-warning-light
+  - transmission-slipping
+  - cv-joint-driveshaft
+  - dashboard-warning-lights
+body: |
+  ## Recalls — Check Before Buying
+
+  Run the vehicle's VIN through your country's official recall checker before viewing any car.
+  The following significant recalls have affected these vehicles:
+
+  | Recall | Models Affected | Issue |
+  |---|---|---|
+  | **Takata airbag inflator** | Various, including Gen 3 and some Gen 4 | Inflator propellant degrades over time; risk of metal fragmentation on deployment. One of the largest automotive recalls in history. Verify completion. |
+  | **Brake accumulator failure** | 2000–2003 Gen 3 | Potential brake failure; approximately 13,400 vehicles affected. Accumulator replaced under recall. |
+  | **Front lower control arm weld failure** | 2016–2018 Gen 4 | Inadequate weld strength at the front right lower arm joint could cause the arm to break during use, compromising steering and stability. Arm replaced free of charge. |
+
+  Do not purchase a vehicle with an outstanding Takata airbag recall. If the seller is unaware
+  of its status, treat this as a red flag about the ownership history. Check your country's
+  official recall database using the vehicle's VIN before viewing any car.
+
+  ## Engine: 3.2 DI-D Diesel (4M41)
+
+  The 3.2-litre diesel is the most common engine in the Pajero and is generally very durable.
+  Several specific issues warrant close attention.
+
+  ### Timing Chain — the Most Important Check
+
+  The upper plastic timing chain guide wears progressively and typically fails between
+  70,000–90,000 miles. When it breaks, fragments can jam the chain or circulate in the oil,
+  causing camshaft and lifter damage. This is the single most expensive engine failure on
+  these vehicles.
+
+  - **Early warning sign:** A cold-start rattle from the top of the engine that settles after a
+    few seconds of running.
+  - **Action:** If the service history does not document chain guide replacement, budget for it
+    immediately. Many specialists recommend replacing the guide proactively at 60,000 miles.
+  - Ask specifically whether the chain, guides, and tensioner have been replaced as a set.
+
+  ### EGR Valve
+
+  Universal on higher-mileage examples, especially post-2006 models with a DPF. Carbon deposits
+  block the EGR valve and intake manifold, causing rough idle, lack of power, and increased smoke.
+  A clean or recently replaced EGR is a positive sign; if it has never been attended to past
+  100,000 km, budget for the job.
+
+  ### Injectors
+
+  Injectors typically run without issue until 150,000–200,000 km but can become varnished and
+  begin misfiring. The more serious risk on Gen 3 models is seized injectors — corrosion of the
+  copper seat caused by a rusty fuel filler neck can cause injectors to seize in the head.
+  Extraction without snapping the body requires specialist tooling. Check the fuel filler neck
+  condition carefully (see **Underside & Corrosion** below) as a proxy for injection system health.
+
+  ### Turbocharger
+
+  Check for worn shaft seals by removing the intercooler intake hose. Oily residue inside the
+  hose and intercooler indicates turbo seal wear. With the engine warm and at idle, look for blue
+  or grey smoke from the exhaust — persistent smoke is a concern. Check for excessive shaft play
+  at inspection.
+
+  ### Oil Cooler
+
+  The integrated oil cooler within the radiator can develop internal leaks, allowing coolant to
+  mix with engine oil. Check the dipstick and oil filler cap for creamy, mayonnaise-like
+  contamination. Any such contamination is a serious warning sign.
+
+  ### Glow Plugs and Relay
+
+  The glow plug relay is a common failure point. A faulty relay prevents the plugs from heating,
+  causing hard cold starting and white smoke on start-up. Individual plugs can seize in the head
+  on high-mileage engines, making extraction costly. Hard cold starting on a diesel is always
+  worth investigating.
+
+  ### Fuel Injection Pump
+
+  The high-pressure pump can fail due to contaminated fuel or neglected filter servicing.
+  Replacement is expensive. Running the tank very low or using poor-quality diesel accelerates
+  wear. Look for evidence of regular fuel filter changes in the service history.
+
+  ## Engine: 3.8 V6 Petrol (6G75 MIVEC)
+
+  ### Timing Chain and Hydraulic Tensioner
+
+  The 3.8 V6 uses a timing chain, not a belt. The plastic guides suffer the same wear pattern as
+  the diesel. Additionally, the hydraulic tensioner can bleed down or fail — if it does, a sudden
+  loud ticking or rattling results. Sudden loud ticking in a 3.8 MIVEC is a serious warning sign
+  requiring immediate investigation before chain skip causes valve damage.
+
+  ### MIVEC Variable Valve Timing System
+
+  The MIVEC system relies on clean oil passages and correct viscosity oil. Infrequent oil changes
+  cause clogged VVT actuator ports, resulting in hesitation, flat spots on acceleration, and
+  check-engine lights. A full service history using the correct oil grade is essential.
+
+  ### Oil Consumption
+
+  Valve stem seals show increased oil consumption past approximately 150,000 km. Check the
+  dipstick level at inspection and look for blue smoke on overrun or under hard acceleration.
+
+  ### Water Pump
+
+  Water pumps tend to fail after approximately 120,000 km. Check coolant condition at inspection
+  and look for weeping at the pump area on the front of the engine.
+
+  ## Bodywork
+
+  - Verify the bonnet and fuel filler flap open correctly using the release levers under the
+    steering column.
+  - Check all four doors along the **top of the door frame**, where the metal is folded and
+    joined. This seam is poorly sealed from the factory; rust begins here and spreads outward.
+    Mitsubishi replaced door tops under warranty on some early Gen 4 cars. Look for paint
+    bubbling along the top of all four doors.
+  - Inspect **wheel arch trims** carefully. Rust develops behind the plastic arch covers;
+    bubbling paint under the arch almost always indicates hidden corrosion.
+  - Check the **rear spare wheel carrier** and its mounting frame on the rear door. These corrode
+    heavily and replacement parts are becoming difficult to source.
+  - Verify body panel alignment. Uneven gaps can indicate previous accident repairs.
+  - On many models, the rear sidelights and indicators are located in the lower bumper lights
+    rather than the main rear clusters.
+
+  ## Underside & Corrosion — Critical Inspection Areas
+
+  This is the most important inspection area on any used Pajero. Use a ramp wherever possible.
+
+  ### Fuel Filler Neck (Gen 3 Diesel — High Priority)
+
+  The fuel filler neck on 2000–2006 diesel models is concealed behind a plastic cover above the
+  right rear wheel. Mud, sand, and salt accumulate here and are rarely disturbed. The pipe
+  corrodes internally, and rust particles travel through the fuel system to the injection pump.
+  A visibly rusty filler neck is a direct warning sign for injection system damage. This is the
+  first thing to check on any Gen 3 diesel.
+
+  ### Chassis Rails — Front Radius Rod Mount (Safety Critical)
+
+  The front radius rod mounting point directly below the battery on the right chassis rail is a
+  severe corrosion point. Cases of the mount completely separating from the chassis rail have
+  been reported. This is a structural safety concern — inspect this area specifically and probe
+  with a screwdriver if any surface rust is visible.
+
+  ### Chassis and Sill Corrosion
+
+  - Check along both full-length chassis rails for pitting and structural thinning.
+  - Inspect the sill area behind plastic body cladding; remove mouldings at inspection where
+    possible.
+  - The area around the VIN stamping point on the right rear chassis is a common rust
+    initiation point.
+
+  ### Rear Cargo Door Seal Area
+
+  Dirt and moisture collect under the tailgate rubber seal. Check the metal behind the seal
+  for corrosion.
+
+  ### Sunroof Drains (if sunroof fitted)
+
+  Blocked sunroof drain channels cause water to pool in the headlining and run into the A-pillar
+  cavity, causing corrosion and electrical issues. Ask whether the drains have ever been cleared.
+
+  ### Suspension Mounting Points
+
+  Check both front and rear suspension mounting points for corrosion, particularly around the
+  front upper strut towers and rear spring/shock mount areas.
+
+  ### Side Steps and Skid Plates
+
+  Verify the presence and condition of the factory bash plates/skid plates. Check side step
+  mounting points for rust. Confirm that the factory bottle jack, jack handle, and wheel brace
+  are present — missing factory equipment often indicates heavy use or poor ownership history.
+
+  ## Suspension
+
+  ### Upper Control Arm Bushings
+
+  The front upper control arm rubber bushings are a primary wear item on both Gen 3 and Gen 4.
+  The rubber separates from the steel sleeve. Symptoms are steering oscillation, wander, and a
+  clunking or knocking over bumps at low speed. Often worn through by 80,000 miles on examples
+  used off-road or with heavy loads.
+
+  ### Lower Ball Joints
+
+  Lower ball joints are subject to high loads in off-road use. Wear produces clunking over bumps
+  and vibration through the steering wheel. Check at every pre-purchase inspection.
+
+  ### Radius Rod Rear Bush
+
+  A specific documented wear item: the rear bush of the front lower radius rod causes front-end
+  wander under braking when worn. Listen for movement and knock during hard braking.
+
+  ### Shock Absorbers
+
+  Check all four for oil leaks around the shaft seal. Bounce each corner — the vehicle should
+  settle in one oscillation, not continue bouncing.
+
+  ## Brakes
+
+  Brake caliper piston seizure is common on older examples.
+
+  - Brake from 60 km/h — the vehicle should stop straight with no pulling, pulsing, or grinding.
+  - Feel for excessive heat from any individual wheel after a moderate drive.
+  - A warning buzzer during braking may indicate problems with the hydraulic brake booster motor
+    or pressure accumulator.
+  - An ABS warning light alone (with no other faults) is a common, typically inexpensive repair
+    — often a faulty wheel speed sensor — but it must be scanned to confirm.
+
+  ## Wheels & Tyres
+
+  Factory wheel size is commonly **265/60R18**. A common and fitment-compatible upgrade is
+  **265/65R18**.
+
+  All five tyres (including the spare) should match in size, brand, and wear level. Mismatched
+  sizes or significantly different wear patterns on an all-time 4WD can cause transmission and
+  transfer case wear. Check the spare is the same specification as the road wheels.
+
+  ## Super Select 4WD System
+
+  The Super Select transfer case is generally very robust, but lack of use causes problems with
+  actuators, vacuum solenoids, and position switches.
+
+  **System modes:**
+
+  - **2H** — rear-wheel drive only
+  - **4H** — full-time four-wheel drive (centre diff open)
+  - **4HLc** — full-time 4WD with centre differential locked
+  - **4LLc** — low range with centre differential locked
+
+  **Checks during test drive:**
+
+  - Switch between 2H and 4H at moderate speed (30–40 km/h). The dashboard indicator should
+    stop flashing and illuminate solidly within a few seconds. A mode that stays flashing
+    indicates incomplete engagement.
+  - Test all four modes in sequence. 4LLc requires a full stop.
+  - After cycling through all modes, confirm no flashing differential warning lights remain.
+
+  The most common failure mode is the "dreaded flashing 4WD light" — the transfer case indicator
+  flashes and the mode does not engage. This can stem from actuator oil seal failure (gearbox oil
+  enters the actuator), vacuum leaks, or faulty position switches. Aftermarket replacement
+  switches are documented as slightly undersized compared to OEM, causing engagement failures.
+  Insist on OEM Mitsubishi parts for any switch replacement.
+
+  4HLc and 4LLc should only be used on loose or slippery surfaces. Using either mode on dry
+  tarmac at speed will cause transmission wind-up and drivetrain stress.
+
+  ## Transmission & Drivetrain
+
+  ### Automatic Gearbox
+
+  Gen 3 uses a 4-speed INVECS-II automatic; Gen 4 uses a Jatco-sourced 5-speed. Both require
+  regular ATF and filter changes — every 60,000 km. Check the service history specifically for
+  this. Incorrect ATF type (generic multi-spec fluid instead of genuine Mitsubishi ATF) is a
+  common cause of shudder and premature clutch pack wear.
+
+  During the test drive check for:
+
+  - Smooth, firm changes under light and hard acceleration
+  - No delayed engagement from Park to Drive or Reverse
+  - No slipping between gears under load
+
+  ### CV Joints
+
+  Drive slowly in a tight circle in each direction and listen for clicking from the front wheels.
+  Any clicking on full lock requires investigation. Check front CV boots for splitting during the
+  underside inspection.
+
+  ## Electrical System
+
+  ### ETACS Control Unit
+
+  The ETACS (Electronic Time and Alarm Control System) is a yellow control module mounted under
+  the steering column. It controls indicators, lighting, wipers, central locking, and the
+  immobiliser. Failures cause:
+
+  - Indicator malfunctions
+  - Intermittent central locking faults
+  - Immobiliser triggering unexpectedly, preventing starting
+
+  ETACS replacement requires a Mitsubishi MUT-III dealer diagnostic tool to program the new unit
+  and register keys. It cannot be swapped without reprogramming. If a vehicle has unexplained
+  immobiliser issues or a history of phantom electrical faults, get a dedicated Mitsubishi scanner
+  on it before buying.
+
+  ### Multiple Warning Lights Simultaneously
+
+  ASC, traction control, centre differential lock, and engine warning lights coming on together
+  usually indicates a sensor communication fault or grounding issue rather than multiple
+  individual component failures. A common cause is the wiring loom under the gearbox tunnel
+  working loose from its retaining clips and contacting the front driveshaft — inspect that loom
+  during the underside check. Any multi-warning-light car must be diagnosed with a scan tool
+  before purchase.
+
+  ### Steering Column Controls (Clockspring)
+
+  Test every steering wheel button individually — horn, audio controls, cruise control.
+  Intermittent or non-functioning buttons indicate a failing clockspring (spiral cable).
+
+  ### Electric Windows
+
+  Test all windows through their full travel in both directions. Slow or jerky operation
+  indicates a worn regulator. A window that stops mid-travel suggests a motor or fuse issue.
+
+  ## Interior
+
+  - Test all seat adjustment mechanisms. Confirm second-row seats fold and slide correctly.
+  - Confirm the infotainment system powers on and functions correctly.
+  - Test the centre armrest compartment and its sliding lid.
+  - Verify the handbrake holds the vehicle securely in neutral on a slope.
+  - Check the third-row seats and headrests are present (where applicable); boot trim panels and
+    hinge covers should also be in place.
+
+  ## Standard Equipment Checklist
+
+  Confirm the vehicle includes:
+
+  - Factory bottle jack, handle, and wheel brace
+  - Locking wheel nut key
+  - Removable tow bar and electrics (if originally fitted)
+  - Third-row seats and headrests (where applicable)
+  - All boot trim panels and hinge covers
+
+  Missing factory equipment often indicates heavy use or poor ownership history.
+
+  ## Test Drive
+
+  A healthy vehicle should:
+
+  - Start quickly with no excessive smoke
+  - Shift gears smoothly at all speeds
+  - Drive quietly without suspension knocks or creaks
+  - Reach normal operating temperature without overheating
+  - Engage all drivetrain modes correctly
+
+  A slight knocking sensation under the driver's feet with a nearly full fuel tank can be normal
+  due to fuel tank shape and fuel movement. Manual shift mode (if fitted) should operate
+  correctly when selected.
+
+  ## Servicing & Maintenance
+
+  Recommended service intervals:
+
+  - **Every 12 months** or **every 12,500 miles** (whichever comes first)
+  - Valve clearance check: every 24,000 miles (4M41 diesel)
+  - Automatic transmission fluid and filter: **every 60,000 km**
+  - Timing chain guide (4M41 diesel): replacement recommended proactively at 60,000 miles
+
+  A strong, documented service history is significantly more important than mileage. A
+  high-mileage car with full history is almost always a better buy than a lower-mileage car
+  with no documented maintenance.
+
+  Coolant: Mitsubishi specifies blue HOAT coolant. Orange, green, or brown coolant in the
+  reservoir indicates incorrect mixing and likely accelerated internal corrosion.
+
+  ## Summary: What to Prioritise
+
+  1. **Check your country's recall database** before viewing — non-negotiable for Takata airbag
+     status
+  2. **Inspect the fuel filler neck and chassis rail at the battery** on any Gen 3 diesel
+  3. **Ask for timing chain guide history** — the single most expensive engine repair
+  4. **Test all four 4WD modes** and confirm clean engagement
+  5. **Check the ATF service history** — a never-serviced automatic is a known failure point
+  6. **Drive over bumps at low speed** and listen for suspension clunks
+  7. **Run a diagnostic scan** on any car with warning lights, electrical oddities, or unknown
+     history
+
+  A clean Gen 4 with full service history and a recently replaced timing chain guide is worth
+  a meaningful premium. Walk away from any vehicle with structural chassis corrosion, milky oil,
+  or an unresolved Takata recall.
