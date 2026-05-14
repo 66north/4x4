@@ -886,12 +886,12 @@ _TEMPLATES["base.html"] = """<!DOCTYPE html>
   {% if sidebar_manual %}<meta name="view-manual" content="{{ sidebar_manual }}">{% endif %}
   {% if feedback_email %}<meta name="feedback-email" content="{{ feedback_email }}">{% endif %}
   <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
-  <meta name="description" content="{{ description or 'DIY repair guides and factory service manual searchable database' }}">
+  <meta name="description" content="{{ description or 'DIY repair guides and factory service manual for Mitsubishi Pajero IV (also Montero, Shogun) 2007–2013' }}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="{{ BASE_URL }}{{ canonical_url or base_url }}">
   <!-- Open Graph -->
   <meta property="og:title" content="{% block og_title %}{{ SITE_NAME }}{% endblock %}">
-  <meta property="og:description" content="{{ description or 'DIY repair guides and factory service manual searchable database' }}">
+  <meta property="og:description" content="{{ description or 'DIY repair guides and factory service manual for Mitsubishi Pajero IV (also Montero, Shogun) 2007–2013' }}">
   <meta property="og:url" content="{{ BASE_URL }}{{ canonical_url or base_url }}">
   <meta property="og:type" content="{{ og_type or 'website' }}">
   <meta property="og:image" content="{{ BASE_URL }}/assets/og-image.png">
@@ -899,14 +899,14 @@ _TEMPLATES["base.html"] = """<!DOCTYPE html>
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% block twitter_title %}{{ SITE_NAME }}{% endblock %}">
-  <meta name="twitter:description" content="{{ description or 'DIY repair guides and factory service manual searchable database' }}">
+  <meta name="twitter:description" content="{{ description or 'DIY repair guides and factory service manual for Mitsubishi Pajero IV (also Montero, Shogun) 2007–2013' }}">
   <meta name="twitter:image" content="{{ BASE_URL }}/assets/og-image.png">
   {% if json_ld %}<script type="application/ld+json">{{ json_ld | tojson }}</script>{% endif %}
   <link rel="stylesheet" href="{{ base_url }}assets/style.css">
 </head>
 <body>
 <header class="site-header" data-pagefind-ignore>
-  <a class="site-brand" href="{{ base_url }}index.html">Pajero <em>IV</em></a>
+  <a class="site-brand" href="{{ base_url }}index.html">Pajero / Montero / Shogun <em>IV</em></a>
   <form class="search-form">
     <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
          stroke="currentColor" stroke-width="2.5">
@@ -1003,12 +1003,12 @@ _TEMPLATES["base_wide.html"] = """<!DOCTYPE html>
   <meta name="base-url" content="{{ base_url }}">
   {% if feedback_email %}<meta name="feedback-email" content="{{ feedback_email }}">{% endif %}
   <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
-  <meta name="description" content="{{ description or 'DIY repair guides and factory service manual searchable database' }}">
+  <meta name="description" content="{{ description or 'DIY repair guides and factory service manual for Mitsubishi Pajero IV (also Montero, Shogun) 2007–2013' }}">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="{{ BASE_URL }}{{ canonical_url or base_url }}">
   <!-- Open Graph -->
   <meta property="og:title" content="{% block og_title %}{{ SITE_NAME }}{% endblock %}">
-  <meta property="og:description" content="{{ description or 'DIY repair guides and factory service manual searchable database' }}">
+  <meta property="og:description" content="{{ description or 'DIY repair guides and factory service manual for Mitsubishi Pajero IV (also Montero, Shogun) 2007–2013' }}">
   <meta property="og:url" content="{{ BASE_URL }}{{ canonical_url or base_url }}">
   <meta property="og:type" content="{{ og_type or 'website' }}">
   <meta property="og:image" content="{{ BASE_URL }}/assets/og-image.png">
@@ -1016,14 +1016,14 @@ _TEMPLATES["base_wide.html"] = """<!DOCTYPE html>
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% block twitter_title %}{{ SITE_NAME }}{% endblock %}">
-  <meta name="twitter:description" content="{{ description or 'DIY repair guides and factory service manual searchable database' }}">
+  <meta name="twitter:description" content="{{ description or 'DIY repair guides and factory service manual for Mitsubishi Pajero IV (also Montero, Shogun) 2007–2013' }}">
   <meta name="twitter:image" content="{{ BASE_URL }}/assets/og-image.png">
   {% if json_ld %}<script type="application/ld+json">{{ json_ld | tojson }}</script>{% endif %}
   <link rel="stylesheet" href="{{ base_url }}assets/style.css">
 </head>
 <body>
 <header class="site-header" data-pagefind-ignore>
-  <a class="site-brand" href="{{ base_url }}index.html">Pajero <em>IV</em></a>
+  <a class="site-brand" href="{{ base_url }}index.html">Pajero / Montero / Shogun <em>IV</em></a>
   <form class="search-form">
     <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
          stroke="currentColor" stroke-width="2.5">
@@ -1042,7 +1042,7 @@ _TEMPLATES["base_wide.html"] = """<!DOCTYPE html>
 """
 
 _TEMPLATES["index.html"] = """{% extends "base_wide.html" %}
-{% block title %}Pajero IV Workshop Hub{% endblock %}
+{% block title %}Pajero IV (Montero / Shogun) Workshop Hub{% endblock %}
 {% block content %}
 <script id="year-labels-json" type="application/json">{{ year_labels_json | safe }}</script>
 <script id="manual-names-json" type="application/json">{{ manual_names_json | safe }}</script>
@@ -1053,7 +1053,7 @@ _TEMPLATES["index.html"] = """{% extends "base_wide.html" %}
 </div>
 <div class="landing-hero">
   <h1>Mitsubishi <em>Pajero IV</em> Workshop Hub</h1>
-  <p>Find repair procedures, specs, and parts for your Pajero IV (2007–2013)</p>
+  <p>Find repair procedures, specs, and parts for your Pajero IV · Montero · Shogun (2007–2013)</p>
   <form id="landing-search" class="landing-search">
     <input type="search" placeholder="Search: timing belt, brake bleed, P0400…" autocomplete="off">
     <button type="submit">Search</button>
@@ -1088,7 +1088,7 @@ _TEMPLATES["index.html"] = """{% extends "base_wide.html" %}
 """
 
 _TEMPLATES["archive_index.html"] = """{% extends "base_wide.html" %}
-{% block title %}Factory Manual Archive — Pajero IV{% endblock %}
+{% block title %}Factory Manual Archive — Pajero IV (Montero / Shogun){% endblock %}
 {% block content %}
 <nav class="breadcrumb">
   <a href="{{ base_url }}index.html">Home</a>
@@ -1125,7 +1125,7 @@ _TEMPLATES["archive_index.html"] = """{% extends "base_wide.html" %}
 """
 
 _TEMPLATES["category.html"] = """{% extends "base_wide.html" %}
-{% block title %}{{ category.title }} — Pajero IV Workshop Hub{% endblock %}
+{% block title %}{{ category.title }} — Pajero IV (Montero / Shogun) Workshop Hub{% endblock %}
 {% block content %}
 <nav class="breadcrumb">
   <a href="{{ base_url }}index.html">Home</a>
@@ -1188,7 +1188,7 @@ _TEMPLATES["category.html"] = """{% extends "base_wide.html" %}
 """
 
 _TEMPLATES["topic.html"] = """{% extends "base.html" %}
-{% block title %}{{ topic.title }} — Pajero IV Workshop Hub{% endblock %}
+{% block title %}{{ topic.title }} — Pajero IV (Montero / Shogun) Workshop Hub{% endblock %}
 {% block content %}
 <nav class="breadcrumb">
   <a href="{{ base_url }}index.html">Home</a>
@@ -1310,7 +1310,7 @@ _TEMPLATES["topic.html"] = """{% extends "base.html" %}
 """
 
 _TEMPLATES["view_index.html"] = """{% extends "base.html" %}
-{% block title %}{{ manual_names[manual] }} {{ year_labels[year] }} — Pajero IV Manual{% endblock %}
+{% block title %}{{ manual_names[manual] }} {{ year_labels[year] }} — Pajero IV (Montero / Shogun) Manual{% endblock %}
 {% block content %}
 <div class="view-header">
   <span class="vh-manual">{{ manual_names[manual] }}</span>
@@ -1363,7 +1363,7 @@ _TEMPLATES["view_group.html"] = """{% extends "base.html" %}
 """
 
 _TEMPLATES["page.html"] = """{% extends "base.html" %}
-{% block title %}{{ page.title }} — Pajero IV Manual{% endblock %}
+{% block title %}{{ page.title }} — Pajero IV (Montero / Shogun) Manual{% endblock %}
 {% block content %}
 <script id="pg-siblings" type="application/json">{{ siblings_json | safe }}</script>
 <span hidden data-pagefind-filter="manual[{{ page.manual_type }}]"></span>
@@ -1421,7 +1421,7 @@ _TEMPLATES["page.html"] = """{% extends "base.html" %}
 """
 
 _TEMPLATES["search.html"] = """{% extends "base.html" %}
-{% block title %}Search — Pajero IV Manual{% endblock %}
+{% block title %}Search — Pajero IV (Montero / Shogun) Manual{% endblock %}
 {% block content %}
 <div class="search-hero">
   <h1>Search manual</h1>
@@ -1519,7 +1519,7 @@ _TEMPLATES["search.html"] = """{% extends "base.html" %}
 """
 
 _TEMPLATES["find_part.html"] = """{% extends "base.html" %}
-{% block title %}Find a Part — Pajero IV Workshop Hub{% endblock %}
+{% block title %}Find a Part — Pajero IV (Montero / Shogun) Workshop Hub{% endblock %}
 {% block content %}
 <nav class="breadcrumb">
   <a href="{{ base_url }}index.html">Home</a>
@@ -1923,7 +1923,7 @@ def gen_parts_search_page(shops: list[dict], topics: list[dict], sidebar_cats: l
                    sidebar_categories=sidebar_cats,
                    feedback_email=feedback_email,
                    canonical_url="/find-part/index.html",
-                   description="Search for Pajero IV parts by name or OEM number and get direct links to AutoDoc, eBay, and Amazon.",
+                   description="Search for Pajero IV (Montero / Shogun) parts by name or OEM number and get direct links to AutoDoc, eBay, and Amazon.",
                    og_type="website")
     ctx["shops_json"] = _json.dumps(shops)
     ctx["topics_with_parts"] = shops_with_parts
@@ -1958,15 +1958,23 @@ def gen_landing(pages: list[dict], topics: list[dict], shops: list[dict],
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": SITE_NAME,
+        "alternateName": ["Montero Workshop Hub", "Shogun Workshop Hub"],
         "url": BASE_URL,
-        "description": "Complete DIY repair guide and factory service manual database",
+        "description": "DIY repair guides and factory service manual for Mitsubishi Pajero IV (also Montero in Latin America, Shogun in UK) 2007–2013",
+        "about": {
+            "@type": "Car",
+            "name": "Mitsubishi Pajero IV",
+            "alternateName": ["Mitsubishi Montero", "Mitsubishi Shogun"],
+            "manufacturer": {"@type": "Organization", "name": "Mitsubishi Motors"},
+            "modelDate": "2007"
+        },
         "creator": {"@type": "Organization", "name": "Community"}
     }
 
     ctx = _base_ctx(
         base_url, full_width=True, feedback_email=feedback_email,
         canonical_url="/", og_type="website",
-        description="Complete DIY repair guide and factory service manual database",
+        description="DIY repair guides and factory service manual for Mitsubishi Pajero IV (Montero / Shogun) 2007–2013. Torque specs, fault codes, maintenance schedules.",
         json_ld=json_ld
     )
     ctx.update({
