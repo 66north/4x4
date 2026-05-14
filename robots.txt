@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+User-agent: CCBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: Gemini
+User-agent: Claude-Web
+Allow: /
+
+Sitemap: /4x4/sitemap.xml
+
+Disallow: /search
